@@ -1,0 +1,117 @@
+<!--
+TODO:
+<div>Icons made by <a href="https://www.flaticon.com/authors/freepik" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>
+ -->
+
+<!DOCTYPE html>
+<html>
+<html lang="en-US">
+<meta charset="UTF-8">
+
+<head>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src='PESlider.js'></script>
+  <script src='BuildJSON.js'></script>
+  <script src='Dots.js'></script>
+  <script type="text/javascript" src="FICOTest.json"></script>
+  <link rel="stylesheet" type="text/css" href="style.css" />
+</head>
+
+
+<body onload="pageLoad();">
+
+  <div id="consent" class="screen">
+    <h1 class="mtitle">University of California, San Diego<br>
+    </h1>
+    <p> CONSENT FORM
+      <br>
+      <br>
+      <button class="big-button" onclick="clickConsent();"> Click here to consent and agree to participate</button>
+  </div>
+
+  <div id="instructions" class="screen">
+    <p class="mtitle">
+      Welcome to the Algorithmic Fairness Task.
+    </p>
+    <p class="mtitle">
+      During this task you will be presented with various situations
+      and decisions. We ask that you read the situation completely then
+      interact with the slider to communicate your decision.
+    </p>
+    <p class="mtitle">
+      Once you have
+      finished making your choice, you may proceed to the next scenario. <br>
+    </p>
+
+    <button class="big-button" onclick="clickInstructions();">Click here to begin</button>
+  </div>
+
+  <div id="trial" class="screen">
+    <div id="trialText">uselesstext</div><br>
+    <span class='val' id="sliderVal"> 50 </span>
+    <input type="range" min="0" max="100" id="trialSlider" oninput="sliderChange(this.value)"><br>
+    <table class='approvals'>
+    <tr>
+      <th>
+        Group
+      </th>
+      <th>
+        Approval %
+      </th>
+    </tr>
+    <tr>
+      <td>
+        Asian
+      </td>
+      <td id='asianVal'>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        White
+      </td>
+      <td id='whiteVal'>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        Hispanic
+      </td>
+      <td id='hispanicVal'>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        Black
+      </td>
+      <td id='blackVal'>
+      </td>
+    </tr>
+  </table>
+    <div class="container">
+      <div class = "race container" , id="asian">Asian:</div>
+      <div class = "container" id="container1"></div>
+      <div class = "race container" , id="white">White:</div>
+      <div class = "container" id="container2"></div>
+      <div class = "race container" , id="hispanic">Hispanic:</div>
+      <div class = "container" id="container3"></div>
+      <div class = "race container" , id="black">Black:</div>
+      <div class = "container" id="container4"></div>
+    </div>
+    <button class="big-button" id="next" onclick="trialDone();">Done!</button>
+
+  <div id="completed" class="screen">
+    <button class="big-button" id="finished" onclick="experimentDone();">Finished!</button>
+  </div>
+
+</body>
+
+</html>
+
+<!-- 
+  TO DO:
+  build 4 containers for values to be output
+  make a loop that looks up val, then reports .race for each div
+  on slider change, update all arrays with the looked up value
+  figure out how to do dots
+-->

@@ -85,16 +85,24 @@ display:none;
   margin-right: auto;
   text-align: center;
   }
-
-  .group{
+.group{
     font-size:20px;
     display: inline-block;
     vertical-align: middle;
       padding: 2%;
-      width: 50%;
-  }
+      width: 100px;
+}
 .container{
     display: inline-block;
-    vertical-align: middle;
+    /* vertical-align: middle; */
       padding: 2%;
 }
+
+/* #test{
+  display:inline-block;
+  width: 100px;
+  height: 100%;
+}
+#container1{
+  display:inline-block;
+} */

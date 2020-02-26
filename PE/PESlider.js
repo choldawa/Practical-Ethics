@@ -23,8 +23,8 @@ function trialStart() {
 	// move to next trial.
 	document.getElementById('trialText').innerHTML = prompts[trialNumber];
 	// reset the slider
-	// document.getElementById('trialSlider').value = initialSliderVal;
-	// document.getElementById('sliderVal').innerHTML = initialSliderVal;
+	document.getElementById('trialSlider').value = initialSliderVal;
+	document.getElementById('sliderVal').innerHTML = initialSliderVal;
 	// document.getElementById('asianVal').innerHTML = myData[initialSliderVal].asian,
 	// document.getElementById('whiteVal').innerHTML = myData[initialSliderVal].white,
 	// document.getElementById('hispanicVal').innerHTML = myData[initialSliderVal].hispanic,

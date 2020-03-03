@@ -1,45 +1,6 @@
-const prompts = ['A loan company is conducting market research to find out what method to use to determine who to give loans to...', 'test2'];
-let trialNumber = 0;
-const trialData = [];
-
-const initialSliderVal = 50;
-var BLOCKS_PER_CHART = 10;
-
-function pageLoad() {
-	document.getElementById('consent').style.display = 'block';
-}
-
-function clickConsent() {
-	document.getElementById('consent').style.display = 'none';
-	document.getElementById('instructions').style.display = 'block';
-}
-
-function clickInstructions() {
-	document.getElementById('instructions').style.display = 'none';
-	trialStart();
-}
-
-function trialStart() {
-	// move to next trial.
-	document.getElementById('trialText').innerHTML = prompts[trialNumber];
-	// reset the slider
-	document.getElementById('trialSlider').value = initialSliderVal;
-	document.getElementById('sliderVal').innerHTML = initialSliderVal;
-	// document.getElementById('asianVal').innerHTML = myData[initialSliderVal].asian,
-	// document.getElementById('whiteVal').innerHTML = myData[initialSliderVal].white,
-	// document.getElementById('hispanicVal').innerHTML = myData[initialSliderVal].hispanic,
-	// document.getElementById('blackVal').innerHTML = myData[initialSliderVal].black,
-	document.getElementById('trial').style.display = 'block';
-	generateDots(fullSet, myData[initialSliderVal].asian, 1);
-	generateDots(fullSet, myData[initialSliderVal].white, 2);
-	generateDots(fullSet, myData[initialSliderVal].hispanic, 3);
-	generateDots(fullSet, myData[initialSliderVal].black, 4);
-}
-
-
 
 function sliderChange(val) {
-	document.getElementById('sliderVal').innerHTML = val;
+	// document.getElementById('sliderVal').innerHTML = val;
 	// const { a, w, b, h } = LookupApprovalPercent(val);
 	// document.getElementById('asianVal').innerHTML = a; 
 	// document.getElementById('whiteVal').innerHTML = w;
@@ -49,6 +10,8 @@ function sliderChange(val) {
 	generateDots(fullSet, myData[val].white, 2);
 	generateDots(fullSet, myData[val].hispanic, 3);
 	generateDots(fullSet, myData[val].black, 4);
+	generateDots(fullSet, myData[val].mu, 5);
+	// document.getElementById('total').innerHTML = Math.round((myData[val].black+myData[val].hispanic+myData[val].white+myData[val].asian)/2);
 }
 
 function calculateThreshold(val) {

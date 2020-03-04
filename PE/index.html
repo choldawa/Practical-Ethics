@@ -14,6 +14,7 @@ Make Slider interpolate wider range
 
 <head>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://psyc241.ucsd.edu/jspsych-6.1.0/jspsych.js"></script>
   <script src='PESlider.js'></script>
   <script src='BuildJSON.js'></script>
   <script src='Dots.js'></script>
@@ -40,7 +41,9 @@ Make Slider interpolate wider range
     <p class="mtitle">
       During this task you will be presented with various situations
       and decisions. We ask that you read the situation completely then
-      interact with the slider to communicate your decision.
+      interact with the slider to communicate your decision. <br>
+      You will receive a bonus at the end of the experiment according to the decisions you make. During the trials,
+      your bonus amount will be hidden, so your previous decisions do not overly affect later ones.
     </p>
     <p class="mtitle">
       Once you have
@@ -54,44 +57,7 @@ Make Slider interpolate wider range
     <div id="trialText">uselesstext</div><br>
     <!-- <span class='val' id="sliderVal"> 50 </span> -->
     <input type="range" min="0" max="200" id="trialSlider" oninput="sliderChange(this.value)"><br>
-    <!-- <table class='approvals'>
-    <tr>
-      <th>
-        Group
-      </th>
-      <th>
-        Approval %
-      </th>
-    </tr>
-    <tr>
-      <td>
-        Asian
-      </td>
-      <td id='asianVal'>
-      </td>
-    </tr>
-    <tr>
-      <td>
-        White
-      </td>
-      <td id='whiteVal'>
-      </td>
-    </tr>
-    <tr>
-      <td>
-        Hispanic
-      </td>
-      <td id='hispanicVal'>
-      </td>
-    </tr>
-    <tr>
-      <td>
-        Black
-      </td>
-      <td id='blackVal'>
-      </td>
-    </tr>
-  </table> -->
+    
     <!-- <div class="container"> -->
     <div class = "block">
       <div class="group">Average:</div>
@@ -114,10 +80,46 @@ Make Slider interpolate wider range
       <div class="group">Group 4:</div>
       <div class="container" id="container4"></div>
     </div>
+    <div class = "block">
+      <div class="bonus" id= "bonusField">Bonus:</div>
+      <div class="bonus" id="bonusAmount"> HIDDEN</div>
+    </div>
     <!-- </div> -->
     <button class="big-button" id="next" onclick="trialDone();">Done!</button>
 
-    <div id="completed" class="screen">
+<!-- Debriefing
+NOT FUNCTIONAL -->
+    <div id="debriefing">
+      <p>
+        Enter your demographics information here:    
+      </p>
+      <p>
+        Age: <input type="number" id="age">
+      </p>
+      <p>
+        Gender:<br>
+          <input type="radio" name="gender" value="male"> Male<br>
+          <input type="radio" name="gender" value="female"> Female<br>
+      </p>
+      <p>
+        Was the experiment fun? <br>
+        <textarea id="wasItFun" rows="4" cols="50"></textarea>
+      </p>
+      <p>
+        Are you an undergrad student, grad student or postdoc?
+        <select id="kindOfStudent"> 
+          <option value="undergrad">Undergrad</option>
+          <option value="grad">Grad</option>
+          <option value="postdoc">Postdoc</option>
+        </select>
+      </p>
+
+      <button id="doneWithDebriefing">
+        Submit
+      </button>
+    </div>
+
+    <div id="done" class="screen">
       <button class="big-button" id="finished" onclick="experimentDone();">Finished!</button>
     </div>
 

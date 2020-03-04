@@ -32,27 +32,4 @@ function LookupApprovalPercent(val) {
 	return approvals;
 }
 
-function trialDone() {
-	document.getElementById('trial').style.display = 'none';
-	// record what the subject said
-	trialData.push({
-		trialNumber: trialNumber,
-		product: prompts[trialNumber],
-		response: document.getElementById('trialSlider').value
-	});
-	// increment the trialNumber
-	trialNumber = trialNumber + 1;
 
-	// if we are done with all trials, then go to completed page
-	if (trialNumber >= prompts.length) {
-		document.getElementById('completed').style.display = 'block';
-	} else {
-		// if we are not done with all trials, then show the next trial.
-		trialStart();
-	}s
-
-}
-
-function experimentDone() {
-	window.location = 'http://www.evullab.org';
-}

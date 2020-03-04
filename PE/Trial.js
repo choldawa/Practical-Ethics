@@ -1,5 +1,8 @@
-const prompts = ['Prompt 1', 
-'Prompt 2'];
+//Boto3 for bonuses (API) send_bonus function
+//Generate series of prompts
+var prompts = ['Prompt 1', 'Prompt 2', 'Prompt 3'];
+var promptsShuffled = jsPsych.randomization.shuffle(prompts); //use the shuffled array
+
 let trialNumber = 0;
 const trialData = [];
 
@@ -22,7 +25,8 @@ function clickInstructions() {
 
 function trialStart() {
 	// move to next trial.
-	document.getElementById('trialText').innerHTML = prompts[trialNumber];
+	// currentPrompt = prompts[getRandomFromBucket()]
+	document.getElementById('trialText').innerHTML = promptsShuffled[trialNumber];
 	// reset the slider
 	document.getElementById('trialSlider').value = initialSliderVal;
 	// document.getElementById('sliderVal').innerHTML = initialSliderVal;
@@ -36,4 +40,52 @@ function trialStart() {
 	generateDots(fullSet, myData[initialSliderVal].hispanic, 3);
 	generateDots(fullSet, myData[initialSliderVal].black, 4);
 	generateDots(fullSet, myData[initialSliderVal].mu, 5);
+}
+
+
+function DoneWithExperiment() {
+	$("#debriefing").show();
+	$('#doneWithDebriefing').on("click", DoneWithDebriefing);
+}
+
+function trialDone() {
+	document.getElementById('trial').style.display = 'none';
+	// record what the subject said
+
+	trialData.push({
+		trialNumber: trialNumber,
+		prompt: promptsShuffled[trialNumber],
+		response: document.getElementById('trialSlider').value
+	});
+	// increment the trialNumber
+	trialNumber = trialNumber + 1;
+	console.log(trialNumber);
+	// if we are done with all trials, then go to completed page
+	if (trialNumber >= prompts.length) {
+		console.log("here");
+		//setTimeout(DoneWithExperiment, 300);
+		document.getElementById('done').style.display = 'block';
+	} else {
+		// if we are not done with all trials, then show the next trial.
+		trialStart();
+	}
+
+}
+
+function DoneWithDebriefing() {
+	$("#debriefing").hide();
+	$("#done").html("Thanks for doing the study. Your survey code is " + subjectId);
+	$("#done").show();
+	// var subjectInfo = {
+	//   subjectId: subjectId,
+	//   age: $('#age').val(),
+	//   gender: $('input[name=gender]:checked').val(), // radio buttons are weird
+	//   wasItFun: $('#wasItFun').val(),
+	//   kindOfStudent: $('#kindOfStudent').val(), // select elements are not weird
+	//   userAgent:  navigator.userAgent,
+	//   trialList: trialList
+};
+
+function experimentDone() {
+	window.location = 'http://www.evullab.org';
 }

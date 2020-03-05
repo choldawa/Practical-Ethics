@@ -1,7 +1,3 @@
-//Boto3 for bonuses (API) send_bonus function
-//Generate series of prompts
-var prompts = ['Prompt 1', 'Prompt 2', 'Prompt 3'];
-var promptsShuffled = jsPsych.randomization.shuffle(prompts); //use the shuffled array
 
 let trialNumber = 0;
 const trialData = [];
@@ -9,21 +5,33 @@ const trialData = [];
 const initialSliderVal = 100;
 var BLOCKS_PER_CHART = 10;
 
-function pageLoad() {
-	document.getElementById('consent').style.display = 'block';
-}
 
-function clickConsent() {
-	document.getElementById('consent').style.display = 'none';
-	document.getElementById('instructions').style.display = 'block';
-}
+var prompts = ['Prompt 1', 'Prompt 2', 'Prompt 3'];
+var promptsShuffled = jsPsych.randomization.shuffle(prompts); //use the shuffled array
 
-function clickInstructions() {
-	document.getElementById('instructions').style.display = 'none';
-	trialStart();
-}
+
+
+// function pageLoad() {
+// 	document.getElementById('consent').style.display = 'block';
+// }
+
+// function clickConsent() {
+// 	document.getElementById('consent').style.display = 'none';
+// 	document.getElementById('instructions').style.display = 'block';
+// }
+
+// function clickInstructions() {
+//     document.getElementById('instructions').style.display = 'none';
+//     document.getElementById('demo').style.display = 'block';
+// }
+
+// function clickDemo() {
+//     document.getElementById('demo').style.display = 'none';
+// 	trialStart();
+// }
 
 function trialStart() {
+	document.getElementById('demo').style.display = 'none';
 	// move to next trial.
 	// currentPrompt = prompts[getRandomFromBucket()]
 	document.getElementById('trialText').innerHTML = promptsShuffled[trialNumber];
@@ -40,6 +48,7 @@ function trialStart() {
 	generateDots(fullSet, myData[initialSliderVal].hispanic, 3);
 	generateDots(fullSet, myData[initialSliderVal].black, 4);
 	generateDots(fullSet, myData[initialSliderVal].mu, 5);
+
 }
 
 
@@ -48,7 +57,13 @@ function DoneWithExperiment() {
 	$('#doneWithDebriefing').on("click", DoneWithDebriefing);
 }
 
-function trialDone() {
+function trialDone() {$(document).ready(function () {
+	document.getElementById("next").disabled = true;
+	setTimeout(function(){
+	  document.getElementById("next").disabled = false;
+	}, 500);
+
+	});
 	document.getElementById('trial').style.display = 'none';
 	// record what the subject said
 
@@ -63,8 +78,8 @@ function trialDone() {
 	// if we are done with all trials, then go to completed page
 	if (trialNumber >= prompts.length) {
 		console.log("here");
-		//setTimeout(DoneWithExperiment, 300);
-		document.getElementById('done').style.display = 'block';
+		setTimeout(DoneWithExperiment, 100);
+		//document.getElementById('done').style.display = 'block';
 	} else {
 		// if we are not done with all trials, then show the next trial.
 		trialStart();

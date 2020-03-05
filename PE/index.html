@@ -19,6 +19,7 @@ Make Slider interpolate wider range
   <script src='BuildJSON.js'></script>
   <script src='Dots.js'></script>
   <script src='Trial.js'></script>
+  <script src='ExperimentSetup.js'></script>
   <link rel="stylesheet" type="text/css" href="style.css" />
 </head>
 
@@ -39,18 +40,36 @@ Make Slider interpolate wider range
       Welcome to the Algorithmic Fairness Task.
     </p>
     <p class="mtitle">
-      During this task you will be presented with various situations
+      We are working with an algorithm developer to understand human intuition on trade-offs in a variety of settings. 
+      <br>
+      <br>
+      During this task you will be presented with varying situations
       and decisions. We ask that you read the situation completely then
-      interact with the slider to communicate your decision. <br>
-      You will receive a bonus at the end of the experiment according to the decisions you make. During the trials,
-      your bonus amount will be hidden, so your previous decisions do not overly affect later ones.
+      interact with the slider to communicate your decision. 
+      <br>
+      <br>
+      After a series of trials your performance will be evaluated based on how similar your responses match those of others. If your responses match closely, your total number of trials will be reduced.
+    </p>
+    <p class="mtitle">
+       <br>
+    </p>
+
+    <button class="big-button" id = "instructionButton" onclick="clickInstructions();">Click here to proceed</button>
+  </div>
+
+  <div id="demo" class="screen">
+    <p class="mtitle">
+      The task  
+    </p>
+    <p class="mtitle">
+      Insert Gif of demo
     </p>
     <p class="mtitle">
       Once you have
       finished making your choice, you may proceed to the next scenario. <br>
     </p>
 
-    <button class="big-button" onclick="clickInstructions();">Click here to begin</button>
+    <button class="big-button" id = "demoButton" onclick="clickDemo();">Click here to begin</button>
   </div>
 
   <div id="trial" class="screen">
@@ -86,7 +105,7 @@ Make Slider interpolate wider range
     </div>
     <!-- </div> -->
     <button class="big-button" id="next" onclick="trialDone();">Done!</button>
-
+  </div>
 <!-- Debriefing
 NOT FUNCTIONAL -->
     <div id="debriefing">
@@ -100,19 +119,20 @@ NOT FUNCTIONAL -->
         Gender:<br>
           <input type="radio" name="gender" value="male"> Male<br>
           <input type="radio" name="gender" value="female"> Female<br>
+          <input type="radio" name="gender" value="other"> Other<br>
       </p>
       <p>
-        Was the experiment fun? <br>
-        <textarea id="wasItFun" rows="4" cols="50"></textarea>
+        Please share your thoughts on the experiment: <br>
+        <textarea id="wasItFun" rows="4" cols="80"></textarea>
       </p>
-      <p>
+      <!-- <p>
         Are you an undergrad student, grad student or postdoc?
         <select id="kindOfStudent"> 
           <option value="undergrad">Undergrad</option>
           <option value="grad">Grad</option>
           <option value="postdoc">Postdoc</option>
         </select>
-      </p>
+      </p> -->
 
       <button id="doneWithDebriefing">
         Submit

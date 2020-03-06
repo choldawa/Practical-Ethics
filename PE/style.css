@@ -91,16 +91,16 @@ display:none;
   vertical-align: middle;
   /* padding: 2%; */
   width: 9%;
-  padding-top: 1%;
-  padding-bottom: 1%;
+  padding-top: .5%;
+  padding-bottom: .5%;
 }
 .container{
   display: inline-block;
     /* vertical-align: middle; */
       /* padding: 1%; */
   width: 90%;
-  padding-top: 1%;
-  padding-bottom: 1%;
+  padding-top: .5%;
+  padding-bottom: .5%;
   text-align: center;
 }
 
@@ -112,6 +112,19 @@ display:none;
   padding-top: 1%;
   padding-bottom: 1%;
   width: 49%;
+}
+
+#average{
+  font-size:25px;
+  padding-top: 1%;
+  padding-bottom: 2%;
+  vertical-align: middle;
+}
+
+#container5{
+  padding-top: 1%;
+  padding-bottom: 2%;
+  vertical-align: middle;
 }
 
 #bonusAmount{

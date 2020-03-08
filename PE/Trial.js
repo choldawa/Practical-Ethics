@@ -5,10 +5,7 @@ const trialData = [];
 const initialSliderVal = 100;
 var BLOCKS_PER_CHART = 10;
 
-
-var prompts = ['Prompt 1', 'Prompt 2', 'Prompt 3'];
-var promptsShuffled = jsPsych.randomization.shuffle(prompts); //use the shuffled array
-
+ //use the shuffled array
 
 
 // function pageLoad() {

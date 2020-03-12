@@ -14,6 +14,8 @@ function sliderChange(val) {
 	// document.getElementById('total').innerHTML = Math.round((myData[val].black+myData[val].hispanic+myData[val].white+myData[val].asian)/2);
 }
 
+
+//Not being used
 function calculateThreshold(val) {
 	return {
 		'a':  myData[val].asian,

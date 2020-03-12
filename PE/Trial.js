@@ -4,7 +4,7 @@ const trialData = [];
 
 const initialSliderVal = 100;
 var BLOCKS_PER_CHART = 10;
-
+var myData;
  //use the shuffled array
 
 
@@ -75,7 +75,7 @@ function trialDone() {$(document).ready(function () {
 	// if we are done with all trials, then go to completed page
 	if (trialNumber >= prompts.length) {
 		console.log("here");
-		setTimeout(DoneWithExperiment, 100);
+		setTimeout(DoneWithExperiment, 50);
 		//document.getElementById('done').style.display = 'block';
 	} else {
 		// if we are not done with all trials, then show the next trial.

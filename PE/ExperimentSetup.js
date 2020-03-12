@@ -1,14 +1,14 @@
 //Boto3 for bonuses (API) send_bonus function
 //Generate series of prompts
 
-var prompts = ['Prompt 1', 'Prompt 2', 'Prompt 3'];
-var promptsShuffled = jsPsych.randomization.shuffle(prompts); //use the shuffled array
+
 
 var clickDisabled = true;
 
 
 function pageLoad() {
 	document.getElementById('consent').style.display = 'block';
+	document.getElementById('demo').style.display = 'none';
 }
 
 function clickConsent() {
@@ -42,5 +42,6 @@ function clickDemo() {
 	setTimeout(function(){
 	  document.getElementById("next").disabled = false;
 	}, 500);
+	// var myData = jsPsych.randomization.sampleWithReplacement(dataArray,1)[0];
 	trialStart();
 }

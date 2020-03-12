@@ -4,7 +4,7 @@ var fullSet = 100
 
 function generateDots(fullSet,val, group){
     var dots = [] //create empty array to be filled with dots
-	var htmlElements = "";
+    var htmlElements = "";
     for (var i = 0; i < val; i++) { // create the list of dots
         var dot = document.createElement('img'); 
         dot.src =  'silhouette'+group+'.svg';  

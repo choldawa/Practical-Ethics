@@ -2,4 +2,4 @@ var prompts = ["A bank must decide who to give home loans to. Only 10% of the lo
  "A local newspaper company is trying to decide how to divide up the paper routes. Some groups of delivery people are faster than others, and if too many papers don't get delivered, customers get angry. Giving more to one group may mean less for others.  How should they divide up the routes?",
   "A local courthouse is deiciding who to give bail to. Their goal is to maintain a constant level of public safety. Some groups are more likely to commit crimes than others. Giving bail to some people may mean not giving bail to others. How should they allocate bail?"];
 
-  var promptsShuffled = jsPsych.randomization.shuffle(prompts);
+  var promptsShuffled = jsPsych.randomization.shuffle(prompts); //use the shuffled array

@@ -49,6 +49,7 @@ function trialStart() {
 }
 
 
+
 function DoneWithExperiment() {
 	$("#debriefing").show();
 	$('#doneWithDebriefing').on("click", DoneWithDebriefing);

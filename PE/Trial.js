@@ -4,7 +4,7 @@ const trialData = [];
 
 const initialSliderVal = 100;
 var BLOCKS_PER_CHART = 10;
-var myData;
+// var myData;
  //use the shuffled array
 
 
@@ -28,6 +28,8 @@ var myData;
 // }
 
 function trialStart() {
+	console.log(myData.length);
+	console.log(myData);
 	document.getElementById('demo').style.display = 'none';
 	// move to next trial.
 	// currentPrompt = prompts[getRandomFromBucket()]
@@ -40,11 +42,11 @@ function trialStart() {
 	// document.getElementById('hispanicVal').innerHTML = myData[initialSliderVal].hispanic,
 	// document.getElementById('blackVal').innerHTML = myData[initialSliderVal].black,
 	document.getElementById('trial').style.display = 'block';
-	generateDots(fullSet, myData[initialSliderVal].asian, 1);
-	generateDots(fullSet, myData[initialSliderVal].white, 2);
-	generateDots(fullSet, myData[initialSliderVal].hispanic, 3);
-	generateDots(fullSet, myData[initialSliderVal].black, 4);
-	generateDots(fullSet, myData[initialSliderVal].mu, 5);
+	generateDots(fullSet, myData[trialNumber][initialSliderVal].asian, 1);
+	generateDots(fullSet, myData[trialNumber][initialSliderVal].white, 2);
+	generateDots(fullSet, myData[trialNumber][initialSliderVal].hispanic, 3);
+	generateDots(fullSet, myData[trialNumber][initialSliderVal].black, 4);
+	generateDots(fullSet, myData[trialNumber][initialSliderVal].mu, 5);
 
 }
 

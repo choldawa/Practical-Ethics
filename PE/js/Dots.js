@@ -7,14 +7,14 @@ function generateDots(fullSet,val, group){
     var htmlElements = "";
     for (var i = 0; i < val; i++) { // create the list of dots
         var dot = document.createElement('img'); 
-        dot.src =  'silhouette'+group+'.svg';  
+        dot.src =  'img/silhouette'+group+'.svg';  
         dot.style.width = "1%";
         dot.style.height = "1%";
         dots.push(dot);
     }
     for (var i = val; i < fullSet; i++) { // create the list of dots
         var dot = document.createElement('img'); 
-        dot.src =  'silhouette0.svg'; 
+        dot.src =  'img/silhouette0.svg'; 
         dot.style.width = "1%";
         dot.style.height = "1%";
         dots.push(dot);

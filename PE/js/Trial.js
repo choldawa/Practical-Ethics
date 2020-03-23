@@ -5,8 +5,10 @@ const trialData = [];
 const initialSliderVal = 100;
 var BLOCKS_PER_CHART = 10;
 var subjectId = "CH" + Math.round(Math.random() * 10000) + "13";
+attentionTrial = 9;
+var att = 0; //default to 0 for non-catch trials
 // var myData;
- //use the shuffled array
+//use the shuffled array
 
 
 // function pageLoad() {
@@ -28,8 +30,11 @@ var subjectId = "CH" + Math.round(Math.random() * 10000) + "13";
 // 	trialStart();
 // }
 
+
+
+
 function trialStart() {
-	document.getElementById('next').disabled=true;
+	document.getElementById('next').disabled = true;
 	console.log(myData_test['prompts_test'].length);
 	document.getElementById('demo').style.display = 'none';
 	// move to next trial.
@@ -56,17 +61,25 @@ function DoneWithExperiment() {
 	$('#doneWithDebriefing').on("click", DoneWithDebriefing);
 }
 
-function trialDone() {$(document).ready(function () {
-	document.getElementById("next").disabled = true;
-	// setTimeout(function(){
-	//   document.getElementById("next").disabled = false;
-	// }, 500);
+function trialDone() {
+	$(document).ready(function () {
+		if (trialNumber == attentionTrial) {
+			att = 1;
+		} else {
+			att = 0;
+		}
+
+		document.getElementById("next").disabled = true;
+		// setTimeout(function(){
+		//   document.getElementById("next").disabled = false;
+		// }, 500);
 
 	});
 	document.getElementById('trial').style.display = 'none';
+	console.log(att);
 	// record what the subject said
-
 	trialData.push({
+		att: att,
 		trialNumber: trialNumber,
 		chosenData: myData_test['datasets_test'][trialNumber][document.getElementById('trialSlider').value],
 		prompt: myData_test['prompts_test'][trialNumber],
@@ -97,20 +110,21 @@ function DoneWithDebriefing() {
 		age: $('#age').val(),
 		gender: $('input[name=gender]:checked').val(),
 		wasItFun: $('#wasItFun').val(),
-		userAgent:  navigator.userAgent,
+		userAgent: navigator.userAgent,
 		trialList: trialData
-	  };
-	  
-	  var dataToServer = {
+	};
+
+	var dataToServer = {
 		id: subjectId,
 		experimenter: "choldawa",
 		experimentName: "PE_Pilot_1",
 		curData: JSON.stringify(subjectInfo)
-	  };
-	  /* AJAX */
-	  $.post("https://psyc241.ucsd.edu/Turk/save.php", dataToServer);
+	};
+	/* AJAX */
+	$.post("https://psyc241.ucsd.edu/Turk/save.php", dataToServer);
 };
 
 function experimentDone() {
-	window.location = 'http://www.evullab.org';
+	submitExternal(client);
+
 }

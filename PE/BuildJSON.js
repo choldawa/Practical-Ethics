@@ -4,7 +4,7 @@
  //to be shuffled in trial
  
 // var myData = [myData1, myData2]
- var myData = [[ 
+ var myData =jsPsych.randomization.shuffle( [[ 
   {
     "asian": 100,
     "white": 98,
@@ -2823,7 +2823,7 @@
   }
 ]]
 
-
+);
 
 
 

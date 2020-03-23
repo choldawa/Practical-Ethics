@@ -4,6 +4,7 @@ const trialData = [];
 
 const initialSliderVal = 100;
 var BLOCKS_PER_CHART = 10;
+var subjectId = "CH" + Math.round(Math.random() * 10000) + "13";
 // var myData;
  //use the shuffled array
 
@@ -69,7 +70,9 @@ function trialDone() {$(document).ready(function () {
 
 	trialData.push({
 		trialNumber: trialNumber,
+		chosenData: myData[trialNumber][document.getElementById('trialSlider').value],
 		prompt: promptsShuffled[trialNumber],
+		// dataset: myData[trialNumber],
 		response: document.getElementById('trialSlider').value
 	});
 	// increment the trialNumber
@@ -91,14 +94,23 @@ function DoneWithDebriefing() {
 	$("#debriefing").hide();
 	$("#done").html("Thanks for doing the study. Your survey code is " + subjectId);
 	$("#done").show();
-	// var subjectInfo = {
-	//   subjectId: subjectId,
-	//   age: $('#age').val(),
-	//   gender: $('input[name=gender]:checked').val(), // radio buttons are weird
-	//   wasItFun: $('#wasItFun').val(),
-	//   kindOfStudent: $('#kindOfStudent').val(), // select elements are not weird
-	//   userAgent:  navigator.userAgent,
-	//   trialList: trialList
+	var subjectInfo = {
+		subjectId: subjectId,
+		age: $('#age').val(),
+		gender: $('input[name=gender]:checked').val(),
+		wasItFun: $('#wasItFun').val(),
+		userAgent:  navigator.userAgent,
+		trialList: trialData
+	  };
+	  
+	  var dataToServer = {
+		id: subjectId,
+		experimenter: "choldawa",
+		experimentName: "PE_Pilot_1",
+		curData: JSON.stringify(subjectInfo)
+	  };
+	  /* AJAX */
+	  $.post("https://psyc241.ucsd.edu/Turk/save.php", dataToServer);
 };
 
 function experimentDone() {

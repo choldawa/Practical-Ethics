@@ -7,6 +7,7 @@ var BLOCKS_PER_CHART = 10;
 var subjectId = "CH" + Math.round(Math.random() * 10000) + "13";
 attentionTrial = 9;
 var att = 0; //default to 0 for non-catch trials
+var client = parseClient();
 // var myData;
 //use the shuffled array
 
@@ -120,7 +121,9 @@ function DoneWithDebriefing() {
 		experimentName: "PE_Pilot_1",
 		curData: JSON.stringify(subjectInfo)
 	};
+	data = {client: client, trials: trialData};
 	/* AJAX */
+	writeServer(data);
 	$.post("https://psyc241.ucsd.edu/Turk/save.php", dataToServer);
 };
 

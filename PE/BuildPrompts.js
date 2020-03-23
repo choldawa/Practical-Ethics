@@ -5,3 +5,5 @@ var prompts = ["A bank must decide who to give home loans to. Only 10% of the lo
 "Meals on Wheels is tasked with delivering meals to homebound persons. Their time and reseources are limited, and some groups live further away, so delivering to some groups may mean less deliveries to others. Numbers below represent how many meals are given to each group. How should they allocate their time for deliveries?"];
 
   var promptsShuffled = jsPsych.randomization.shuffle(prompts); //use the shuffled array
+
+  var promptCatch = ["A bank must decide who to give home loans to. Their brillaint Loan Officer, Tom Hanks thinks they should deliver loans in a very extreme manner. How should the loans be allocated?"];

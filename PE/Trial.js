@@ -29,25 +29,23 @@ var subjectId = "CH" + Math.round(Math.random() * 10000) + "13";
 // }
 
 function trialStart() {
-	console.log(myData.length);
-	console.log(myData);
+	document.getElementById('next').disabled=true;
+	console.log(myData_test['prompts_test'].length);
 	document.getElementById('demo').style.display = 'none';
 	// move to next trial.
 	// currentPrompt = prompts[getRandomFromBucket()]
-	document.getElementById('trialText').innerHTML = promptsShuffled[trialNumber];
+	document.getElementById('trialText').innerHTML = myData_test['prompts_test'][trialNumber];
 	// reset the slider
 	document.getElementById('trialSlider').value = initialSliderVal;
-	// document.getElementById('sliderVal').innerHTML = initialSliderVal;
-	// document.getElementById('asianVal').innerHTML = myData[initialSliderVal].asian,
-	// document.getElementById('whiteVal').innerHTML = myData[initialSliderVal].white,
-	// document.getElementById('hispanicVal').innerHTML = myData[initialSliderVal].hispanic,
-	// document.getElementById('blackVal').innerHTML = myData[initialSliderVal].black,
+
 	document.getElementById('trial').style.display = 'block';
-	generateDots(fullSet, myData[trialNumber][initialSliderVal].asian, 1);
-	generateDots(fullSet, myData[trialNumber][initialSliderVal].white, 2);
-	generateDots(fullSet, myData[trialNumber][initialSliderVal].hispanic, 3);
-	generateDots(fullSet, myData[trialNumber][initialSliderVal].black, 4);
-	generateDots(fullSet, myData[trialNumber][initialSliderVal].mu, 5);
+	generateDots(fullSet, myData_test['datasets_test'][trialNumber][initialSliderVal].asian, 1);
+	generateDots(fullSet, myData_test['datasets_test'][trialNumber][initialSliderVal].white, 2);
+	generateDots(fullSet, myData_test['datasets_test'][trialNumber][initialSliderVal].hispanic, 3);
+	generateDots(fullSet, myData_test['datasets_test'][trialNumber][initialSliderVal].black, 4);
+	generateDots(fullSet, myData_test['datasets_test'][trialNumber][initialSliderVal].mu, 5);
+	console.log(myData_test['prompts_test'][0]);
+	console.log(myData_test['datasets_test'][0][initialSliderVal].mu);
 
 }
 
@@ -60,9 +58,9 @@ function DoneWithExperiment() {
 
 function trialDone() {$(document).ready(function () {
 	document.getElementById("next").disabled = true;
-	setTimeout(function(){
-	  document.getElementById("next").disabled = false;
-	}, 500);
+	// setTimeout(function(){
+	//   document.getElementById("next").disabled = false;
+	// }, 500);
 
 	});
 	document.getElementById('trial').style.display = 'none';
@@ -70,8 +68,8 @@ function trialDone() {$(document).ready(function () {
 
 	trialData.push({
 		trialNumber: trialNumber,
-		chosenData: myData[trialNumber][document.getElementById('trialSlider').value],
-		prompt: promptsShuffled[trialNumber],
+		chosenData: myData_test['datasets_test'][trialNumber][document.getElementById('trialSlider').value],
+		prompt: myData_test['prompts_test'][trialNumber],
 		// dataset: myData[trialNumber],
 		response: document.getElementById('trialSlider').value
 	});
@@ -79,7 +77,7 @@ function trialDone() {$(document).ready(function () {
 	trialNumber = trialNumber + 1;
 	console.log(trialNumber);
 	// if we are done with all trials, then go to completed page
-	if (trialNumber >= prompts.length) {
+	if (trialNumber >= myData_test['prompts_test'].length) {
 		console.log("here");
 		setTimeout(DoneWithExperiment, 50);
 		//document.getElementById('done').style.display = 'block';

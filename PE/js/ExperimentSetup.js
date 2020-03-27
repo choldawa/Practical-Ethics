@@ -45,3 +45,9 @@ function clickDemo() {
 	// var myData = jsPsych.randomization.sampleWithReplacement(dataArray,1)[0];
 	trialStart();
 }
+
+function clickPrompt() {
+	console.log("checkPrompt");
+	document.getElementById('prompt').style.display = 'none';
+	document.getElementById('trial').style.display = 'block';
+}

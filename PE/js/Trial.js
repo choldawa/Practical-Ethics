@@ -35,8 +35,14 @@ var client = parseClient();
 
 
 function trialStart() {
+	document.getElementById('prompt').style.display = 'block';
+	document.getElementById('preTrialText').innerHTML = myData_test['prompts_test'][trialNumber];
+	document.getElementById('promptButton').disabled = true;
+	setTimeout(function(){
+		document.getElementById("promptButton").disabled = false;
+	  }, 1000);
 	document.getElementById('next').disabled = true;
-	console.log(myData_test['prompts_test'].length);
+
 	document.getElementById('demo').style.display = 'none';
 	// move to next trial.
 	// currentPrompt = prompts[getRandomFromBucket()]
@@ -44,7 +50,6 @@ function trialStart() {
 	// reset the slider
 	document.getElementById('trialSlider').value = initialSliderVal;
 
-	document.getElementById('trial').style.display = 'block';
 	generateDots(fullSet, myData_test['datasets_test'][trialNumber][initialSliderVal].asian, 1);
 	generateDots(fullSet, myData_test['datasets_test'][trialNumber][initialSliderVal].white, 2);
 	generateDots(fullSet, myData_test['datasets_test'][trialNumber][initialSliderVal].hispanic, 3);

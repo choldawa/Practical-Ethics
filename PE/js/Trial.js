@@ -40,7 +40,7 @@ function trialStart() {
 	document.getElementById('promptButton').disabled = true;
 	setTimeout(function(){
 		document.getElementById("promptButton").disabled = false;
-	  }, 1000);
+	  }, 4000);
 	document.getElementById('next').disabled = true;
 
 	document.getElementById('demo').style.display = 'none';
@@ -113,6 +113,7 @@ function DoneWithDebriefing() {
 	$("#done").show();
 	var subjectInfo = {
 		subjectId: subjectId,
+		promptCheck:$('input[name=promptCheck]:checked').val(),
 		age: $('#age').val(),
 		gender: $('input[name=gender]:checked').val(),
 		wasItFun: $('#wasItFun').val(),

@@ -6,4 +6,4 @@ var prompts = ["A bank must decide who to give home loans to. Only 10% of the lo
 
   var promptsShuffled = jsPsych.randomization.shuffle(prompts); //use the shuffled array
 
-  var promptCatch = ["A bank must decide who to give home loans to. Their brillaint Loan Officer, Tom Hanks thinks they should deliver loans in a very extreme manner. How should the loans be allocated?"];
+  // var promptCatch = ["A bank must decide who to give home loans to. Their brillaint Loan Officer, Tom Hanks thinks they should deliver loans in a very extreme manner. How should the loans be allocated?"];

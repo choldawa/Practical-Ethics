@@ -23,12 +23,25 @@ function clickConsent() {
 
 function clickInstructions() {
 	// disable next button
+	document.getElementById("instructionsContButton").disabled = true;
+     setTimeout(function(){
+       document.getElementById("instructionsContButton").disabled = false;
+     }, 2000);
+
+	document.getElementById('instructions').style.display = 'none';
+	console.log("Clicked instructions");
+	document.getElementById('instructionsCont').style.display = 'block';
+
+}
+
+function clickInstructionsCont() {
+	// disable next button
 	document.getElementById("demoButton").disabled = true;
      setTimeout(function(){
        document.getElementById("demoButton").disabled = false;
-     }, 1000);
+     }, 2000);
 
-	document.getElementById('instructions').style.display = 'none';
+	document.getElementById('instructionsCont').style.display = 'none';
 	console.log("Clicked instructions");
 	document.getElementById('demo').style.display = 'block';
 
@@ -47,7 +60,17 @@ function clickDemo() {
 }
 
 function clickPrompt() {
-	console.log("checkPrompt");
+	console.log("promptCheck");
 	document.getElementById('prompt').style.display = 'none';
+	if (trialNumber == 1){
+		document.getElementById('promptCheck').style.display = 'block';
+	}else{
+		document.getElementById('trial').style.display = 'block';
+	}
+	
+}
+function clickCheckPrompt() {
+	console.log("promptCheck");
+	document.getElementById('promptCheck').style.display = 'none';
 	document.getElementById('trial').style.display = 'block';
 }

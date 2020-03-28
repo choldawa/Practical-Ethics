@@ -177,6 +177,6 @@ display:none;
   text-align: center;
 }
 
-#prompt{
+#prompt, #promptCheck{
   display: none;
 }

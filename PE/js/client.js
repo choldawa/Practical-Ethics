@@ -31,6 +31,11 @@ function parseClient(){
 	client.userAgent = navigator.userAgent;
 	client.score = 0;
 	client.bonus = 0;
+	/////////
+	client.promptCheck = $('input[name=promptCheck]:checked').val();
+	client.age = $('#age').val();
+	client.gender = $('input[name=gender]:checked').val();
+	client.wasItFun = $('#wasItFun').val();
 	return(client);
 }
 

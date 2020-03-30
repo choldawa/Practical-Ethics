@@ -1,6 +1,7 @@
 
 let trialNumber = 0;
 const trialData = [];
+var subjectData = []
 
 const initialSliderVal = 100;
 var BLOCKS_PER_CHART = 10;
@@ -111,23 +112,23 @@ function DoneWithDebriefing() {
 	$("#debriefing").hide();
 	$("#done").html("Thanks for participating! Your answers will help shape the future of algorithmic fairness!");
 	$("#done").show();
-	var subjectInfo = {
+	subjectData.push({
 		subjectId: subjectId,
 		promptCheck:$('input[name=promptCheck]:checked').val(),
 		age: $('#age').val(),
 		gender: $('input[name=gender]:checked').val(),
 		wasItFun: $('#wasItFun').val(),
-		userAgent: navigator.userAgent,
-		trialList: trialData
-	};
+		userAgent: navigator.userAgent
+		// trialList: trialData
+	});
 
-	var dataToServer = {
-		id: subjectId,
-		experimenter: "choldawa",
-		experimentName: "PE_Pilot_1",
-		curData: JSON.stringify(subjectInfo)
-	};
-	data = {client: client, trials: subjectInfo};
+	// var dataToServer = {
+	// 	id: subjectId,
+	// 	experimenter: "choldawa",
+	// 	experimentName: "PE_Pilot_1",
+	// 	curData: JSON.stringify(subjectData)
+	// };
+	data = {client: client,  subjectData: subjectData, trials: trialData};
 	/* AJAX */
 	writeServer(data);
 	// $.post("https://psyc241.ucsd.edu/Turk/save.php", dataToServer);

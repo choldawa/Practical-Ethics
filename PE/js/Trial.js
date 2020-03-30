@@ -109,7 +109,7 @@ function trialDone() {
 
 function DoneWithDebriefing() {
 	$("#debriefing").hide();
-	$("#done").html("Thanks for doing the study. Your survey code is " + subjectId);
+	$("#done").html("Thanks for participating! Your answers will help shape the future of algorithmic fairness!");
 	$("#done").show();
 	var subjectInfo = {
 		subjectId: subjectId,

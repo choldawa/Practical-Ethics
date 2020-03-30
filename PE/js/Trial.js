@@ -127,10 +127,10 @@ function DoneWithDebriefing() {
 		experimentName: "PE_Pilot_1",
 		curData: JSON.stringify(subjectInfo)
 	};
-	data = {client: client, trials: trialData};
+	data = {client: client, trials: subjectInfo};
 	/* AJAX */
 	writeServer(data);
-	$.post("https://psyc241.ucsd.edu/Turk/save.php", dataToServer);
+	// $.post("https://psyc241.ucsd.edu/Turk/save.php", dataToServer);
 };
 
 function experimentDone() {

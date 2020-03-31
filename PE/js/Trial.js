@@ -6,7 +6,7 @@ var subjectData = []
 const initialSliderVal = 100;
 var BLOCKS_PER_CHART = 10;
 var subjectId = "CH" + Math.round(Math.random() * 10000) + "13";
-attentionTrial = 9;
+attentionTrial = 7;
 var att = 0; //default to 0 for non-catch trials
 var client = parseClient();
 // var myData;
@@ -114,10 +114,12 @@ function DoneWithDebriefing() {
 	$("#done").show();
 	subjectData.push({
 		subjectId: subjectId,
-		promptCheck:$('input[name=promptCheck]:checked').val(),
+		promptCheck1:$('input[name=promptCheck1]:checked').val(),
+		promptCheck2:$('input[name=promptCheck2]:checked').val(),
 		age: $('#age').val(),
 		gender: $('input[name=gender]:checked').val(),
-		wasItFun: $('#wasItFun').val(),
+		thoughts: $('#thoughts').val(),
+		strategies: $('#strategies').val(),
 		userAgent: navigator.userAgent
 		// trialList: trialData
 	});

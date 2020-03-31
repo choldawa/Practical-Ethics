@@ -123,18 +123,34 @@ Make Slider interpolate wider range
     <button class="big-button" id="promptButton" onclick="clickPrompt();">I understand the prompt</button>
   </div>
 
-  <div id="promptCheck" class="screen">
+  <div id="promptCheck1" class="screen">
     <p>
       What is this prompt asking about:<br>
-      <input type="radio" name="promptCheck" value="loan"> Loans<br>
-      <input type="radio" name="promptCheck" value="bail"> Bail<br>
-      <input type="radio" name="promptCheck" value="meals"> Meals<br>
-      <input type="radio" name="promptCheck" value="respirators"> Respirators<br>
-      <input type="radio" name="promptCheck" value="newspapers"> Newspapers<br>
-      <input type="radio" name="promptCheck" value="other"> Other<br>
+      <input type="radio" name="promptCheck1" value="loan"> Loans<br>
+      <input type="radio" name="promptCheck1" value="bail"> Bail<br>
+      <input type="radio" name="promptCheck1" value="meals"> Meals<br>
+      <input type="radio" name="promptCheck1" value="respirators"> Respirators<br>
+      <input type="radio" name="promptCheck1" value="newspapers"> Newspapers<br>
+      <input type="radio" name="promptCheck1" value="other"> Other<br>
     </p>
     <br>
-    <button class="big-button" id="checkPromptButton" onclick="clickCheckPrompt();">Submit</button>
+    <button class="big-button" id="promptCheck1Button" onclick="clickPromptCheck1();">Submit</button>
+
+  </div>
+
+
+  <div id="promptCheck2" class="screen">
+    <p>
+      What is this prompt asking about:<br>
+      <input type="radio" name="promptCheck2" value="loan"> Loans<br>
+      <input type="radio" name="promptCheck2" value="bail"> Bail<br>
+      <input type="radio" name="promptCheck2" value="meals"> Meals<br>
+      <input type="radio" name="promptCheck2" value="respirators"> Respirators<br>
+      <input type="radio" name="promptCheck2" value="newspapers"> Newspapers<br>
+      <input type="radio" name="promptCheck2" value="other"> Other<br>
+    </p>
+    <br>
+    <button class="big-button" id="promptCheck2Button" onclick="clickPromptCheck2();">Submit</button>
 
   </div>
 
@@ -189,7 +205,11 @@ NOT FUNCTIONAL -->
     </p>
     <p>
       Please share your thoughts on the experiment: <br>
-      <textarea id="wasItFun" rows="4" cols="80"></textarea>
+      <textarea id="thoughts" rows="4" cols="80"></textarea>
+    </p>
+    <p>
+      Please tell us about your strategies: <br>
+      <textarea id="strategies" rows="4" cols="80"></textarea>
     </p>
     <!-- <p>
         Are you an undergrad student, grad student or postdoc?

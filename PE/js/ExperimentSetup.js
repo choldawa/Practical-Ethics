@@ -63,14 +63,23 @@ function clickPrompt() {
 	console.log("promptCheck");
 	document.getElementById('prompt').style.display = 'none';
 	if (trialNumber == 1){
-		document.getElementById('promptCheck').style.display = 'block';
-	}else{
+		document.getElementById('promptCheck1').style.display = 'block';
+	}else if(trialNumber == 11){
+		document.getElementById('promptCheck2').style.display = 'block';
+	}
+	else{
 		document.getElementById('trial').style.display = 'block';
 	}
 	
 }
-function clickCheckPrompt() {
-	console.log("promptCheck");
-	document.getElementById('promptCheck').style.display = 'none';
+function clickPromptCheck1() {
+	console.log("promptCheck1");
+	document.getElementById('promptCheck1').style.display = 'none';
+	document.getElementById('trial').style.display = 'block';
+}
+
+function clickPromptCheck2() {
+	console.log("promptCheck2");
+	document.getElementById('promptCheck2').style.display = 'none';
 	document.getElementById('trial').style.display = 'block';
 }

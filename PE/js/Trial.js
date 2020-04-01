@@ -39,9 +39,9 @@ function trialStart() {
 	document.getElementById('prompt').style.display = 'block';
 	document.getElementById('preTrialText').innerHTML = myData_test['prompts_test'][trialNumber];
 	document.getElementById('promptButton').disabled = true;
-	setTimeout(function(){
+	setTimeout(function () {
 		document.getElementById("promptButton").disabled = false;
-	  }, 4000);
+	}, 4000);
 	document.getElementById('next').disabled = true;
 
 	document.getElementById('demo').style.display = 'none';
@@ -114,8 +114,8 @@ function DoneWithDebriefing() {
 	$("#done").show();
 	subjectData.push({
 		subjectId: subjectId,
-		promptCheck1:$('input[name=promptCheck1]:checked').val(),
-		promptCheck2:$('input[name=promptCheck2]:checked').val(),
+		promptCheck1: $('input[name=promptCheck1]:checked').val(),
+		promptCheck2: $('input[name=promptCheck2]:checked').val(),
 		age: $('#age').val(),
 		gender: $('input[name=gender]:checked').val(),
 		thoughts: $('#thoughts').val(),
@@ -130,7 +130,7 @@ function DoneWithDebriefing() {
 	// 	experimentName: "PE_Pilot_1",
 	// 	curData: JSON.stringify(subjectData)
 	// };
-	data = {client: client,  subjectData: subjectData, trials: trialData};
+	data = { client: client, subjectData: subjectData, trials: trialData };
 	/* AJAX */
 	writeServer(data);
 	// $.post("https://psyc241.ucsd.edu/Turk/save.php", dataToServer);

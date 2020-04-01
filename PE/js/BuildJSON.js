@@ -1,10 +1,10 @@
 // Prompt 1 (Default Rate  = 0.1, Base Rates: 'ALTERED: A:750, W:700, B:450, H:500', -50 -> 150)
 // Prompt 2 (Default Rate  = 0.1, Base Rates: 'ALTERED: A:750, W:700, B:450, H:500', 0 -> 200)
 // Prompt 3 (Default Rate  = 0.1, Base Rates: 'ALTERED: A:750, W:700, B:450, H:500', 50 -> 250)
- //to be shuffled in trial
- 
+//to be shuffled in trial
+
 // var myData = [myData1, myData2]
- var myData =jsPsych.randomization.shuffle( [[ 
+var myData = jsPsych.randomization.shuffle([[
   {
     "asian": 100,
     "white": 98,
@@ -5650,6 +5650,6 @@
 // ]
 
 
-  
+
 
 

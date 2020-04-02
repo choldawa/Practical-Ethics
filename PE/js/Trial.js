@@ -58,7 +58,11 @@ function trialStart() {
 	generateDots(fullSet, myData_test['datasets_test'][trialNumber][initialSliderVal].mu, 5);
 	console.log(myData_test['prompts_test'][0]);
 	console.log(myData_test['datasets_test'][0][initialSliderVal].mu);
-
+	console.log(myData_test['prompts_test'][trialNumber]  == prompts_dict['Loans']);
+	if(trialNumber == 1){
+		console.log(prompts_dict[$('input[name=promptCheck1]:checked').val()] == myData_test['prompts_test'][1]);
+	}
+	
 }
 
 
@@ -114,8 +118,9 @@ function DoneWithDebriefing() {
 	$("#done").show();
 	subjectData.push({
 		subjectId: subjectId,
-		promptCheck1: $('input[name=promptCheck1]:checked').val(),
-		promptCheck2: $('input[name=promptCheck2]:checked').val(),
+		promptCheck1: prompts_dict[$('input[name=promptCheck1]:checked').val()] == myData_test['prompts_test'][1],
+		promptCheck2: prompts_dict[$('input[name=promptCheck1]:checked').val()] == myData_test['prompts_test'][11],
+		// attention: myData_test['datasets_test'][trialNumber][document.getElementById('trialSlider').value] == 0, //should be 0
 		age: $('#age').val(),
 		gender: $('input[name=gender]:checked').val(),
 		thoughts: $('#thoughts').val(),

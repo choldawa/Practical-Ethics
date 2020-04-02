@@ -2830,3 +2830,17 @@ var factors = {
 var myData_test = jsPsych.randomization.factorial(factors, 2, true);
 myData_test['prompts_test'].splice(attentionTrial, 0, "A local hospital has a shortage of <font color='red'> <b>respirators for patients during the COVID-19 outbreak</b></font>. Some patients are more likely to be on respirators for longer than others, so less patients will be able to use one. The numbers below represent the number of patients receiving respirators. <font color='red'><b>This is a test trial to help calibrate your responses. Please move your slider all the way to the left. Thank you. </b>  </font>");
 myData_test['datasets_test'].splice(attentionTrial, 0, myData_test['datasets_test'][0]);
+
+//Build mapping here?
+var prompts_dict = {
+    loans: factors['prompts_test'][0],
+    lewspapers: factors['prompts_test'][1],
+    bail: factors['prompts_test'][2],
+    jobs: factors['prompts_test'][3],
+    meals: factors['prompts_test'][4],
+    respirators: factors['prompts_test'][5]
+}
+
+var dataset_dict = {
+
+}

@@ -2844,3 +2844,11 @@ var prompts_dict = {
 var dataset_dict = {
 
 }
+
+function retrieveKey(val, dict) {
+    for (var key in dict) {
+        if (dict[key] == val) {
+            return key
+        }
+    }
+}

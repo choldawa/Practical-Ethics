@@ -58,11 +58,11 @@ function trialStart() {
 	generateDots(fullSet, myData_test['datasets_test'][trialNumber][initialSliderVal].mu, 5);
 	console.log(myData_test['prompts_test'][0]);
 	console.log(myData_test['datasets_test'][0][initialSliderVal].mu);
-	console.log(myData_test['prompts_test'][trialNumber]  == prompts_dict['Loans']);
-	if(trialNumber == 1){
+	console.log(myData_test['prompts_test'][trialNumber] == prompts_dict['Loans']);
+	if (trialNumber == 1) {
 		console.log(prompts_dict[$('input[name=promptCheck1]:checked').val()] == myData_test['prompts_test'][1]);
 	}
-	
+
 }
 
 

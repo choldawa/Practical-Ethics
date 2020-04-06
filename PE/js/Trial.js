@@ -56,9 +56,7 @@ function trialStart() {
 	generateDots(fullSet, myData_test['datasets_test'][trialNumber][initialSliderVal].hispanic, 3);
 	generateDots(fullSet, myData_test['datasets_test'][trialNumber][initialSliderVal].black, 4);
 	generateDots(fullSet, myData_test['datasets_test'][trialNumber][initialSliderVal].mu, 5);
-	console.log(myData_test['prompts_test'][0]);
-	console.log(myData_test['datasets_test'][0][initialSliderVal].mu);
-	console.log(myData_test['prompts_test'][trialNumber] == prompts_dict['Loans']);
+	console.log(myData_test['prompts_test'][trialNumber] == prompts_dict['loans']);
 	if (trialNumber == 1) {
 		console.log(prompts_dict[$('input[name=promptCheck1]:checked').val()] == myData_test['prompts_test'][1]);
 	}
@@ -99,7 +97,7 @@ function trialDone() {
 	});
 	// increment the trialNumber
 	trialNumber = trialNumber + 1;
-	console.log(trialNumber);
+	console.log("TiralNumber:",trialNumber);
 	// if we are done with all trials, then go to completed page
 	if (trialNumber >= myData_test['prompts_test'].length) {
 		console.log("here");

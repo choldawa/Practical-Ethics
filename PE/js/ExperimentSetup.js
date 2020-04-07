@@ -18,7 +18,7 @@ function clickConsent() {
 	document.getElementById("instructionButton").disabled = true;
      setTimeout(function(){
        document.getElementById("instructionButton").disabled = false;
-     }, 1000);
+     }, 4000);
 }
 
 function clickInstructions() {
@@ -26,7 +26,7 @@ function clickInstructions() {
 	document.getElementById("instructionsContButton").disabled = true;
      setTimeout(function(){
        document.getElementById("instructionsContButton").disabled = false;
-     }, 2000);
+     }, 5000);
 
 	document.getElementById('instructions').style.display = 'none';
 	console.log("Clicked instructions");
@@ -39,7 +39,7 @@ function clickInstructionsCont() {
 	document.getElementById("demoButton").disabled = true;
      setTimeout(function(){
        document.getElementById("demoButton").disabled = false;
-     }, 2000);
+     }, 5000);
 
 	document.getElementById('instructionsCont').style.display = 'none';
 	console.log("Clicked instructions");
@@ -54,7 +54,7 @@ function clickDemo() {
 	document.getElementById("next").disabled = true;
 	setTimeout(function(){
 	  document.getElementById("next").disabled = false;
-	}, 500);
+	}, 1000);
 	// var myData = jsPsych.randomization.sampleWithReplacement(dataArray,1)[0];
 	trialStart();
 }

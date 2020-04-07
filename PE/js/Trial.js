@@ -97,7 +97,7 @@ function trialDone() {
 	});
 	// increment the trialNumber
 	trialNumber = trialNumber + 1;
-	console.log("TiralNumber:",trialNumber);
+	console.log("TrialNumber:",trialNumber);
 	// if we are done with all trials, then go to completed page
 	if (trialNumber >= myData_test['prompts_test'].length) {
 		console.log("here");

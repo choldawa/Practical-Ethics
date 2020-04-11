@@ -4849,7 +4849,7 @@ myData_test['datasets_test'].splice(attentionTrial, 0, myData_test['datasets_tes
 //Build mapping here?
 var prompts_dict = {
     loans: factors['prompts_test'][0],
-    lewspapers: factors['prompts_test'][1],
+    newspapers: factors['prompts_test'][1],
     bail: factors['prompts_test'][2],
     jobs: factors['prompts_test'][3],
     meals: factors['prompts_test'][4],

@@ -33,7 +33,7 @@ for (file in file_list){
     rm(temp_dataset)
   }
 }
- 
+
 df = df_full
 colnames(df) = c("response","att", "trialNumber", "prompt", "mu", "dataType", "id")
 df$response = as.numeric(df$response)
@@ -55,9 +55,9 @@ df = df %>%
 
 #plots of response by datatype and prompt
 library(ggpubr)
-ggerrorplot(df, x = "prompt.type", y = "mu", 
+ggerrorplot(df, x = "dataType", y = "response", 
             desc_stat = "mean_se")+
-  ggtitle("Mu Distribution by Prompt")
+  ggtitle("Response Distribution by Tradeoff")
 
 df %>% mutate(name = fct_relevel(dataType, 
                             "LOW(-50,150)", 
@@ -94,13 +94,13 @@ corr_eqn = function(x,y, digits = 2) {
 
 labels = data.frame(x = 25, y = 55, label = corr_eqn(df_grouped$mu.x, df_grouped$mu.y))
 
-ggplot(df_grouped, aes(x = mu.x, y = mu.y))+
+ggplot(df_grouped, aes(x = response.x, y = response.y, color = dataType))+
   geom_point()+
   ggtitle("Correlation of Mu (repeated trials) within subject")+
   xlab("Mu (first trial)") +
-  ylab("Mu (second trial)")+
-  geom_smooth(method = "lm")+
-  geom_text(data = labels, aes(x = 25, y = 55, label = label), parse = TRUE)
+  ylab("Mu (second trial)") +
+  geom_smooth(method = "lm")
+ # geom_text(data = labels, aes(x = 25, y = 55, label = label), parse = TRUE)
 
 
 

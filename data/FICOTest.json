@@ -5,7 +5,8 @@
     "black": 5,
     "hispanic": 44,
     "mu": 60,
-    "type": "LOW(-50,150)"
+    "tradeoff": "HIGH",
+    "sliderRange": "[-50,150]"
   },
   {
     "asian": 100,
@@ -13,7 +14,8 @@
     "black": 5,
     "hispanic": 44,
     "mu": 60,
-    "type": "LOW(-50,150)"
+    "tradeoff": "HIGH",
+    "sliderRange": "[-50,150]"
   },
   {
     "asian": 100,
@@ -21,7 +23,8 @@
     "black": 5,
     "hispanic": 44,
     "mu": 60,
-    "type": "LOW(-50,150)"
+    "tradeoff": "HIGH",
+    "sliderRange": "[-50,150]"
   },
   {
     "asian": 100,
@@ -29,7 +32,8 @@
     "black": 5,
     "hispanic": 44,
     "mu": 60,
-    "type": "LOW(-50,150)"
+    "tradeoff": "HIGH",
+    "sliderRange": "[-50,150]"
   },
   {
     "asian": 100,
@@ -37,7 +41,8 @@
     "black": 6,
     "hispanic": 45,
     "mu": 60.5,
-    "type": "LOW(-50,150)"
+    "tradeoff": "HIGH",
+    "sliderRange": "[-50,150]"
   },
   {
     "asian": 100,
@@ -45,7 +50,8 @@
     "black": 6,
     "hispanic": 45,
     "mu": 60.5,
-    "type": "LOW(-50,150)"
+    "tradeoff": "HIGH",
+    "sliderRange": "[-50,150]"
   },
   {
     "asian": 100,
@@ -53,7 +59,8 @@
     "black": 6,
     "hispanic": 45,
     "mu": 60.25,
-    "type": "LOW(-50,150)"
+    "tradeoff": "HIGH",
+    "sliderRange": "[-50,150]"
   },
   {
     "asian": 100,
@@ -61,7 +68,8 @@
     "black": 6,
     "hispanic": 45,
     "mu": 60.25,
-    "type": "LOW(-50,150)"
+    "tradeoff": "HIGH",
+    "sliderRange": "[-50,150]"
   },
   {
     "asian": 100,
@@ -69,7 +77,8 @@
     "black": 6,
     "hispanic": 45,
     "mu": 60.25,
-    "type": "LOW(-50,150)"
+    "tradeoff": "HIGH",
+    "sliderRange": "[-50,150]"
   },
   {
     "asian": 100,
@@ -77,7 +86,8 @@
     "black": 6,
     "hispanic": 45,
     "mu": 60.25,
-    "type": "LOW(-50,150)"
+    "tradeoff": "HIGH",
+    "sliderRange": "[-50,150]"
   },
   {
     "asian": 100,
@@ -85,7 +95,8 @@
     "black": 6,
     "hispanic": 45,
     "mu": 60.25,
-    "type": "LOW(-50,150)"
+    "tradeoff": "HIGH",
+    "sliderRange": "[-50,150]"
   },
   {
     "asian": 100,
@@ -93,7 +104,8 @@
     "black": 7,
     "hispanic": 45,
     "mu": 60.5,
-    "type": "LOW(-50,150)"
+    "tradeoff": "HIGH",
+    "sliderRange": "[-50,150]"
   },
   {
     "asian": 100,
@@ -101,7 +113,8 @@
     "black": 7,
     "hispanic": 45,
     "mu": 60.5,
-    "type": "LOW(-50,150)"
+    "tradeoff": "HIGH",
+    "sliderRange": "[-50,150]"
   },
   {
     "asian": 100,
@@ -109,7 +122,8 @@
     "black": 7,
     "hispanic": 46,
     "mu": 60.75,
-    "type": "LOW(-50,150)"
+    "tradeoff": "HIGH",
+    "sliderRange": "[-50,150]"
   },
   {
     "asian": 100,
@@ -117,7 +131,8 @@
     "black": 7,
     "hispanic": 46,
     "mu": 60.5,
-    "type": "LOW(-50,150)"
+    "tradeoff": "HIGH",
+    "sliderRange": "[-50,150]"
   },
   {
     "asian": 100,
@@ -125,7 +140,8 @@
     "black": 7,
     "hispanic": 46,
     "mu": 60.5,
-    "type": "LOW(-50,150)"
+    "tradeoff": "HIGH",
+    "sliderRange": "[-50,150]"
   },
   {
     "asian": 99,
@@ -133,7 +149,8 @@
     "black": 7,
     "hispanic": 46,
     "mu": 60.25,
-    "type": "LOW(-50,150)"
+    "tradeoff": "HIGH",
+    "sliderRange": "[-50,150]"
   },
   {
     "asian": 99,
@@ -141,7 +158,8 @@
     "black": 8,
     "hispanic": 46,
     "mu": 60.5,
-    "type": "LOW(-50,150)"
+    "tradeoff": "HIGH",
+    "sliderRange": "[-50,150]"
   },
   {
     "asian": 99,
@@ -149,7 +167,8 @@
     "black": 8,
     "hispanic": 46,
     "mu": 60.5,
-    "type": "LOW(-50,150)"
+    "tradeoff": "HIGH",
+    "sliderRange": "[-50,150]"
   },
   {
     "asian": 99,
@@ -157,7 +176,8 @@
     "black": 8,
     "hispanic": 46,
     "mu": 60.5,
-    "type": "LOW(-50,150)"
+    "tradeoff": "HIGH",
+    "sliderRange": "[-50,150]"
   },
   {
     "asian": 99,
@@ -165,7 +185,8 @@
     "black": 8,
     "hispanic": 46,
     "mu": 60.5,
-    "type": "LOW(-50,150)"
+    "tradeoff": "HIGH",
+    "sliderRange": "[-50,150]"
   },
   {
     "asian": 99,
@@ -173,7 +194,8 @@
     "black": 8,
     "hispanic": 46,
     "mu": 60.25,
-    "type": "LOW(-50,150)"
+    "tradeoff": "HIGH",
+    "sliderRange": "[-50,150]"
   },
   {
     "asian": 99,
@@ -181,31 +203,8 @@
     "black": 9,
     "hispanic": 46,
     "mu": 60.5,
-    "type": "LOW(-50,150)"
-  },
-  {
-    "asian": 99,
-    "white": 88,
-    "black": 9,
-    "hispanic": 47,
-    "mu": 60.75,
-    "type": "LOW(-50,150)"
-  },
-  {
-    "asian": 99,
-    "white": 88,
-    "black": 9,
-    "hispanic": 47,
-    "mu": 60.75,
-    "type": "LOW(-50,150)"
-  },
-  {
-    "asian": 99,
-    "white": 88,
-    "black": 9,
-    "hispanic": 47,
-    "mu": 60.75,
-    "type": "LOW(-50,150)"
+    "tradeoff": "HIGH",
+    "sliderRange": "[-50,150]"
   },
   {
     "asian": 99,
@@ -213,7 +212,35 @@
     "black": 9,
     "hispanic": 47,
     "mu": 60.75,
-    "type": "LOW(-50,150)"
+    "tradeoff": "HIGH",
+    "sliderRange": "[-50,150]"
+  },
+  {
+    "asian": 99,
+    "white": 88,
+    "black": 9,
+    "hispanic": 47,
+    "mu": 60.75,
+    "tradeoff": "HIGH",
+    "sliderRange": "[-50,150]"
+  },
+  {
+    "asian": 99,
+    "white": 88,
+    "black": 9,
+    "hispanic": 47,
+    "mu": 60.75,
+    "tradeoff": "HIGH",
+    "sliderRange": "[-50,150]"
+  },
+  {
+    "asian": 99,
+    "white": 88,
+    "black": 9,
+    "hispanic": 47,
+    "mu": 60.75,
+    "tradeoff": "HIGH",
+    "sliderRange": "[-50,150]"
   },
   {
     "asian": 99,
@@ -221,7 +248,8 @@
     "black": 10,
     "hispanic": 47,
     "mu": 61,
-    "type": "LOW(-50,150)"
+    "tradeoff": "HIGH",
+    "sliderRange": "[-50,150]"
   },
   {
     "asian": 99,
@@ -229,7 +257,8 @@
     "black": 10,
     "hispanic": 47,
     "mu": 60.75,
-    "type": "LOW(-50,150)"
+    "tradeoff": "HIGH",
+    "sliderRange": "[-50,150]"
   },
   {
     "asian": 99,
@@ -237,7 +266,8 @@
     "black": 10,
     "hispanic": 47,
     "mu": 60.75,
-    "type": "LOW(-50,150)"
+    "tradeoff": "HIGH",
+    "sliderRange": "[-50,150]"
   },
   {
     "asian": 99,
@@ -245,7 +275,8 @@
     "black": 10,
     "hispanic": 47,
     "mu": 60.75,
-    "type": "LOW(-50,150)"
+    "tradeoff": "HIGH",
+    "sliderRange": "[-50,150]"
   },
   {
     "asian": 99,
@@ -253,7 +284,8 @@
     "black": 10,
     "hispanic": 47,
     "mu": 60.75,
-    "type": "LOW(-50,150)"
+    "tradeoff": "HIGH",
+    "sliderRange": "[-50,150]"
   },
   {
     "asian": 99,
@@ -261,7 +293,8 @@
     "black": 11,
     "hispanic": 47,
     "mu": 61,
-    "type": "LOW(-50,150)"
+    "tradeoff": "HIGH",
+    "sliderRange": "[-50,150]"
   },
   {
     "asian": 99,
@@ -269,7 +302,8 @@
     "black": 11,
     "hispanic": 47,
     "mu": 61,
-    "type": "LOW(-50,150)"
+    "tradeoff": "HIGH",
+    "sliderRange": "[-50,150]"
   },
   {
     "asian": 99,
@@ -277,7 +311,8 @@
     "black": 11,
     "hispanic": 48,
     "mu": 61,
-    "type": "LOW(-50,150)"
+    "tradeoff": "HIGH",
+    "sliderRange": "[-50,150]"
   },
   {
     "asian": 99,
@@ -285,7 +320,8 @@
     "black": 11,
     "hispanic": 48,
     "mu": 61,
-    "type": "LOW(-50,150)"
+    "tradeoff": "HIGH",
+    "sliderRange": "[-50,150]"
   },
   {
     "asian": 99,
@@ -293,7 +329,8 @@
     "black": 12,
     "hispanic": 48,
     "mu": 61.25,
-    "type": "LOW(-50,150)"
+    "tradeoff": "HIGH",
+    "sliderRange": "[-50,150]"
   },
   {
     "asian": 99,
@@ -301,7 +338,8 @@
     "black": 12,
     "hispanic": 48,
     "mu": 61.25,
-    "type": "LOW(-50,150)"
+    "tradeoff": "HIGH",
+    "sliderRange": "[-50,150]"
   },
   {
     "asian": 99,
@@ -309,7 +347,8 @@
     "black": 12,
     "hispanic": 48,
     "mu": 61.25,
-    "type": "LOW(-50,150)"
+    "tradeoff": "HIGH",
+    "sliderRange": "[-50,150]"
   },
   {
     "asian": 98,
@@ -317,7 +356,8 @@
     "black": 12,
     "hispanic": 48,
     "mu": 60.75,
-    "type": "LOW(-50,150)"
+    "tradeoff": "HIGH",
+    "sliderRange": "[-50,150]"
   },
   {
     "asian": 98,
@@ -325,7 +365,8 @@
     "black": 12,
     "hispanic": 48,
     "mu": 60.75,
-    "type": "LOW(-50,150)"
+    "tradeoff": "HIGH",
+    "sliderRange": "[-50,150]"
   },
   {
     "asian": 98,
@@ -333,7 +374,8 @@
     "black": 13,
     "hispanic": 48,
     "mu": 61,
-    "type": "LOW(-50,150)"
+    "tradeoff": "HIGH",
+    "sliderRange": "[-50,150]"
   },
   {
     "asian": 98,
@@ -341,7 +383,8 @@
     "black": 13,
     "hispanic": 48,
     "mu": 61,
-    "type": "LOW(-50,150)"
+    "tradeoff": "HIGH",
+    "sliderRange": "[-50,150]"
   },
   {
     "asian": 98,
@@ -349,7 +392,8 @@
     "black": 13,
     "hispanic": 48,
     "mu": 61,
-    "type": "LOW(-50,150)"
+    "tradeoff": "HIGH",
+    "sliderRange": "[-50,150]"
   },
   {
     "asian": 98,
@@ -357,7 +401,8 @@
     "black": 13,
     "hispanic": 48,
     "mu": 61,
-    "type": "LOW(-50,150)"
+    "tradeoff": "HIGH",
+    "sliderRange": "[-50,150]"
   },
   {
     "asian": 98,
@@ -365,7 +410,8 @@
     "black": 14,
     "hispanic": 48,
     "mu": 61,
-    "type": "LOW(-50,150)"
+    "tradeoff": "HIGH",
+    "sliderRange": "[-50,150]"
   },
   {
     "asian": 98,
@@ -373,7 +419,8 @@
     "black": 14,
     "hispanic": 48,
     "mu": 61,
-    "type": "LOW(-50,150)"
+    "tradeoff": "HIGH",
+    "sliderRange": "[-50,150]"
   },
   {
     "asian": 98,
@@ -381,7 +428,8 @@
     "black": 14,
     "hispanic": 48,
     "mu": 61,
-    "type": "LOW(-50,150)"
+    "tradeoff": "HIGH",
+    "sliderRange": "[-50,150]"
   },
   {
     "asian": 98,
@@ -389,7 +437,8 @@
     "black": 15,
     "hispanic": 49,
     "mu": 61.5,
-    "type": "LOW(-50,150)"
+    "tradeoff": "HIGH",
+    "sliderRange": "[-50,150]"
   },
   {
     "asian": 98,
@@ -397,7 +446,8 @@
     "black": 15,
     "hispanic": 49,
     "mu": 61.25,
-    "type": "LOW(-50,150)"
+    "tradeoff": "HIGH",
+    "sliderRange": "[-50,150]"
   },
   {
     "asian": 98,
@@ -405,7 +455,8 @@
     "black": 15,
     "hispanic": 49,
     "mu": 61.25,
-    "type": "LOW(-50,150)"
+    "tradeoff": "HIGH",
+    "sliderRange": "[-50,150]"
   },
   {
     "asian": 97,
@@ -413,7 +464,8 @@
     "black": 15,
     "hispanic": 49,
     "mu": 61,
-    "type": "LOW(-50,150)"
+    "tradeoff": "HIGH",
+    "sliderRange": "[-50,150]"
   },
   {
     "asian": 97,
@@ -421,7 +473,8 @@
     "black": 16,
     "hispanic": 49,
     "mu": 61.25,
-    "type": "LOW(-50,150)"
+    "tradeoff": "HIGH",
+    "sliderRange": "[-50,150]"
   },
   {
     "asian": 97,
@@ -429,7 +482,8 @@
     "black": 16,
     "hispanic": 49,
     "mu": 61.25,
-    "type": "LOW(-50,150)"
+    "tradeoff": "HIGH",
+    "sliderRange": "[-50,150]"
   },
   {
     "asian": 97,
@@ -437,7 +491,8 @@
     "black": 16,
     "hispanic": 49,
     "mu": 61,
-    "type": "LOW(-50,150)"
+    "tradeoff": "HIGH",
+    "sliderRange": "[-50,150]"
   },
   {
     "asian": 97,
@@ -445,7 +500,8 @@
     "black": 16,
     "hispanic": 49,
     "mu": 61,
-    "type": "LOW(-50,150)"
+    "tradeoff": "HIGH",
+    "sliderRange": "[-50,150]"
   },
   {
     "asian": 97,
@@ -453,7 +509,8 @@
     "black": 17,
     "hispanic": 49,
     "mu": 61.25,
-    "type": "LOW(-50,150)"
+    "tradeoff": "HIGH",
+    "sliderRange": "[-50,150]"
   },
   {
     "asian": 97,
@@ -461,7 +518,8 @@
     "black": 17,
     "hispanic": 49,
     "mu": 61.25,
-    "type": "LOW(-50,150)"
+    "tradeoff": "HIGH",
+    "sliderRange": "[-50,150]"
   },
   {
     "asian": 97,
@@ -469,7 +527,8 @@
     "black": 17,
     "hispanic": 49,
     "mu": 61,
-    "type": "LOW(-50,150)"
+    "tradeoff": "HIGH",
+    "sliderRange": "[-50,150]"
   },
   {
     "asian": 96,
@@ -477,7 +536,8 @@
     "black": 18,
     "hispanic": 49,
     "mu": 61,
-    "type": "LOW(-50,150)"
+    "tradeoff": "HIGH",
+    "sliderRange": "[-50,150]"
   },
   {
     "asian": 96,
@@ -485,7 +545,8 @@
     "black": 18,
     "hispanic": 49,
     "mu": 61,
-    "type": "LOW(-50,150)"
+    "tradeoff": "HIGH",
+    "sliderRange": "[-50,150]"
   },
   {
     "asian": 96,
@@ -493,7 +554,8 @@
     "black": 18,
     "hispanic": 49,
     "mu": 61,
-    "type": "LOW(-50,150)"
+    "tradeoff": "HIGH",
+    "sliderRange": "[-50,150]"
   },
   {
     "asian": 96,
@@ -501,7 +563,8 @@
     "black": 18,
     "hispanic": 49,
     "mu": 60.75,
-    "type": "LOW(-50,150)"
+    "tradeoff": "HIGH",
+    "sliderRange": "[-50,150]"
   },
   {
     "asian": 96,
@@ -509,7 +572,8 @@
     "black": 19,
     "hispanic": 49,
     "mu": 61,
-    "type": "LOW(-50,150)"
+    "tradeoff": "HIGH",
+    "sliderRange": "[-50,150]"
   },
   {
     "asian": 96,
@@ -517,7 +581,8 @@
     "black": 19,
     "hispanic": 49,
     "mu": 61,
-    "type": "LOW(-50,150)"
+    "tradeoff": "HIGH",
+    "sliderRange": "[-50,150]"
   },
   {
     "asian": 95,
@@ -525,7 +590,8 @@
     "black": 19,
     "hispanic": 49,
     "mu": 60.75,
-    "type": "LOW(-50,150)"
+    "tradeoff": "HIGH",
+    "sliderRange": "[-50,150]"
   },
   {
     "asian": 95,
@@ -533,7 +599,8 @@
     "black": 20,
     "hispanic": 49,
     "mu": 60.75,
-    "type": "LOW(-50,150)"
+    "tradeoff": "HIGH",
+    "sliderRange": "[-50,150]"
   },
   {
     "asian": 95,
@@ -541,7 +608,8 @@
     "black": 20,
     "hispanic": 49,
     "mu": 60.75,
-    "type": "LOW(-50,150)"
+    "tradeoff": "HIGH",
+    "sliderRange": "[-50,150]"
   },
   {
     "asian": 95,
@@ -549,7 +617,8 @@
     "black": 20,
     "hispanic": 49,
     "mu": 60.75,
-    "type": "LOW(-50,150)"
+    "tradeoff": "HIGH",
+    "sliderRange": "[-50,150]"
   },
   {
     "asian": 95,
@@ -557,7 +626,8 @@
     "black": 20,
     "hispanic": 49,
     "mu": 60.75,
-    "type": "LOW(-50,150)"
+    "tradeoff": "HIGH",
+    "sliderRange": "[-50,150]"
   },
   {
     "asian": 94,
@@ -565,7 +635,8 @@
     "black": 21,
     "hispanic": 49,
     "mu": 60.5,
-    "type": "LOW(-50,150)"
+    "tradeoff": "HIGH",
+    "sliderRange": "[-50,150]"
   },
   {
     "asian": 94,
@@ -573,7 +644,8 @@
     "black": 21,
     "hispanic": 49,
     "mu": 60.5,
-    "type": "LOW(-50,150)"
+    "tradeoff": "HIGH",
+    "sliderRange": "[-50,150]"
   },
   {
     "asian": 94,
@@ -581,7 +653,8 @@
     "black": 21,
     "hispanic": 49,
     "mu": 60.5,
-    "type": "LOW(-50,150)"
+    "tradeoff": "HIGH",
+    "sliderRange": "[-50,150]"
   },
   {
     "asian": 94,
@@ -589,7 +662,8 @@
     "black": 22,
     "hispanic": 49,
     "mu": 60.75,
-    "type": "LOW(-50,150)"
+    "tradeoff": "HIGH",
+    "sliderRange": "[-50,150]"
   },
   {
     "asian": 93,
@@ -597,7 +671,8 @@
     "black": 22,
     "hispanic": 49,
     "mu": 60.25,
-    "type": "LOW(-50,150)"
+    "tradeoff": "HIGH",
+    "sliderRange": "[-50,150]"
   },
   {
     "asian": 93,
@@ -605,7 +680,8 @@
     "black": 22,
     "hispanic": 49,
     "mu": 60.25,
-    "type": "LOW(-50,150)"
+    "tradeoff": "HIGH",
+    "sliderRange": "[-50,150]"
   },
   {
     "asian": 93,
@@ -613,7 +689,8 @@
     "black": 23,
     "hispanic": 49,
     "mu": 60.5,
-    "type": "LOW(-50,150)"
+    "tradeoff": "HIGH",
+    "sliderRange": "[-50,150]"
   },
   {
     "asian": 93,
@@ -621,7 +698,8 @@
     "black": 23,
     "hispanic": 50,
     "mu": 60.5,
-    "type": "LOW(-50,150)"
+    "tradeoff": "HIGH",
+    "sliderRange": "[-50,150]"
   },
   {
     "asian": 92,
@@ -629,7 +707,8 @@
     "black": 23,
     "hispanic": 50,
     "mu": 60.25,
-    "type": "LOW(-50,150)"
+    "tradeoff": "HIGH",
+    "sliderRange": "[-50,150]"
   },
   {
     "asian": 92,
@@ -637,7 +716,8 @@
     "black": 24,
     "hispanic": 50,
     "mu": 60.5,
-    "type": "LOW(-50,150)"
+    "tradeoff": "HIGH",
+    "sliderRange": "[-50,150]"
   },
   {
     "asian": 92,
@@ -645,7 +725,8 @@
     "black": 24,
     "hispanic": 50,
     "mu": 60.25,
-    "type": "LOW(-50,150)"
+    "tradeoff": "HIGH",
+    "sliderRange": "[-50,150]"
   },
   {
     "asian": 91,
@@ -653,7 +734,8 @@
     "black": 24,
     "hispanic": 50,
     "mu": 60,
-    "type": "LOW(-50,150)"
+    "tradeoff": "HIGH",
+    "sliderRange": "[-50,150]"
   },
   {
     "asian": 91,
@@ -661,7 +743,8 @@
     "black": 24,
     "hispanic": 50,
     "mu": 60,
-    "type": "LOW(-50,150)"
+    "tradeoff": "HIGH",
+    "sliderRange": "[-50,150]"
   },
   {
     "asian": 91,
@@ -669,7 +752,8 @@
     "black": 25,
     "hispanic": 49,
     "mu": 59.75,
-    "type": "LOW(-50,150)"
+    "tradeoff": "HIGH",
+    "sliderRange": "[-50,150]"
   },
   {
     "asian": 90,
@@ -677,7 +761,8 @@
     "black": 25,
     "hispanic": 49,
     "mu": 59.5,
-    "type": "LOW(-50,150)"
+    "tradeoff": "HIGH",
+    "sliderRange": "[-50,150]"
   },
   {
     "asian": 90,
@@ -685,7 +770,8 @@
     "black": 25,
     "hispanic": 49,
     "mu": 59.5,
-    "type": "LOW(-50,150)"
+    "tradeoff": "HIGH",
+    "sliderRange": "[-50,150]"
   },
   {
     "asian": 90,
@@ -693,7 +779,8 @@
     "black": 26,
     "hispanic": 49,
     "mu": 59.5,
-    "type": "LOW(-50,150)"
+    "tradeoff": "HIGH",
+    "sliderRange": "[-50,150]"
   },
   {
     "asian": 89,
@@ -701,7 +788,8 @@
     "black": 26,
     "hispanic": 49,
     "mu": 59.25,
-    "type": "LOW(-50,150)"
+    "tradeoff": "HIGH",
+    "sliderRange": "[-50,150]"
   },
   {
     "asian": 89,
@@ -709,7 +797,8 @@
     "black": 26,
     "hispanic": 49,
     "mu": 59.25,
-    "type": "LOW(-50,150)"
+    "tradeoff": "HIGH",
+    "sliderRange": "[-50,150]"
   },
   {
     "asian": 89,
@@ -717,7 +806,8 @@
     "black": 27,
     "hispanic": 49,
     "mu": 59.25,
-    "type": "LOW(-50,150)"
+    "tradeoff": "HIGH",
+    "sliderRange": "[-50,150]"
   },
   {
     "asian": 88,
@@ -725,7 +815,8 @@
     "black": 27,
     "hispanic": 49,
     "mu": 59,
-    "type": "LOW(-50,150)"
+    "tradeoff": "HIGH",
+    "sliderRange": "[-50,150]"
   },
   {
     "asian": 88,
@@ -733,7 +824,8 @@
     "black": 27,
     "hispanic": 49,
     "mu": 59,
-    "type": "LOW(-50,150)"
+    "tradeoff": "HIGH",
+    "sliderRange": "[-50,150]"
   },
   {
     "asian": 87,
@@ -741,7 +833,8 @@
     "black": 28,
     "hispanic": 49,
     "mu": 58.75,
-    "type": "LOW(-50,150)"
+    "tradeoff": "HIGH",
+    "sliderRange": "[-50,150]"
   },
   {
     "asian": 87,
@@ -749,7 +842,8 @@
     "black": 28,
     "hispanic": 49,
     "mu": 58.75,
-    "type": "LOW(-50,150)"
+    "tradeoff": "HIGH",
+    "sliderRange": "[-50,150]"
   },
   {
     "asian": 86,
@@ -757,7 +851,8 @@
     "black": 28,
     "hispanic": 49,
     "mu": 58.5,
-    "type": "LOW(-50,150)"
+    "tradeoff": "HIGH",
+    "sliderRange": "[-50,150]"
   },
   {
     "asian": 86,
@@ -765,7 +860,8 @@
     "black": 28,
     "hispanic": 49,
     "mu": 58.25,
-    "type": "LOW(-50,150)"
+    "tradeoff": "HIGH",
+    "sliderRange": "[-50,150]"
   },
   {
     "asian": 86,
@@ -773,7 +869,8 @@
     "black": 29,
     "hispanic": 49,
     "mu": 58.5,
-    "type": "LOW(-50,150)"
+    "tradeoff": "HIGH",
+    "sliderRange": "[-50,150]"
   },
   {
     "asian": 85,
@@ -781,7 +878,8 @@
     "black": 29,
     "hispanic": 49,
     "mu": 58,
-    "type": "LOW(-50,150)"
+    "tradeoff": "HIGH",
+    "sliderRange": "[-50,150]"
   },
   {
     "asian": 85,
@@ -789,7 +887,8 @@
     "black": 29,
     "hispanic": 49,
     "mu": 58,
-    "type": "LOW(-50,150)"
+    "tradeoff": "HIGH",
+    "sliderRange": "[-50,150]"
   },
   {
     "asian": 84,
@@ -797,7 +896,8 @@
     "black": 30,
     "hispanic": 49,
     "mu": 58,
-    "type": "LOW(-50,150)"
+    "tradeoff": "HIGH",
+    "sliderRange": "[-50,150]"
   },
   {
     "asian": 83,
@@ -805,7 +905,8 @@
     "black": 30,
     "hispanic": 49,
     "mu": 57.5,
-    "type": "LOW(-50,150)"
+    "tradeoff": "HIGH",
+    "sliderRange": "[-50,150]"
   },
   {
     "asian": 83,
@@ -813,7 +914,8 @@
     "black": 30,
     "hispanic": 49,
     "mu": 57.5,
-    "type": "LOW(-50,150)"
+    "tradeoff": "HIGH",
+    "sliderRange": "[-50,150]"
   },
   {
     "asian": 82,
@@ -821,7 +923,8 @@
     "black": 31,
     "hispanic": 49,
     "mu": 57.25,
-    "type": "LOW(-50,150)"
+    "tradeoff": "HIGH",
+    "sliderRange": "[-50,150]"
   },
   {
     "asian": 82,
@@ -829,7 +932,8 @@
     "black": 31,
     "hispanic": 49,
     "mu": 57.25,
-    "type": "LOW(-50,150)"
+    "tradeoff": "HIGH",
+    "sliderRange": "[-50,150]"
   },
   {
     "asian": 81,
@@ -837,7 +941,8 @@
     "black": 31,
     "hispanic": 49,
     "mu": 57,
-    "type": "LOW(-50,150)"
+    "tradeoff": "HIGH",
+    "sliderRange": "[-50,150]"
   },
   {
     "asian": 81,
@@ -845,7 +950,8 @@
     "black": 31,
     "hispanic": 49,
     "mu": 56.75,
-    "type": "LOW(-50,150)"
+    "tradeoff": "HIGH",
+    "sliderRange": "[-50,150]"
   },
   {
     "asian": 80,
@@ -853,7 +959,8 @@
     "black": 32,
     "hispanic": 49,
     "mu": 56.75,
-    "type": "LOW(-50,150)"
+    "tradeoff": "HIGH",
+    "sliderRange": "[-50,150]"
   },
   {
     "asian": 79,
@@ -861,7 +968,8 @@
     "black": 32,
     "hispanic": 48,
     "mu": 56,
-    "type": "LOW(-50,150)"
+    "tradeoff": "HIGH",
+    "sliderRange": "[-50,150]"
   },
   {
     "asian": 79,
@@ -869,7 +977,8 @@
     "black": 32,
     "hispanic": 48,
     "mu": 56,
-    "type": "LOW(-50,150)"
+    "tradeoff": "HIGH",
+    "sliderRange": "[-50,150]"
   },
   {
     "asian": 78,
@@ -877,7 +986,8 @@
     "black": 33,
     "hispanic": 48,
     "mu": 55.75,
-    "type": "LOW(-50,150)"
+    "tradeoff": "HIGH",
+    "sliderRange": "[-50,150]"
   },
   {
     "asian": 78,
@@ -885,7 +995,8 @@
     "black": 33,
     "hispanic": 48,
     "mu": 55.75,
-    "type": "LOW(-50,150)"
+    "tradeoff": "HIGH",
+    "sliderRange": "[-50,150]"
   },
   {
     "asian": 77,
@@ -893,7 +1004,8 @@
     "black": 33,
     "hispanic": 48,
     "mu": 55.25,
-    "type": "LOW(-50,150)"
+    "tradeoff": "HIGH",
+    "sliderRange": "[-50,150]"
   },
   {
     "asian": 76,
@@ -901,7 +1013,8 @@
     "black": 33,
     "hispanic": 48,
     "mu": 55,
-    "type": "LOW(-50,150)"
+    "tradeoff": "HIGH",
+    "sliderRange": "[-50,150]"
   },
   {
     "asian": 75,
@@ -909,7 +1022,8 @@
     "black": 34,
     "hispanic": 48,
     "mu": 54.75,
-    "type": "LOW(-50,150)"
+    "tradeoff": "HIGH",
+    "sliderRange": "[-50,150]"
   },
   {
     "asian": 75,
@@ -917,7 +1031,8 @@
     "black": 34,
     "hispanic": 48,
     "mu": 54.75,
-    "type": "LOW(-50,150)"
+    "tradeoff": "HIGH",
+    "sliderRange": "[-50,150]"
   },
   {
     "asian": 74,
@@ -925,7 +1040,8 @@
     "black": 34,
     "hispanic": 48,
     "mu": 54.5,
-    "type": "LOW(-50,150)"
+    "tradeoff": "HIGH",
+    "sliderRange": "[-50,150]"
   },
   {
     "asian": 73,
@@ -933,7 +1049,8 @@
     "black": 34,
     "hispanic": 48,
     "mu": 54,
-    "type": "LOW(-50,150)"
+    "tradeoff": "HIGH",
+    "sliderRange": "[-50,150]"
   },
   {
     "asian": 73,
@@ -941,7 +1058,8 @@
     "black": 35,
     "hispanic": 48,
     "mu": 54.25,
-    "type": "LOW(-50,150)"
+    "tradeoff": "HIGH",
+    "sliderRange": "[-50,150]"
   },
   {
     "asian": 72,
@@ -949,7 +1067,8 @@
     "black": 35,
     "hispanic": 47,
     "mu": 53.5,
-    "type": "LOW(-50,150)"
+    "tradeoff": "HIGH",
+    "sliderRange": "[-50,150]"
   },
   {
     "asian": 71,
@@ -957,7 +1076,8 @@
     "black": 35,
     "hispanic": 47,
     "mu": 53.25,
-    "type": "LOW(-50,150)"
+    "tradeoff": "HIGH",
+    "sliderRange": "[-50,150]"
   },
   {
     "asian": 70,
@@ -965,7 +1085,8 @@
     "black": 36,
     "hispanic": 47,
     "mu": 53,
-    "type": "LOW(-50,150)"
+    "tradeoff": "HIGH",
+    "sliderRange": "[-50,150]"
   },
   {
     "asian": 69,
@@ -973,7 +1094,8 @@
     "black": 36,
     "hispanic": 47,
     "mu": 52.75,
-    "type": "LOW(-50,150)"
+    "tradeoff": "HIGH",
+    "sliderRange": "[-50,150]"
   },
   {
     "asian": 69,
@@ -981,7 +1103,8 @@
     "black": 36,
     "hispanic": 47,
     "mu": 52.5,
-    "type": "LOW(-50,150)"
+    "tradeoff": "HIGH",
+    "sliderRange": "[-50,150]"
   },
   {
     "asian": 68,
@@ -989,7 +1112,8 @@
     "black": 36,
     "hispanic": 47,
     "mu": 52.25,
-    "type": "LOW(-50,150)"
+    "tradeoff": "HIGH",
+    "sliderRange": "[-50,150]"
   },
   {
     "asian": 67,
@@ -997,7 +1121,8 @@
     "black": 37,
     "hispanic": 47,
     "mu": 52,
-    "type": "LOW(-50,150)"
+    "tradeoff": "HIGH",
+    "sliderRange": "[-50,150]"
   },
   {
     "asian": 66,
@@ -1005,7 +1130,8 @@
     "black": 37,
     "hispanic": 47,
     "mu": 51.5,
-    "type": "LOW(-50,150)"
+    "tradeoff": "HIGH",
+    "sliderRange": "[-50,150]"
   },
   {
     "asian": 65,
@@ -1013,7 +1139,8 @@
     "black": 37,
     "hispanic": 46,
     "mu": 51,
-    "type": "LOW(-50,150)"
+    "tradeoff": "HIGH",
+    "sliderRange": "[-50,150]"
   },
   {
     "asian": 64,
@@ -1021,7 +1148,8 @@
     "black": 37,
     "hispanic": 46,
     "mu": 50.5,
-    "type": "LOW(-50,150)"
+    "tradeoff": "HIGH",
+    "sliderRange": "[-50,150]"
   },
   {
     "asian": 63,
@@ -1029,7 +1157,8 @@
     "black": 38,
     "hispanic": 46,
     "mu": 50.5,
-    "type": "LOW(-50,150)"
+    "tradeoff": "HIGH",
+    "sliderRange": "[-50,150]"
   },
   {
     "asian": 63,
@@ -1037,7 +1166,8 @@
     "black": 38,
     "hispanic": 46,
     "mu": 50.25,
-    "type": "LOW(-50,150)"
+    "tradeoff": "HIGH",
+    "sliderRange": "[-50,150]"
   },
   {
     "asian": 62,
@@ -1045,7 +1175,8 @@
     "black": 38,
     "hispanic": 46,
     "mu": 50,
-    "type": "LOW(-50,150)"
+    "tradeoff": "HIGH",
+    "sliderRange": "[-50,150]"
   },
   {
     "asian": 61,
@@ -1053,7 +1184,8 @@
     "black": 38,
     "hispanic": 46,
     "mu": 49.5,
-    "type": "LOW(-50,150)"
+    "tradeoff": "HIGH",
+    "sliderRange": "[-50,150]"
   },
   {
     "asian": 60,
@@ -1061,7 +1193,8 @@
     "black": 39,
     "hispanic": 46,
     "mu": 49.5,
-    "type": "LOW(-50,150)"
+    "tradeoff": "HIGH",
+    "sliderRange": "[-50,150]"
   },
   {
     "asian": 59,
@@ -1069,7 +1202,8 @@
     "black": 39,
     "hispanic": 45,
     "mu": 48.75,
-    "type": "LOW(-50,150)"
+    "tradeoff": "HIGH",
+    "sliderRange": "[-50,150]"
   },
   {
     "asian": 58,
@@ -1077,7 +1211,8 @@
     "black": 39,
     "hispanic": 45,
     "mu": 48.5,
-    "type": "LOW(-50,150)"
+    "tradeoff": "HIGH",
+    "sliderRange": "[-50,150]"
   },
   {
     "asian": 57,
@@ -1085,7 +1220,8 @@
     "black": 39,
     "hispanic": 45,
     "mu": 48,
-    "type": "LOW(-50,150)"
+    "tradeoff": "HIGH",
+    "sliderRange": "[-50,150]"
   },
   {
     "asian": 56,
@@ -1093,7 +1229,8 @@
     "black": 39,
     "hispanic": 45,
     "mu": 47.5,
-    "type": "LOW(-50,150)"
+    "tradeoff": "HIGH",
+    "sliderRange": "[-50,150]"
   },
   {
     "asian": 55,
@@ -1101,7 +1238,8 @@
     "black": 40,
     "hispanic": 45,
     "mu": 47.5,
-    "type": "LOW(-50,150)"
+    "tradeoff": "HIGH",
+    "sliderRange": "[-50,150]"
   },
   {
     "asian": 54,
@@ -1109,7 +1247,8 @@
     "black": 40,
     "hispanic": 45,
     "mu": 47,
-    "type": "LOW(-50,150)"
+    "tradeoff": "HIGH",
+    "sliderRange": "[-50,150]"
   },
   {
     "asian": 53,
@@ -1117,7 +1256,8 @@
     "black": 40,
     "hispanic": 44,
     "mu": 46.5,
-    "type": "LOW(-50,150)"
+    "tradeoff": "HIGH",
+    "sliderRange": "[-50,150]"
   },
   {
     "asian": 52,
@@ -1125,7 +1265,8 @@
     "black": 40,
     "hispanic": 44,
     "mu": 46,
-    "type": "LOW(-50,150)"
+    "tradeoff": "HIGH",
+    "sliderRange": "[-50,150]"
   },
   {
     "asian": 51,
@@ -1133,7 +1274,8 @@
     "black": 40,
     "hispanic": 44,
     "mu": 45.75,
-    "type": "LOW(-50,150)"
+    "tradeoff": "HIGH",
+    "sliderRange": "[-50,150]"
   },
   {
     "asian": 50,
@@ -1141,7 +1283,8 @@
     "black": 41,
     "hispanic": 44,
     "mu": 45.5,
-    "type": "LOW(-50,150)"
+    "tradeoff": "HIGH",
+    "sliderRange": "[-50,150]"
   },
   {
     "asian": 49,
@@ -1149,7 +1292,8 @@
     "black": 41,
     "hispanic": 44,
     "mu": 45,
-    "type": "LOW(-50,150)"
+    "tradeoff": "HIGH",
+    "sliderRange": "[-50,150]"
   },
   {
     "asian": 48,
@@ -1157,7 +1301,8 @@
     "black": 41,
     "hispanic": 43,
     "mu": 44.5,
-    "type": "LOW(-50,150)"
+    "tradeoff": "HIGH",
+    "sliderRange": "[-50,150]"
   },
   {
     "asian": 47,
@@ -1165,7 +1310,8 @@
     "black": 41,
     "hispanic": 43,
     "mu": 44,
-    "type": "LOW(-50,150)"
+    "tradeoff": "HIGH",
+    "sliderRange": "[-50,150]"
   },
   {
     "asian": 46,
@@ -1173,7 +1319,8 @@
     "black": 41,
     "hispanic": 43,
     "mu": 43.75,
-    "type": "LOW(-50,150)"
+    "tradeoff": "HIGH",
+    "sliderRange": "[-50,150]"
   },
   {
     "asian": 45,
@@ -1181,7 +1328,8 @@
     "black": 42,
     "hispanic": 43,
     "mu": 43.5,
-    "type": "LOW(-50,150)"
+    "tradeoff": "HIGH",
+    "sliderRange": "[-50,150]"
   },
   {
     "asian": 44,
@@ -1189,7 +1337,8 @@
     "black": 42,
     "hispanic": 43,
     "mu": 43,
-    "type": "LOW(-50,150)"
+    "tradeoff": "HIGH",
+    "sliderRange": "[-50,150]"
   },
   {
     "asian": 43,
@@ -1197,7 +1346,8 @@
     "black": 42,
     "hispanic": 42,
     "mu": 42.5,
-    "type": "LOW(-50,150)"
+    "tradeoff": "HIGH",
+    "sliderRange": "[-50,150]"
   },
   {
     "asian": 42,
@@ -1205,7 +1355,8 @@
     "black": 42,
     "hispanic": 42,
     "mu": 42,
-    "type": "LOW(-50,150)"
+    "tradeoff": "HIGH",
+    "sliderRange": "[-50,150]"
   },
   {
     "asian": 41,
@@ -1213,7 +1364,8 @@
     "black": 42,
     "hispanic": 42,
     "mu": 41.75,
-    "type": "LOW(-50,150)"
+    "tradeoff": "HIGH",
+    "sliderRange": "[-50,150]"
   },
   {
     "asian": 40,
@@ -1221,7 +1373,8 @@
     "black": 43,
     "hispanic": 42,
     "mu": 41.5,
-    "type": "LOW(-50,150)"
+    "tradeoff": "HIGH",
+    "sliderRange": "[-50,150]"
   },
   {
     "asian": 39,
@@ -1229,7 +1382,8 @@
     "black": 43,
     "hispanic": 42,
     "mu": 41,
-    "type": "LOW(-50,150)"
+    "tradeoff": "HIGH",
+    "sliderRange": "[-50,150]"
   },
   {
     "asian": 38,
@@ -1237,7 +1391,8 @@
     "black": 43,
     "hispanic": 41,
     "mu": 40.5,
-    "type": "LOW(-50,150)"
+    "tradeoff": "HIGH",
+    "sliderRange": "[-50,150]"
   },
   {
     "asian": 37,
@@ -1245,7 +1400,8 @@
     "black": 43,
     "hispanic": 41,
     "mu": 40,
-    "type": "LOW(-50,150)"
+    "tradeoff": "HIGH",
+    "sliderRange": "[-50,150]"
   },
   {
     "asian": 36,
@@ -1253,7 +1409,8 @@
     "black": 43,
     "hispanic": 41,
     "mu": 39.75,
-    "type": "LOW(-50,150)"
+    "tradeoff": "HIGH",
+    "sliderRange": "[-50,150]"
   },
   {
     "asian": 35,
@@ -1261,7 +1418,8 @@
     "black": 43,
     "hispanic": 41,
     "mu": 39.25,
-    "type": "LOW(-50,150)"
+    "tradeoff": "HIGH",
+    "sliderRange": "[-50,150]"
   },
   {
     "asian": 34,
@@ -1269,7 +1427,8 @@
     "black": 44,
     "hispanic": 41,
     "mu": 39,
-    "type": "LOW(-50,150)"
+    "tradeoff": "HIGH",
+    "sliderRange": "[-50,150]"
   },
   {
     "asian": 34,
@@ -1277,7 +1436,8 @@
     "black": 44,
     "hispanic": 40,
     "mu": 38.75,
-    "type": "LOW(-50,150)"
+    "tradeoff": "HIGH",
+    "sliderRange": "[-50,150]"
   },
   {
     "asian": 33,
@@ -1285,7 +1445,8 @@
     "black": 44,
     "hispanic": 40,
     "mu": 38.25,
-    "type": "LOW(-50,150)"
+    "tradeoff": "HIGH",
+    "sliderRange": "[-50,150]"
   },
   {
     "asian": 32,
@@ -1293,7 +1454,8 @@
     "black": 44,
     "hispanic": 40,
     "mu": 38,
-    "type": "LOW(-50,150)"
+    "tradeoff": "HIGH",
+    "sliderRange": "[-50,150]"
   },
   {
     "asian": 31,
@@ -1301,7 +1463,8 @@
     "black": 44,
     "hispanic": 40,
     "mu": 37.5,
-    "type": "LOW(-50,150)"
+    "tradeoff": "HIGH",
+    "sliderRange": "[-50,150]"
   },
   {
     "asian": 30,
@@ -1309,7 +1472,8 @@
     "black": 44,
     "hispanic": 39,
     "mu": 36.75,
-    "type": "LOW(-50,150)"
+    "tradeoff": "HIGH",
+    "sliderRange": "[-50,150]"
   },
   {
     "asian": 29,
@@ -1317,7 +1481,8 @@
     "black": 45,
     "hispanic": 39,
     "mu": 36.75,
-    "type": "LOW(-50,150)"
+    "tradeoff": "HIGH",
+    "sliderRange": "[-50,150]"
   },
   {
     "asian": 28,
@@ -1325,7 +1490,8 @@
     "black": 45,
     "hispanic": 39,
     "mu": 36.25,
-    "type": "LOW(-50,150)"
+    "tradeoff": "HIGH",
+    "sliderRange": "[-50,150]"
   },
   {
     "asian": 27,
@@ -1333,7 +1499,8 @@
     "black": 45,
     "hispanic": 39,
     "mu": 36,
-    "type": "LOW(-50,150)"
+    "tradeoff": "HIGH",
+    "sliderRange": "[-50,150]"
   },
   {
     "asian": 26,
@@ -1341,7 +1508,8 @@
     "black": 45,
     "hispanic": 38,
     "mu": 35.25,
-    "type": "LOW(-50,150)"
+    "tradeoff": "HIGH",
+    "sliderRange": "[-50,150]"
   },
   {
     "asian": 25,
@@ -1349,7 +1517,8 @@
     "black": 45,
     "hispanic": 38,
     "mu": 35,
-    "type": "LOW(-50,150)"
+    "tradeoff": "HIGH",
+    "sliderRange": "[-50,150]"
   },
   {
     "asian": 25,
@@ -1357,7 +1526,8 @@
     "black": 45,
     "hispanic": 38,
     "mu": 34.75,
-    "type": "LOW(-50,150)"
+    "tradeoff": "HIGH",
+    "sliderRange": "[-50,150]"
   },
   {
     "asian": 24,
@@ -1365,7 +1535,8 @@
     "black": 45,
     "hispanic": 38,
     "mu": 34.25,
-    "type": "LOW(-50,150)"
+    "tradeoff": "HIGH",
+    "sliderRange": "[-50,150]"
   },
   {
     "asian": 23,
@@ -1373,7 +1544,8 @@
     "black": 46,
     "hispanic": 37,
     "mu": 34,
-    "type": "LOW(-50,150)"
+    "tradeoff": "HIGH",
+    "sliderRange": "[-50,150]"
   },
   {
     "asian": 22,
@@ -1381,7 +1553,8 @@
     "black": 46,
     "hispanic": 37,
     "mu": 33.5,
-    "type": "LOW(-50,150)"
+    "tradeoff": "HIGH",
+    "sliderRange": "[-50,150]"
   },
   {
     "asian": 21,
@@ -1389,7 +1562,8 @@
     "black": 46,
     "hispanic": 37,
     "mu": 33.25,
-    "type": "LOW(-50,150)"
+    "tradeoff": "HIGH",
+    "sliderRange": "[-50,150]"
   },
   {
     "asian": 21,
@@ -1397,7 +1571,8 @@
     "black": 46,
     "hispanic": 37,
     "mu": 33,
-    "type": "LOW(-50,150)"
+    "tradeoff": "HIGH",
+    "sliderRange": "[-50,150]"
   },
   {
     "asian": 20,
@@ -1405,7 +1580,8 @@
     "black": 46,
     "hispanic": 36,
     "mu": 32.5,
-    "type": "LOW(-50,150)"
+    "tradeoff": "HIGH",
+    "sliderRange": "[-50,150]"
   },
   {
     "asian": 19,
@@ -1413,7 +1589,8 @@
     "black": 46,
     "hispanic": 36,
     "mu": 32,
-    "type": "LOW(-50,150)"
+    "tradeoff": "HIGH",
+    "sliderRange": "[-50,150]"
   },
   {
     "asian": 18,
@@ -1421,7 +1598,8 @@
     "black": 46,
     "hispanic": 36,
     "mu": 31.5,
-    "type": "LOW(-50,150)"
+    "tradeoff": "HIGH",
+    "sliderRange": "[-50,150]"
   },
   {
     "asian": 18,
@@ -1429,7 +1607,8 @@
     "black": 47,
     "hispanic": 36,
     "mu": 31.75,
-    "type": "LOW(-50,150)"
+    "tradeoff": "HIGH",
+    "sliderRange": "[-50,150]"
   },
   {
     "asian": 17,
@@ -1437,7 +1616,8 @@
     "black": 47,
     "hispanic": 35,
     "mu": 31,
-    "type": "LOW(-50,150)"
+    "tradeoff": "HIGH",
+    "sliderRange": "[-50,150]"
   },
   {
     "asian": 16,
@@ -1445,7 +1625,8 @@
     "black": 47,
     "hispanic": 35,
     "mu": 30.75,
-    "type": "LOW(-50,150)"
+    "tradeoff": "HIGH",
+    "sliderRange": "[-50,150]"
   },
   {
     "asian": 16,
@@ -1453,7 +1634,8 @@
     "black": 47,
     "hispanic": 35,
     "mu": 30.5,
-    "type": "LOW(-50,150)"
+    "tradeoff": "HIGH",
+    "sliderRange": "[-50,150]"
   },
   {
     "asian": 15,
@@ -1461,7 +1643,8 @@
     "black": 47,
     "hispanic": 35,
     "mu": 30.25,
-    "type": "LOW(-50,150)"
+    "tradeoff": "HIGH",
+    "sliderRange": "[-50,150]"
   },
   {
     "asian": 14,
@@ -1469,7 +1652,8 @@
     "black": 47,
     "hispanic": 34,
     "mu": 29.5,
-    "type": "LOW(-50,150)"
+    "tradeoff": "HIGH",
+    "sliderRange": "[-50,150]"
   },
   {
     "asian": 14,
@@ -1477,7 +1661,8 @@
     "black": 47,
     "hispanic": 34,
     "mu": 29.5,
-    "type": "LOW(-50,150)"
+    "tradeoff": "HIGH",
+    "sliderRange": "[-50,150]"
   },
   {
     "asian": 13,
@@ -1485,7 +1670,8 @@
     "black": 47,
     "hispanic": 34,
     "mu": 29,
-    "type": "LOW(-50,150)"
+    "tradeoff": "HIGH",
+    "sliderRange": "[-50,150]"
   },
   {
     "asian": 13,
@@ -1493,7 +1679,8 @@
     "black": 47,
     "hispanic": 34,
     "mu": 29,
-    "type": "LOW(-50,150)"
+    "tradeoff": "HIGH",
+    "sliderRange": "[-50,150]"
   },
   {
     "asian": 12,
@@ -1501,7 +1688,8 @@
     "black": 48,
     "hispanic": 33,
     "mu": 28.5,
-    "type": "LOW(-50,150)"
+    "tradeoff": "HIGH",
+    "sliderRange": "[-50,150]"
   },
   {
     "asian": 12,
@@ -1509,7 +1697,8 @@
     "black": 48,
     "hispanic": 33,
     "mu": 28.5,
-    "type": "LOW(-50,150)"
+    "tradeoff": "HIGH",
+    "sliderRange": "[-50,150]"
   },
   {
     "asian": 11,
@@ -1517,7 +1706,8 @@
     "black": 48,
     "hispanic": 33,
     "mu": 28,
-    "type": "LOW(-50,150)"
+    "tradeoff": "HIGH",
+    "sliderRange": "[-50,150]"
   },
   {
     "asian": 11,
@@ -1525,7 +1715,8 @@
     "black": 48,
     "hispanic": 33,
     "mu": 28,
-    "type": "LOW(-50,150)"
+    "tradeoff": "HIGH",
+    "sliderRange": "[-50,150]"
   },
   {
     "asian": 10,
@@ -1533,7 +1724,8 @@
     "black": 48,
     "hispanic": 32,
     "mu": 27.25,
-    "type": "LOW(-50,150)"
+    "tradeoff": "HIGH",
+    "sliderRange": "[-50,150]"
   },
   {
     "asian": 10,
@@ -1541,7 +1733,8 @@
     "black": 48,
     "hispanic": 32,
     "mu": 27.25,
-    "type": "LOW(-50,150)"
+    "tradeoff": "HIGH",
+    "sliderRange": "[-50,150]"
   },
   {
     "asian": 9,
@@ -1549,7 +1742,8 @@
     "black": 48,
     "hispanic": 32,
     "mu": 26.75,
-    "type": "LOW(-50,150)"
+    "tradeoff": "HIGH",
+    "sliderRange": "[-50,150]"
   },
   {
     "asian": 9,
@@ -1557,7 +1751,8 @@
     "black": 48,
     "hispanic": 31,
     "mu": 26.5,
-    "type": "LOW(-50,150)"
+    "tradeoff": "HIGH",
+    "sliderRange": "[-50,150]"
   },
   {
     "asian": 8,
@@ -1565,7 +1760,8 @@
     "black": 48,
     "hispanic": 31,
     "mu": 26,
-    "type": "LOW(-50,150)"
+    "tradeoff": "HIGH",
+    "sliderRange": "[-50,150]"
   },
   {
     "asian": 8,
@@ -1573,7 +1769,8 @@
     "black": 48,
     "hispanic": 31,
     "mu": 26,
-    "type": "LOW(-50,150)"
+    "tradeoff": "HIGH",
+    "sliderRange": "[-50,150]"
   },
   {
     "asian": 7,
@@ -1581,7 +1778,8 @@
     "black": 49,
     "hispanic": 31,
     "mu": 25.75,
-    "type": "LOW(-50,150)"
+    "tradeoff": "HIGH",
+    "sliderRange": "[-50,150]"
   },
   {
     "asian": 7,
@@ -1589,7 +1787,8 @@
     "black": 49,
     "hispanic": 30,
     "mu": 25.5,
-    "type": "LOW(-50,150)"
+    "tradeoff": "HIGH",
+    "sliderRange": "[-50,150]"
   },
   {
     "asian": 7,
@@ -1597,7 +1796,8 @@
     "black": 49,
     "hispanic": 30,
     "mu": 25.5,
-    "type": "LOW(-50,150)"
+    "tradeoff": "HIGH",
+    "sliderRange": "[-50,150]"
   },
   {
     "asian": 6,
@@ -1605,6 +1805,7 @@
     "black": 49,
     "hispanic": 30,
     "mu": 25,
-    "type": "LOW(-50,150)"
+    "tradeoff": "HIGH",
+    "sliderRange": "[-50,150]"
   }
 ]

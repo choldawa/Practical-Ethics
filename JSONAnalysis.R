@@ -36,11 +36,11 @@ for (file in file_list){
   }
 }
 
-df = df_full
+df = df_full %>% distinct()
 colnames(df) = c("response","att", "trialNumber", "prompt", "mu", "tradeoff", "jitter", "id")
-df$response = as.numeric(df$response)
+df$response = as.numeric(as.character(df$response))
 #attention checks
-df %>% select(att,response) %>%  filter(att == 1)
+df %>% select(att,response, id, trialNumber) %>%  filter(att == 1)
 #json.data[[2]][["promptCheck1"]]+json.data[[2]][["promptCheck2"]]
 
 
@@ -55,6 +55,8 @@ df$tradeoff <- ifelse(grepl("LOW", df$tradeoff, ignore.case = T), "low",
                          ifelse(grepl("MED", df$tradeoff, ignore.case = T), "med","high"))
 
 df$respJitter = df$response+df$jitter
+df$latentEquality = df$response+df$jitter-50
+
 ##remove attention trials
 df = df %>% 
   filter(att == 0)
@@ -65,20 +67,20 @@ df %>% mutate(name = fct_relevel(tradeoff,
                                  "low", 
                                  "med", 
                                  "high")) %>% 
-  ggerrorplot(x = "name", y = "respJitter", 
+  ggerrorplot(x = "name", y = "latentEquality", 
             desc_stat = "mean_se")+
-  ggtitle("Response Distribution by Tradeoff")
+  ggtitle("latentEquality Distribution by Tradeoff")
 
 df %>% mutate(name = fct_relevel(prompt.type, 
                                  "meals", 
-                                 "loan", 
+                                 "bail", 
+                                 "loan",
+                                 "respirator",
                                  "job",
-                                 "bail",
-                                 "newspaper",
-                                 "respirator")) %>%
-ggerrorplot(x = "name", y = "respJitter", 
+                                 "newspaper")) %>%
+ggerrorplot(x = "name", y = "latentEquality", 
             desc_stat = "mean_se")+
-  ggtitle("Response Distribution by Prompt")
+  ggtitle("latentEquality Distribution by Prompt")
 
 df %>% mutate(tradeoff = fct_relevel(tradeoff, 
                             "low", 
@@ -86,33 +88,38 @@ df %>% mutate(tradeoff = fct_relevel(tradeoff,
                             "high"),
               prompt = fct_relevel(prompt.type, 
                                    "meals", 
-                                   "job", 
+                                   "bail", 
                                    "loan",
-                                   "newspaper",
                                    "respirator",
-                                   "bail")) %>% 
-  ggerrorplot(x = "prompt", y = "mu", 
+                                   "job",
+                                   "newspaper")) %>% 
+  ggerrorplot(x = "prompt", y = "latentEquality", 
             desc_stat = "mean_se") + 
   facet_grid(.~tradeoff)+
   theme(axis.text.x = element_text(angle = 90))+
-  ggtitle("Response by Prompt and Tradeoff")
+  ggtitle("latentEquality by Prompt and Tradeoff")
 
 #Distribution of responses
-ggplot(df, aes(respJitter)) +
+ggplot(df, aes(latentEquality)) +
   geom_histogram(bins = 15) +facet_grid(.~tradeoff)
-table(df$mu, df$dataType)
+table(df$latentEquality, df$tradeoff)
 
-lin = lm(data = df, respJitter ~ tradeoff*prompt.type+jitter)
+ggplot(df, aes(x = trialNumber, y = latentEquality))+
+  geom_point()+
+  facet_grid(.~tradeoff)+
+  geom_smooth(method = "lm")
+
+lin = lm(data = df, latentEquality ~ tradeoff+prompt.type+jitter)
 summary(lin)
 ##Create DF to compare correlation between trials 
 df_first_obs = df %>% 
   arrange(trialNumber) %>% 
   group_by(id, prompt.type, tradeoff) %>% 
   slice(1) %>% 
-  select(id, tradeoff, prompt.type, mu, response, respJitter)
+  select(id, tradeoff, prompt.type, mu, response, latentEquality)
 df_second_obs = df %>% arrange(trialNumber) %>% 
   group_by(id, prompt.type, tradeoff) %>% slice(n()) %>% 
-  select(id, tradeoff, prompt.type, mu, response, respJitter)
+  select(id, tradeoff, prompt.type, mu, response, latentEquality)
 df_grouped = left_join(df_first_obs, df_second_obs, by=c("id","tradeoff", "prompt.type")) %>% rowwise()
 
 #create equation for correlation
@@ -123,10 +130,10 @@ corr_eqn = function(x,y, digits = 2) {
 
 labels = data.frame(x = 25, y = 55, label = corr_eqn(df_grouped$mu.x, df_grouped$mu.y))
 
-ggplot(df_grouped, aes(x = respJitter.x, y = respJitter.y))+
+ggplot(df_grouped, aes(x = latentEquality.x, y = latentEquality.y))+
   geom_point()+
   facet_grid(.~tradeoff)+
-  ggtitle("Correlation of Mu (repeated trials) within subject")+
+  ggtitle("Correlation of LatentEquality (repeated trials) within subject")+
   xlab("Response (first trial)") +
   ylab("Reponse (second trial)") +
   geom_smooth(method = "lm")

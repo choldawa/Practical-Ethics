@@ -56,6 +56,19 @@ function clickDemo() {
 	  document.getElementById("next").disabled = false;
 	}, 1000);
 	// var myData = jsPsych.randomization.sampleWithReplacement(dataArray,1)[0];
+	document.getElementById('demo').style.display = 'none';
+	console.log("Clicked instructions");
+	document.getElementById('example').style.display = 'block';
+}
+
+function clickExample() {
+	document.getElementById('example').style.display = 'none';
+	// disable next button
+	document.getElementById("next").disabled = true;
+	setTimeout(function(){
+	  document.getElementById("next").disabled = false;
+	}, 1000);
+	// var myData = jsPsych.randomization.sampleWithReplacement(dataArray,1)[0];
 	trialStart();
 }
 

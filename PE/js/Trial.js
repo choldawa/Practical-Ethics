@@ -1,5 +1,6 @@
 
 let trialNumber = 0;
+let jitterList = [0, 10, 20]
 const trialData = [];
 var subjectData = []
 
@@ -36,6 +37,9 @@ var client = parseClient();
 
 
 function trialStart() {
+	var currDataset = myData_test['datasets_test'][trialNumber]
+	jitter = jitterList[Math.floor(Math.random() * jitterList.length)];
+	console.log("jitter in trial", jitter);
 	document.getElementById('prompt').style.display = 'block';
 	document.getElementById('preTrialText').innerHTML = myData_test['prompts_test'][trialNumber];
 	document.getElementById('promptButton').disabled = true;
@@ -51,16 +55,11 @@ function trialStart() {
 	// reset the slider
 	document.getElementById('trialSlider').value = initialSliderVal;
 
-	generateDots(fullSet, myData_test['datasets_test'][trialNumber][initialSliderVal].asian, 1);
-	generateDots(fullSet, myData_test['datasets_test'][trialNumber][initialSliderVal].white, 2);
-	generateDots(fullSet, myData_test['datasets_test'][trialNumber][initialSliderVal].hispanic, 3);
-	generateDots(fullSet, myData_test['datasets_test'][trialNumber][initialSliderVal].black, 4);
-	generateDots(fullSet, myData_test['datasets_test'][trialNumber][initialSliderVal].mu, 5);
-	console.log(myData_test['prompts_test'][trialNumber] == prompts_dict['loans']);
-	if (trialNumber == 1) {
-		console.log(prompts_dict[$('input[name=promptCheck1]:checked').val()] == myData_test['prompts_test'][1]);
-	}
-
+	generateDots(fullSet, currDataset[initialSliderVal].asian, 1);
+	generateDots(fullSet, currDataset[initialSliderVal].white, 2);
+	generateDots(fullSet, currDataset[initialSliderVal].hispanic, 3);
+	generateDots(fullSet, currDataset[initialSliderVal].black, 4);
+	generateDots(fullSet, currDataset[initialSliderVal].mu, 5);
 }
 
 
@@ -90,14 +89,14 @@ function trialDone() {
 	trialData.push({
 		att: att,
 		trialNumber: trialNumber,
-		chosenData: myData_test['datasets_test'][trialNumber][document.getElementById('trialSlider').value],
+		chosenData: myData_test['datasets_test'][trialNumber][parseInt(document.getElementById('trialSlider').value) + jitter],
 		prompt: myData_test['prompts_test'][trialNumber],
-		// dataset: myData[trialNumber],
+		jitter: jitter,
 		response: document.getElementById('trialSlider').value
 	});
 	// increment the trialNumber
 	trialNumber = trialNumber + 1;
-	console.log("TrialNumber:",trialNumber);
+	console.log("TrialNumber:", trialNumber);
 	// if we are done with all trials, then go to completed page
 	if (trialNumber >= myData_test['prompts_test'].length) {
 		console.log("here");
@@ -112,10 +111,11 @@ function trialDone() {
 
 function DoneWithDebriefing() {
 	$("#debriefing").hide();
-	$("#done").html("Thanks for participating! Your answers will help shape the future of algorithmic fairness!");
+	$("#done").html("Thanks for participating! Your answers will help shape the future of algorithmic fairness! <br> Your credit will be added manually to SONA within 24 hours.");
 	$("#done").show();
 	subjectData.push({
 		subjectId: subjectId,
+		ExperimentVersion: 2,
 		promptCheck1: prompts_dict[$('input[name=promptCheck1]:checked').val()] == myData_test['prompts_test'][1],
 		promptCheck2: prompts_dict[$('input[name=promptCheck1]:checked').val()] == myData_test['prompts_test'][11],
 		// attention: myData_test['datasets_test'][trialNumber][document.getElementById('trialSlider').value] == 0, //should be 0

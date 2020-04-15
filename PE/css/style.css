@@ -161,7 +161,7 @@ display:none;
   display: none;
 }
 
-#gif{
+#gif, #equalExample, #unequalExample{
   display: block;
   margin-left: auto;
   margin-right: auto;

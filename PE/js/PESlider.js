@@ -12,7 +12,6 @@ function sliderChange(val) {
 	generateDots(fullSet, myData_test['datasets_test'][trialNumber][parseInt(val) + jitter].black, 4);
 	generateDots(fullSet, myData_test['datasets_test'][trialNumber][parseInt(val) + jitter].mu, 5);
 	document.getElementById('next').disabled=false;
-	// document.getElementById('total').innerHTML = Math.round((myData[val].black+myData[val].hispanic+myData[val].white+myData[val].asian)/2);
 }
 
 

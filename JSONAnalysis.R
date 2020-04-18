@@ -3,7 +3,7 @@ library(tidyverse)
 #json.data = fromJSON("./sona-31385.json")
 
 #Read in and merge all json data files
-setwd("./data")
+setwd("./dataV2")
 file_list <- list.files()
 for (file in file_list){
   print(file)

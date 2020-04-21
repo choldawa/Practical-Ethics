@@ -1,0 +1,261 @@
+<!--
+TODO:
+<div>Icons made by <a href="https://www.flaticon.com/authors/freepik" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>
+ 
+
+Fix container for divs
+Make Slider interpolate wider range
+-->
+
+<!DOCTYPE html>
+<html>
+<html lang="en-US">
+<meta charset="UTF-8">
+
+<head>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://psyc241.ucsd.edu/jspsych-6.1.0/jspsych.js"></script>
+  <script src='js/PESlider.js'></script>
+  <script src='js/BuildJSON.js'></script>
+  <script src='js/Dots.js'></script>
+  <script type="text/javascript" src='js/dataio.js'></script>
+  <script src='js/config.js'></script>
+  <script src='js/client.js'></script>
+  <script src='js/Trial.js'></script>
+  <script src='js/ExperimentSetup.js'></script>
+  <script src='js/BuildPrompts.js'></script>
+  <script src='js/BuildData.js'></script>
+  <link rel="stylesheet" type="text/css" href="css/style.css" />
+</head>
+
+
+<body onload="pageLoad();">
+
+  <div id="consent" class="screen">
+    <h1 class="mtitle">University of California, San Diego<br>
+      Consent to act as a research subject</h1>
+    <p> The Computational Cognition Lab is conducting a this research program.
+      You have been asked to participate because you are an undergraduate here at UCSD. <br><br>
+      PROCEDURES. If you agree to participate in this study, the following will happen to you:<br>
+      1. You will sit at the computer and read a prompt.<br>
+      2. You will communicate your decision via a slider, then continue to the next question.<br><br>
+      RISKS. No potential risks or discomforts are anticipated except for the possibility that some tasks may be
+      slightly repetitive.<br><br>
+      PAYMENT/REMUNERATION. In consideration of your time and inconvenience, you will receive 1 hour of course credit.
+      The procedures and length of participation will last approximately one hour.<br><br>
+      RIGHTS. You may call the UCSD Human Research Protection Program at 858-657- 5100 to ask about your rights as a
+      research subject or to report research-related problems.<br><br>
+      BENEFITS. There will be no direct benefit to you from these procedures. However, the investigator may learn more
+      about basic questions pertaining to memory, perception, cognition, and learning. This knowledge may have benefits
+      to society in fields ranging from education to design of airplane cockpits, but these benefits will be
+      indirect.<br><br>
+      EXPLANATION. The researcher has explained this study to you and answered your questions. If you have questions or
+      research related problems, you may reach Edward Vul at 858-534- 4401.<br><br>
+      VOLUNTARY NATURE OF PARTICIPATION. Participation in research is entirely voluntary. You may refuse to participate
+      or withdraw at any time without penalty.<br><br>
+      CONFIDENTIALITY. Research records will be kept confidential to the extent allowed by law. As with all research,
+      there is also the possibility of loss of confidentiality. Information from participants will be identified by a
+      study number. The database which relates the study number to a specific subject will be maintained in the study
+      coordinators office.<br><br>
+      COPY OF CONSENT. You have received a copy of this consent document to keep and a copy of the Experimental Bill of
+      Rights.<br><br><br>
+      Click the button below if you agree to participate.</p>
+    <button class="big-button" onclick="clickConsent();"> Click here to consent and agree to participate</button>
+  </div>
+
+  <div id="instructions" class="screen">
+    <p class="mtitle" id="instructionHeader">
+      Welcome to the Machine Learning Trade-off Task.
+    </p>
+    <p class="mtitle">
+      We are working with an algorithm developer to understand human intuition on trade-offs in a variety of settings.
+      <br>
+      <br>
+      Sometimes these trade-offs are tricky, so we need your help to make better algorithms!
+      <br>
+      <br>
+
+
+    </p>
+    <p class="mtitle">
+      <br>
+    </p>
+
+    <button class="big-button" id="instructionButton" onclick="clickInstructions();">Click here to proceed</button>
+  </div>
+
+  <div id="instructionsCont" class="screen">
+    <p class="mtitle">
+      During this task you will be presented with several situations and decisions.
+      In each round, you will be asked to decide how to allocate resources to multiple groups, and some situations will
+      be repeated.
+
+    </p>
+
+    <br>
+    <p class="mtitle">
+      Please read each task completely. Also pay attention to how the numbers change, as this may not be the same for
+      each trial.
+    </p>
+    <button class="big-button" id="instructionsContButton" onclick="clickInstructionsCont();">Click here to proceed</button>
+  </div>
+
+  <div id="demo" class="screen">
+
+    <p class="mtitle">
+      The Task:
+      <br>
+      <br>
+      <p align="center">In each round you will move a slider to decide how a resource should be allocated. <br>
+        The icons indicate the percentage of each group receiving the resource.
+        The <strong>"Average"</strong> indicates the average across all groups.</p>
+      <br>
+      <IMG SRC="PE.gif" id="gif">
+    </p>
+    <p class="mtitle">
+      Once you have finished making your choice, you may proceed to the next round. <br>
+    </p>
+
+    <button class="big-button" id="demoButton" onclick="clickDemo();">Click here to proceed</button>
+  </div>
+
+  <div id="example" class="screen">
+
+    <p class="mtitle">
+      Example: 
+      <p align="center">Suppose you are signing people up to vote. Some groups of people live far away, so taking the time to go to their houses means less total people will be signed up. <br>
+        How should time be allocated in this scenario?
+        Here are two examples to explain how the slider works.</p>
+      <br>
+      <br>
+      <IMG SRC="EqualExample.png" id="equalExample">
+        <p align="center">Above, less total people get signed up, but each group is equally likely.</p>
+      <br>
+      <br>
+      <IMG SRC="UnequalExample.png" id="unequalExample">
+        <p align="center">Here, more TOTAL people get signed up, but some groups are less likely to be signed up.</p>
+  
+    </p>
+    <br>
+    <p class="mtitle">
+      You will make similar tradeoffs in this study. <br>
+    </p>
+    <button class="big-button" id="exampleButton" onclick="clickExample();">I understand, let's begin the study!</button>
+  </div>
+
+  <div id="prompt" class="screen">
+    <div id="preTrialText">uselesstext</div><br>
+    <button class="big-button" id="promptButton" onclick="clickPrompt();">I understand the prompt</button>
+  </div>
+
+  <div id="promptCheck1" class="screen">
+    <p>
+      What is this prompt asking about:<br>
+      <input type="radio" name="promptCheck1" value="loan"> Loans<br>
+      <input type="radio" name="promptCheck1" value="bail"> Bail<br>
+      <input type="radio" name="promptCheck1" value="meals"> Meals<br>
+      <input type="radio" name="promptCheck1" value="respirators"> Respirators<br>
+      <input type="radio" name="promptCheck1" value="newspapers"> Newspapers<br>
+      <input type="radio" name="promptCheck1" value="jobs"> Jobs<br>
+      <input type="radio" name="promptCheck1" value="other"> Other<br>
+    </p>
+    <br>
+    <button class="big-button" id="promptCheck1Button" onclick="clickPromptCheck1();">Submit</button>
+
+  </div>
+
+
+  <div id="promptCheck2" class="screen">
+    <p>
+      What is this prompt asking about:<br>
+      <input type="radio" name="promptCheck2" value="loan"> Loans<br>
+      <input type="radio" name="promptCheck2" value="bail"> Bail<br>
+      <input type="radio" name="promptCheck2" value="meals"> Meals<br>
+      <input type="radio" name="promptCheck2" value="respirators"> Respirators<br>
+      <input type="radio" name="promptCheck2" value="newspapers"> Newspapers<br>
+      <input type="radio" name="promptCheck1" value="jobs"> Jobs<br>
+      <input type="radio" name="promptCheck2" value="other"> Other<br>
+    </p>
+    <br>
+    <button class="big-button" id="promptCheck2Button" onclick="clickPromptCheck2();">Submit</button>
+
+  </div>
+
+  <div id="trial" class="screen">
+    <div id="trialText">uselesstext</div><br>
+    <!-- <span class='val' id="sliderVal"> 50 </span> -->
+    <input type="range" min="0" max="150" id="trialSlider" oninput="sliderChange(this.value)"><br>
+
+    <!-- <div class="container"> -->
+    <div class="block">
+      <div class="group" id="average"><strong>Average:</strong> </div>
+      <div class="container" id="container5"></div>
+      <div></div>
+    </div>
+    <div class="block">
+      <div class="group" id="test">Group 1:</div>
+      <div class="container" id="container1"></div>
+    </div>
+    <div class="block">
+      <div class="group">Group 2:</div>
+      <div class="container" id="container2"></div>
+    </div>
+    <div class="block">
+      <div class="group">Group 3:</div>
+      <div class="container" id="container3"></div>
+    </div>
+    <div class="block">
+      <div class="group">Group 4:</div>
+      <div class="container" id="container4"></div>
+    </div>
+    <!-- <div class = "block">
+      <div class="bonus" id= "bonusField">Bonus:</div>
+      <div class="bonus" id="bonusAmount"> HIDDEN</div>
+    </div> -->
+    <!-- </div> -->
+    <button class="big-button" id="next" onclick="trialDone();">Done!</button>
+  </div>
+  <!-- Debriefing
+NOT FUNCTIONAL -->
+  <div id="debriefing">
+    <p>
+      Enter your demographics information here:
+    </p>
+    <p>
+      Age: <input type="number" id="age">
+    </p>
+    <p>
+      Gender:<br>
+      <input type="radio" name="gender" value="male"> Male<br>
+      <input type="radio" name="gender" value="female"> Female<br>
+      <input type="radio" name="gender" value="other"> Other<br>
+    </p>
+    <p>
+      Please tell us about your strategies: <br>
+      <textarea id="strategies" rows="4" cols="80"></textarea>
+    </p>
+    <p>
+      Please share your thoughts on the experiment: <br>
+      <textarea id="thoughts" rows="4" cols="80"></textarea>
+    </p>
+    <!-- <p>
+        Are you an undergrad student, grad student or postdoc?
+        <select id="kindOfStudent"> 
+          <option value="undergrad">Undergrad</option>
+          <option value="grad">Grad</option>
+          <option value="postdoc">Postdoc</option>
+        </select>
+      </p> -->
+
+    <button id="doneWithDebriefing">
+      Submit
+    </button>
+  </div>
+
+  <div id="done" class="screen">
+    <button class="big-button" id="finished" onclick="experimentDone();">Finished!</button>
+  </div>
+
+</body>
+
+</html>

@@ -22,7 +22,9 @@ for (file in file_list){
                          json.data[["trials"]][["chosenData"]][["mu"]],
                          json.data[["trials"]][["chosenData"]][["tradeoff"]],
                          json.data[["trials"]][["chosenData"]][["p"]],
-                         json.data[["trials"]][["jitter"]])
+                         json.data[["trials"]][["jitter"]],
+                         json.data[["subjectData"]][["promptCheck1"]],
+                         json.data[["subjectData"]][["promptCheck2"]])
     df_full$id = json.data[["client"]][["sid"]]
   }
  
@@ -40,7 +42,9 @@ for (file in file_list){
                               json.data[["trials"]][["chosenData"]][["mu"]],
                               json.data[["trials"]][["chosenData"]][["tradeoff"]],
                               json.data[["trials"]][["chosenData"]][["p"]],
-                              json.data[["trials"]][["jitter"]])
+                              json.data[["trials"]][["jitter"]],
+                              json.data[["subjectData"]][["promptCheck1"]],
+                              json.data[["subjectData"]][["promptCheck2"]])
     temp_dataset$id = json.data[["client"]][["sid"]]
     df_full = rbind(df_full, temp_dataset)
     rm(temp_dataset)
@@ -48,14 +52,26 @@ for (file in file_list){
 }
 
 df = df_full %>% distinct()
-colnames(df) = c("response","att", "trialNumber", "prompt", "g1","g2","g3","g4", "mu", "tradeoff", "p", "jitter", "id")
+colnames(df) = c("response","att", "trialNumber", "prompt", "g1","g2","g3","g4", "mu", "tradeoff", "p", "jitter", "check1", "check2", "id")
 df$response = as.numeric(as.character(df$response))
 #variance of response
 df = df %>% 
   mutate(var = pmap_dbl(list(g1,g2,g3,g4), ~ var(c(...))))
 df$sd = sqrt(df$var)
 #attention checks
-df %>% select(att,response, id, trialNumber) %>%  filter(att == 1)
+df30 = df %>% select(att, p, id, trialNumber) %>%  filter(att == 1, trialNumber ==5)
+df30$diff = abs(df30$p-30)
+df60 = df %>% select(att, p, id, trialNumber) %>%  filter(att == 1, trialNumber ==25)
+df60$diff = abs(df60$p-60) 
+table(df60$diff)
+ggplot(df60, aes(diff)) +
+  geom_histogram(bins = 15)
+
+# includeID60 = df60[df60$diff<=20,"id"]
+# includeID30 = df30[df30$diff<=20,"id"]
+# 
+# df = df %>% filter(id %in% c(includeID60,includeID30) )
+df = df %>% filter(check1+check2 >0)
 #json.data[[2]][["promptCheck1"]]+json.data[[2]][["promptCheck2"]]
 
 
@@ -115,8 +131,11 @@ df %>% mutate(tradeoff = fct_relevel(tradeoff,
   ggtitle("latentEquality by Prompt and Tradeoff")
 
 #Distribution of responses
-ggplot(df, aes(p)) +
-  geom_histogram(bins = 15) +facet_grid(.~tradeoff)
+df %>% mutate(name = fct_relevel(tradeoff, 
+                                 "low", 
+                                 "med", 
+                                 "high")) %>% ggplot(aes(p)) +
+  geom_histogram(bins = 15) +facet_grid(.~name)
 
 ggplot(df, aes(x = trialNumber, y = p))+
   geom_point()+

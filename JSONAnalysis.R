@@ -5,7 +5,10 @@ library(tidyverse)
 #Read in and merge all json data files
 setwd(dirname(rstudioapi::getActiveDocumentContext()$path))
 setwd("./data")
-file_list <- list.files()
+file_list = list.files()
+setwd(dirname(rstudioapi::getActiveDocumentContext()$path))
+setwd("./dataV3V4combined")
+file_list = list.files()
 for (file in file_list){
   print(file)
   # if the merged dataset doesn't exist, create it
@@ -52,20 +55,20 @@ for (file in file_list){
 }
 
 df = df_full %>% distinct()
-colnames(df) = c("response","att", "trialNumber", "prompt", "g1","g2","g3","g4", "mu", "tradeoff", "p", "jitter", "check1", "check2", "id")
+colnames(df) = c("response","att", "trialNumber", "prompt", "g1","g2","g3","g4", "mu", "tradeoff", "p", "jitter","check1", "check2", "id")
 df$response = as.numeric(as.character(df$response))
 #variance of response
 df = df %>% 
   mutate(var = pmap_dbl(list(g1,g2,g3,g4), ~ var(c(...))))
 df$sd = sqrt(df$var)
 #attention checks
-df30 = df %>% select(att, p, id, trialNumber) %>%  filter(att == 1, trialNumber ==5)
-df30$diff = abs(df30$p-30)
-df60 = df %>% select(att, p, id, trialNumber) %>%  filter(att == 1, trialNumber ==25)
-df60$diff = abs(df60$p-60) 
-table(df60$diff)
-ggplot(df60, aes(diff)) +
-  geom_histogram(bins = 15)
+# df30 = df %>% select(att, p, id, trialNumber) %>%  filter(att == 1, trialNumber ==5)
+# df30$diff = abs(df30$p-30)
+# df60 = df %>% select(att, p, id, trialNumber) %>%  filter(att == 1, trialNumber ==25)
+# df60$diff = abs(df60$p-60) 
+# table(df60$diff)
+# ggplot(df60, aes(diff)) +
+#   geom_histogram(bins = 15)
 
 # includeID60 = df60[df60$diff<=20,"id"]
 # includeID30 = df30[df30$diff<=20,"id"]
@@ -85,7 +88,7 @@ df$prompt.type <- ifelse(grepl("loan", df$prompt, ignore.case = T), "loan",
 df$tradeoff <- ifelse(grepl("LOW", df$tradeoff, ignore.case = T), "low", 
                          ifelse(grepl("MED", df$tradeoff, ignore.case = T), "med","high"))
 
-df$respJitter = df$response+df$jitter
+#df$respJitter = df$response+df$jitter
 #df$latentEquality = df$response+df$jitter-50
 
 ##remove attention trials
@@ -104,11 +107,11 @@ df %>% mutate(name = fct_relevel(tradeoff,
 
 df %>% mutate(name = fct_relevel(prompt.type, 
                                  "bail", 
-                                 "job",
-                                 "newspaper",
                                  "meals",
+                                 "newspaper",
                                  "loan",
-                                 "respirator")) %>%
+                                 "respirator",
+                                 "job")) %>%
 ggerrorplot(x = "name", y = "p", 
             desc_stat = "mean_se")+
   ggtitle("latentEquality Distribution by Prompt")
@@ -119,11 +122,11 @@ df %>% mutate(tradeoff = fct_relevel(tradeoff,
                             "high"),
               prompt = fct_relevel(prompt.type, 
                                    "bail", 
-                                   "job",
-                                   "newspaper",
                                    "meals",
+                                   "newspaper",
+                                   "respirator",
                                    "loan",
-                                   "respirator")) %>% 
+                                   "job")) %>% 
   ggerrorplot(x = "prompt", y = "p", 
             desc_stat = "mean_se") + 
   facet_grid(.~tradeoff)+

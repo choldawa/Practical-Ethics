@@ -1,0 +1,9 @@
+var prompts = ["A bank must decide who to give home loans to. Only 10% of the loans can default and some groups are more likely to default than others, so giving loans to some people may result in less loans for others. How should the loans be allocated?",
+ "A local newspaper company is trying to decide how to divide up the paper routes. Some groups of delivery people are faster than others, and if too many papers don't get delivered, customers get angry. Giving more to one group may mean less for others.  How should they divide up the routes?",
+ "A local courthouse is deciding who to give bail to. Their goal is to maintain a constant level of public safety. Some groups are more likely to commit crimes than others. Giving bail to some people may mean not giving bail to others. How should they allocate bail?",
+"A corporate recruiter is seeking to fill a position at their company. They have limited recruiting budget, and each group uses different job search services, each with different success rates at delivering qualified applicants. The values below show the number of applicants in each group for a fixed advertising budget. How should they allocate their advertising dollars?",
+"Meals on Wheels is tasked with delivering meals to homebound persons. Their time and reseources are limited, and some groups live further away, so delivering to some groups may mean less deliveries to others. Numbers below represent how many meals are given to each group. How should they allocate their time for deliveries?"];
+
+  var promptsShuffled = jsPsych.randomization.shuffle(prompts); //use the shuffled array
+
+  // var promptCatch = ["A bank must decide who to give home loans to. Their brillaint Loan Officer, Tom Hanks thinks they should deliver loans in a very extreme manner. How should the loans be allocated?"];

@@ -1,0 +1,659 @@
+{
+    "client": {
+        "type": "sona",
+        "experiment_id": 1814,
+        "credit_token": "8adb3035e40c4a07b9be9d24519a0b6c",
+        "survey_code": "25700",
+        "sid": "sona-25700",
+        "window": {
+            "width": 1595,
+            "height": 1075
+        },
+        "screen": {
+            "width": 2560,
+            "height": 1440
+        },
+        "userAgent": "Mozilla\/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/75.0.3770.142 Safari\/537.36",
+        "score": 0,
+        "bonus": 0
+    },
+    "subjectData": [
+        {
+            "subjectId": "CH541113",
+            "ExperimentVersion": 2,
+            "promptCheck1": true,
+            "promptCheck2": false,
+            "age": "21",
+            "gender": "female",
+            "thoughts": "",
+            "strategies": "",
+            "userAgent": "Mozilla\/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/75.0.3770.142 Safari\/537.36"
+        }
+    ],
+    "trials": [
+        {
+            "att": 0,
+            "trialNumber": 0,
+            "chosenData": {
+                "g1": 63,
+                "g2": 60,
+                "g3": 58,
+                "g4": 56,
+                "mu": 59.25,
+                "tradeoff": "LOW: g1:660, g2:620, g3:580, g4:540 (SD:200)",
+                "p": 72
+            },
+            "prompt": "A bank must decide who to give <font color='red'> <b>home loans <\/b> <\/font> to. Only 10% of the loans can default and some groups are more likely to default than others, so giving loans to some people may result in less loans for others. <font color='red'><b>How should the loans be allocated?<\/b> <\/font>",
+            "jitter": 10,
+            "response": "92"
+        },
+        {
+            "att": 0,
+            "trialNumber": 1,
+            "chosenData": {
+                "g1": 71,
+                "g2": 55,
+                "g3": 39,
+                "g4": 24,
+                "mu": 47.25,
+                "tradeoff": "HIGH: g1:920, g2:707, g3:493, g4:280 (SD = 200)",
+                "p": 61
+            },
+            "prompt": "Meals on Wheels is tasked with delivering <font color='red'> <b> meals to homebound persons<\/b><\/font>. Their time and resources are limited, and some groups live further away, so delivering to some groups may mean less deliveries to others. The numbers below represent how many meals are given to each group. <font color='red'><b>How should they allocate their time for deliveries?<\/b><\/font>",
+            "jitter": 10,
+            "response": "81"
+        },
+        {
+            "att": 0,
+            "trialNumber": 2,
+            "chosenData": {
+                "g1": 64,
+                "g2": 61,
+                "g3": 58,
+                "g4": 55,
+                "mu": 59.5,
+                "tradeoff": "LOW: g1:660, g2:620, g3:580, g4:540 (SD:200)",
+                "p": 65
+            },
+            "prompt": "Meals on Wheels is tasked with delivering <font color='red'> <b> meals to homebound persons<\/b><\/font>. Their time and resources are limited, and some groups live further away, so delivering to some groups may mean less deliveries to others. The numbers below represent how many meals are given to each group. <font color='red'><b>How should they allocate their time for deliveries?<\/b><\/font>",
+            "jitter": 10,
+            "response": "85"
+        },
+        {
+            "att": 0,
+            "trialNumber": 3,
+            "chosenData": {
+                "g1": 28,
+                "g2": 28,
+                "g3": 28,
+                "g4": 28,
+                "mu": 28,
+                "tradeoff": "HIGH: g1:920, g2:707, g3:493, g4:280 (SD = 200)",
+                "p": 100
+            },
+            "prompt": "A local hospital has a shortage of <font color='red'> <b>respirators for patients during the COVID-19 outbreak<\/b><\/font>. Some patients are more likely to be on respirators for longer than others, so less patients will be able to use one. The numbers below represent the number of patients receiving respirators. <font color='red'><b>How should the hospital allocate their respirators? <\/b>  <\/font>",
+            "jitter": 0,
+            "response": "130"
+        },
+        {
+            "att": 0,
+            "trialNumber": 4,
+            "chosenData": {
+                "g1": 73,
+                "g2": 65,
+                "g3": 56,
+                "g4": 47,
+                "mu": 60.25,
+                "tradeoff": "LOW: g1:660, g2:620, g3:580, g4:540 (SD:200)",
+                "p": -14
+            },
+            "prompt": "A local newspaper company is trying to decide how to <font color='red'> <b> divide up the paper routes<\/b><\/font>. Some groups of delivery people are faster than others, and if too many papers don't get delivered, customers get angry. Giving more to one delivery group may mean less for others. The icons below show how many routes are given to each group. <font color='red'><b>How should they divide up the routes?<\/b><\/font>",
+            "jitter": 0,
+            "response": "16"
+        },
+        {
+            "att": 1,
+            "trialNumber": 5,
+            "chosenData": {
+                "g1": 74.3333,
+                "g2": 64.3333,
+                "g3": 54.3333,
+                "g4": 44.3333,
+                "mu": 59.3333,
+                "tradeoff": "MAX at 30",
+                "p": 31
+            },
+            "prompt": "A corporate recruiter is seeking to <font color='red'> <b> fill a position at their company<\/b><\/font>. They have limited recruiting budget, and each group uses different job search services, each with different success rates at delivering qualified applicants. The values below show the number of applicants in each group for a fixed advertising budget. <font color='red'><b>How should they allocate their advertising dollars?<\/b><\/font>",
+            "jitter": 10,
+            "response": "51"
+        },
+        {
+            "att": 0,
+            "trialNumber": 6,
+            "chosenData": {
+                "g1": 89,
+                "g2": 70,
+                "g3": 43,
+                "g4": 19,
+                "mu": 55.25,
+                "tradeoff": "HIGH: g1:920, g2:707, g3:493, g4:280 (SD = 200)",
+                "p": 35
+            },
+            "prompt": "A bank must decide who to give <font color='red'> <b>home loans <\/b> <\/font> to. Only 10% of the loans can default and some groups are more likely to default than others, so giving loans to some people may result in less loans for others. <font color='red'><b>How should the loans be allocated?<\/b> <\/font>",
+            "jitter": 0,
+            "response": "65"
+        },
+        {
+            "att": 1,
+            "trialNumber": 7,
+            "chosenData": {
+                "g1": 73,
+                "g2": 65,
+                "g3": 56,
+                "g4": 46,
+                "mu": 60,
+                "tradeoff": "LOW: g1:660, g2:620, g3:580, g4:540 (SD:200)",
+                "p": -20
+            },
+            "prompt": "A local hospital has a shortage of <font color='red'> <b>respirators for patients during the COVID-19 outbreak<\/b><\/font>. Some patients are more likely to be on respirators for longer than others, so less patients will be able to use one. The numbers below represent the number of patients receiving respirators. <font color='red'><b>This is a test trial to help calibrate your responses. Please move your slider all the way to the left. Thank you. <\/b>  <\/font>",
+            "jitter": 10,
+            "response": "0"
+        },
+        {
+            "att": 0,
+            "trialNumber": 8,
+            "chosenData": {
+                "g1": 92,
+                "g2": 73,
+                "g3": 44,
+                "g4": 17,
+                "mu": 56.5,
+                "tradeoff": "HIGH: g1:920, g2:707, g3:493, g4:280 (SD = 200)",
+                "p": 27
+            },
+            "prompt": "A bank must decide who to give <font color='red'> <b>home loans <\/b> <\/font> to. Only 10% of the loans can default and some groups are more likely to default than others, so giving loans to some people may result in less loans for others. <font color='red'><b>How should the loans be allocated?<\/b> <\/font>",
+            "jitter": 20,
+            "response": "37"
+        },
+        {
+            "att": 0,
+            "trialNumber": 9,
+            "chosenData": {
+                "g1": 70,
+                "g2": 63,
+                "g3": 57,
+                "g4": 50,
+                "mu": 60,
+                "tradeoff": "LOW: g1:660, g2:620, g3:580, g4:540 (SD:200)",
+                "p": 14
+            },
+            "prompt": "A corporate recruiter is seeking to <font color='red'> <b> fill a position at their company<\/b><\/font>. They have limited recruiting budget, and each group uses different job search services, each with different success rates at delivering qualified applicants. The values below show the number of applicants in each group for a fixed advertising budget. <font color='red'><b>How should they allocate their advertising dollars?<\/b><\/font>",
+            "jitter": 20,
+            "response": "24"
+        },
+        {
+            "att": 0,
+            "trialNumber": 10,
+            "chosenData": {
+                "g1": 62,
+                "g2": 60,
+                "g3": 58,
+                "g4": 56,
+                "mu": 59,
+                "tradeoff": "LOW: g1:660, g2:620, g3:580, g4:540 (SD:200)",
+                "p": 76
+            },
+            "prompt": "Meals on Wheels is tasked with delivering <font color='red'> <b> meals to homebound persons<\/b><\/font>. Their time and resources are limited, and some groups live further away, so delivering to some groups may mean less deliveries to others. The numbers below represent how many meals are given to each group. <font color='red'><b>How should they allocate their time for deliveries?<\/b><\/font>",
+            "jitter": 20,
+            "response": "86"
+        },
+        {
+            "att": 0,
+            "trialNumber": 11,
+            "chosenData": {
+                "g1": 59,
+                "g2": 59,
+                "g3": 59,
+                "g4": 59,
+                "mu": 59,
+                "tradeoff": "LOW: g1:660, g2:620, g3:580, g4:540 (SD:200)",
+                "p": 100
+            },
+            "prompt": "A local hospital has a shortage of <font color='red'> <b>respirators for patients during the COVID-19 outbreak<\/b><\/font>. Some patients are more likely to be on respirators for longer than others, so less patients will be able to use one. The numbers below represent the number of patients receiving respirators. <font color='red'><b>How should the hospital allocate their respirators? <\/b>  <\/font>",
+            "jitter": 0,
+            "response": "130"
+        },
+        {
+            "att": 0,
+            "trialNumber": 12,
+            "chosenData": {
+                "g1": 74,
+                "g2": 65,
+                "g3": 55,
+                "g4": 45,
+                "mu": 59.75,
+                "tradeoff": "LOW: g1:660, g2:620, g3:580, g4:540 (SD:200)",
+                "p": -30
+            },
+            "prompt": "A <font color='red'> <b> local courthouse is deciding who to give bail to<\/b><\/font>. Their goal is to maintain a constant level of public safety. Some groups are more likely to commit crimes than others. Giving bail to some people may mean not giving bail to others. The icons below show the percentage of each group receiving bail. <font color='red'><b>How should they allocate bail?<\/b><\/font>",
+            "jitter": 0,
+            "response": "0"
+        },
+        {
+            "att": 0,
+            "trialNumber": 13,
+            "chosenData": {
+                "g1": 28,
+                "g2": 28,
+                "g3": 28,
+                "g4": 28,
+                "mu": 28,
+                "tradeoff": "HIGH: g1:920, g2:707, g3:493, g4:280 (SD = 200)",
+                "p": 100
+            },
+            "prompt": "A local hospital has a shortage of <font color='red'> <b>respirators for patients during the COVID-19 outbreak<\/b><\/font>. Some patients are more likely to be on respirators for longer than others, so less patients will be able to use one. The numbers below represent the number of patients receiving respirators. <font color='red'><b>How should the hospital allocate their respirators? <\/b>  <\/font>",
+            "jitter": 0,
+            "response": "130"
+        },
+        {
+            "att": 0,
+            "trialNumber": 14,
+            "chosenData": {
+                "g1": 83,
+                "g2": 64,
+                "g3": 42,
+                "g4": 22,
+                "mu": 52.75,
+                "tradeoff": "HIGH: g1:920, g2:707, g3:493, g4:280 (SD = 200)",
+                "p": 46
+            },
+            "prompt": "A corporate recruiter is seeking to <font color='red'> <b> fill a position at their company<\/b><\/font>. They have limited recruiting budget, and each group uses different job search services, each with different success rates at delivering qualified applicants. The values below show the number of applicants in each group for a fixed advertising budget. <font color='red'><b>How should they allocate their advertising dollars?<\/b><\/font>",
+            "jitter": 0,
+            "response": "76"
+        },
+        {
+            "att": 0,
+            "trialNumber": 15,
+            "chosenData": {
+                "g1": 46,
+                "g2": 46,
+                "g3": 46,
+                "g4": 46,
+                "mu": 46,
+                "tradeoff": "MED: g1:800, g2:633, g3:567, g4:400 (SD:567)",
+                "p": 100
+            },
+            "prompt": "A local hospital has a shortage of <font color='red'> <b>respirators for patients during the COVID-19 outbreak<\/b><\/font>. Some patients are more likely to be on respirators for longer than others, so less patients will be able to use one. The numbers below represent the number of patients receiving respirators. <font color='red'><b>How should the hospital allocate their respirators? <\/b>  <\/font>",
+            "jitter": 0,
+            "response": "130"
+        },
+        {
+            "att": 0,
+            "trialNumber": 16,
+            "chosenData": {
+                "g1": 84,
+                "g2": 65,
+                "g3": 55,
+                "g4": 31,
+                "mu": 58.75,
+                "tradeoff": "MED: g1:800, g2:633, g3:567, g4:400 (SD:567)",
+                "p": 24
+            },
+            "prompt": "A bank must decide who to give <font color='red'> <b>home loans <\/b> <\/font> to. Only 10% of the loans can default and some groups are more likely to default than others, so giving loans to some people may result in less loans for others. <font color='red'><b>How should the loans be allocated?<\/b> <\/font>",
+            "jitter": 20,
+            "response": "34"
+        },
+        {
+            "att": 0,
+            "trialNumber": 17,
+            "chosenData": {
+                "g1": 60,
+                "g2": 53,
+                "g3": 50,
+                "g4": 43,
+                "mu": 51.5,
+                "tradeoff": "MED: g1:800, g2:633, g3:567, g4:400 (SD:567)",
+                "p": 78
+            },
+            "prompt": "Meals on Wheels is tasked with delivering <font color='red'> <b> meals to homebound persons<\/b><\/font>. Their time and resources are limited, and some groups live further away, so delivering to some groups may mean less deliveries to others. The numbers below represent how many meals are given to each group. <font color='red'><b>How should they allocate their time for deliveries?<\/b><\/font>",
+            "jitter": 0,
+            "response": "108"
+        },
+        {
+            "att": 0,
+            "trialNumber": 18,
+            "chosenData": {
+                "g1": 88,
+                "g2": 67,
+                "g3": 55,
+                "g4": 27,
+                "mu": 59.25,
+                "tradeoff": "MED: g1:800, g2:633, g3:567, g4:400 (SD:567)",
+                "p": 10
+            },
+            "prompt": "A local newspaper company is trying to decide how to <font color='red'> <b> divide up the paper routes<\/b><\/font>. Some groups of delivery people are faster than others, and if too many papers don't get delivered, customers get angry. Giving more to one delivery group may mean less for others. The icons below show how many routes are given to each group. <font color='red'><b>How should they divide up the routes?<\/b><\/font>",
+            "jitter": 20,
+            "response": "20"
+        },
+        {
+            "att": 0,
+            "trialNumber": 19,
+            "chosenData": {
+                "g1": 73,
+                "g2": 59,
+                "g3": 53,
+                "g4": 38,
+                "mu": 55.75,
+                "tradeoff": "MED: g1:800, g2:633, g3:567, g4:400 (SD:567)",
+                "p": 54
+            },
+            "prompt": "A corporate recruiter is seeking to <font color='red'> <b> fill a position at their company<\/b><\/font>. They have limited recruiting budget, and each group uses different job search services, each with different success rates at delivering qualified applicants. The values below show the number of applicants in each group for a fixed advertising budget. <font color='red'><b>How should they allocate their advertising dollars?<\/b><\/font>",
+            "jitter": 0,
+            "response": "84"
+        },
+        {
+            "att": 0,
+            "trialNumber": 20,
+            "chosenData": {
+                "g1": 88,
+                "g2": 67,
+                "g3": 55,
+                "g4": 27,
+                "mu": 59.25,
+                "tradeoff": "MED: g1:800, g2:633, g3:567, g4:400 (SD:567)",
+                "p": 10
+            },
+            "prompt": "A local newspaper company is trying to decide how to <font color='red'> <b> divide up the paper routes<\/b><\/font>. Some groups of delivery people are faster than others, and if too many papers don't get delivered, customers get angry. Giving more to one delivery group may mean less for others. The icons below show how many routes are given to each group. <font color='red'><b>How should they divide up the routes?<\/b><\/font>",
+            "jitter": 0,
+            "response": "40"
+        },
+        {
+            "att": 0,
+            "trialNumber": 21,
+            "chosenData": {
+                "g1": 59,
+                "g2": 59,
+                "g3": 59,
+                "g4": 59,
+                "mu": 59,
+                "tradeoff": "LOW: g1:660, g2:620, g3:580, g4:540 (SD:200)",
+                "p": 100
+            },
+            "prompt": "A local hospital has a shortage of <font color='red'> <b>respirators for patients during the COVID-19 outbreak<\/b><\/font>. Some patients are more likely to be on respirators for longer than others, so less patients will be able to use one. The numbers below represent the number of patients receiving respirators. <font color='red'><b>How should the hospital allocate their respirators? <\/b>  <\/font>",
+            "jitter": 0,
+            "response": "130"
+        },
+        {
+            "att": 0,
+            "trialNumber": 22,
+            "chosenData": {
+                "g1": 92,
+                "g2": 69,
+                "g3": 55,
+                "g4": 21,
+                "mu": 59.25,
+                "tradeoff": "MED: g1:800, g2:633, g3:567, g4:400 (SD:567)",
+                "p": -11
+            },
+            "prompt": "A bank must decide who to give <font color='red'> <b>home loans <\/b> <\/font> to. Only 10% of the loans can default and some groups are more likely to default than others, so giving loans to some people may result in less loans for others. <font color='red'><b>How should the loans be allocated?<\/b> <\/font>",
+            "jitter": 0,
+            "response": "19"
+        },
+        {
+            "att": 0,
+            "trialNumber": 23,
+            "chosenData": {
+                "g1": 74,
+                "g2": 65,
+                "g3": 55,
+                "g4": 45,
+                "mu": 59.75,
+                "tradeoff": "LOW: g1:660, g2:620, g3:580, g4:540 (SD:200)",
+                "p": -30
+            },
+            "prompt": "A <font color='red'> <b> local courthouse is deciding who to give bail to<\/b><\/font>. Their goal is to maintain a constant level of public safety. Some groups are more likely to commit crimes than others. Giving bail to some people may mean not giving bail to others. The icons below show the percentage of each group receiving bail. <font color='red'><b>How should they allocate bail?<\/b><\/font>",
+            "jitter": 0,
+            "response": "0"
+        },
+        {
+            "att": 0,
+            "trialNumber": 24,
+            "chosenData": {
+                "g1": 46,
+                "g2": 46,
+                "g3": 46,
+                "g4": 46,
+                "mu": 46,
+                "tradeoff": "MED: g1:800, g2:633, g3:567, g4:400 (SD:567)",
+                "p": 99
+            },
+            "prompt": "A local hospital has a shortage of <font color='red'> <b>respirators for patients during the COVID-19 outbreak<\/b><\/font>. Some patients are more likely to be on respirators for longer than others, so less patients will be able to use one. The numbers below represent the number of patients receiving respirators. <font color='red'><b>How should the hospital allocate their respirators? <\/b>  <\/font>",
+            "jitter": 20,
+            "response": "109"
+        },
+        {
+            "att": 1,
+            "trialNumber": 25,
+            "chosenData": {
+                "g1": 70.6,
+                "g2": 60.6,
+                "g3": 50.6,
+                "g4": 40.6,
+                "mu": 55.6,
+                "tradeoff": "MAX at 60",
+                "p": 59
+            },
+            "prompt": "A local newspaper company is trying to decide how to <font color='red'> <b> divide up the paper routes<\/b><\/font>. Some groups of delivery people are faster than others, and if too many papers don't get delivered, customers get angry. Giving more to one delivery group may mean less for others. The icons below show how many routes are given to each group. <font color='red'><b>How should they divide up the routes?<\/b><\/font>",
+            "jitter": 0,
+            "response": "89"
+        },
+        {
+            "att": 0,
+            "trialNumber": 26,
+            "chosenData": {
+                "g1": 87,
+                "g2": 66,
+                "g3": 55,
+                "g4": 28,
+                "mu": 59,
+                "tradeoff": "MED: g1:800, g2:633, g3:567, g4:400 (SD:567)",
+                "p": 14
+            },
+            "prompt": "A <font color='red'> <b> local courthouse is deciding who to give bail to<\/b><\/font>. Their goal is to maintain a constant level of public safety. Some groups are more likely to commit crimes than others. Giving bail to some people may mean not giving bail to others. The icons below show the percentage of each group receiving bail. <font color='red'><b>How should they allocate bail?<\/b><\/font>",
+            "jitter": 20,
+            "response": "24"
+        },
+        {
+            "att": 0,
+            "trialNumber": 27,
+            "chosenData": {
+                "g1": 86,
+                "g2": 67,
+                "g3": 42,
+                "g4": 21,
+                "mu": 54,
+                "tradeoff": "HIGH: g1:920, g2:707, g3:493, g4:280 (SD = 200)",
+                "p": 41
+            },
+            "prompt": "A local newspaper company is trying to decide how to <font color='red'> <b> divide up the paper routes<\/b><\/font>. Some groups of delivery people are faster than others, and if too many papers don't get delivered, customers get angry. Giving more to one delivery group may mean less for others. The icons below show how many routes are given to each group. <font color='red'><b>How should they divide up the routes?<\/b><\/font>",
+            "jitter": 0,
+            "response": "71"
+        },
+        {
+            "att": 0,
+            "trialNumber": 28,
+            "chosenData": {
+                "g1": 71,
+                "g2": 55,
+                "g3": 39,
+                "g4": 24,
+                "mu": 47.25,
+                "tradeoff": "HIGH: g1:920, g2:707, g3:493, g4:280 (SD = 200)",
+                "p": 61
+            },
+            "prompt": "A corporate recruiter is seeking to <font color='red'> <b> fill a position at their company<\/b><\/font>. They have limited recruiting budget, and each group uses different job search services, each with different success rates at delivering qualified applicants. The values below show the number of applicants in each group for a fixed advertising budget. <font color='red'><b>How should they allocate their advertising dollars?<\/b><\/font>",
+            "jitter": 20,
+            "response": "71"
+        },
+        {
+            "att": 0,
+            "trialNumber": 29,
+            "chosenData": {
+                "g1": 86,
+                "g2": 67,
+                "g3": 42,
+                "g4": 21,
+                "mu": 54,
+                "tradeoff": "HIGH: g1:920, g2:707, g3:493, g4:280 (SD = 200)",
+                "p": 41
+            },
+            "prompt": "A local newspaper company is trying to decide how to <font color='red'> <b> divide up the paper routes<\/b><\/font>. Some groups of delivery people are faster than others, and if too many papers don't get delivered, customers get angry. Giving more to one delivery group may mean less for others. The icons below show how many routes are given to each group. <font color='red'><b>How should they divide up the routes?<\/b><\/font>",
+            "jitter": 10,
+            "response": "61"
+        },
+        {
+            "att": 0,
+            "trialNumber": 30,
+            "chosenData": {
+                "g1": 71,
+                "g2": 64,
+                "g3": 56,
+                "g4": 48,
+                "mu": 59.75,
+                "tradeoff": "LOW: g1:660, g2:620, g3:580, g4:540 (SD:200)",
+                "p": 0
+            },
+            "prompt": "A corporate recruiter is seeking to <font color='red'> <b> fill a position at their company<\/b><\/font>. They have limited recruiting budget, and each group uses different job search services, each with different success rates at delivering qualified applicants. The values below show the number of applicants in each group for a fixed advertising budget. <font color='red'><b>How should they allocate their advertising dollars?<\/b><\/font>",
+            "jitter": 0,
+            "response": "30"
+        },
+        {
+            "att": 0,
+            "trialNumber": 31,
+            "chosenData": {
+                "g1": 54,
+                "g2": 50,
+                "g3": 48,
+                "g4": 44,
+                "mu": 49,
+                "tradeoff": "MED: g1:800, g2:633, g3:567, g4:400 (SD:567)",
+                "p": 87
+            },
+            "prompt": "Meals on Wheels is tasked with delivering <font color='red'> <b> meals to homebound persons<\/b><\/font>. Their time and resources are limited, and some groups live further away, so delivering to some groups may mean less deliveries to others. The numbers below represent how many meals are given to each group. <font color='red'><b>How should they allocate their time for deliveries?<\/b><\/font>",
+            "jitter": 10,
+            "response": "107"
+        },
+        {
+            "att": 0,
+            "trialNumber": 32,
+            "chosenData": {
+                "g1": 83,
+                "g2": 64,
+                "g3": 55,
+                "g4": 32,
+                "mu": 58.5,
+                "tradeoff": "MED: g1:800, g2:633, g3:567, g4:400 (SD:567)",
+                "p": 28
+            },
+            "prompt": "A corporate recruiter is seeking to <font color='red'> <b> fill a position at their company<\/b><\/font>. They have limited recruiting budget, and each group uses different job search services, each with different success rates at delivering qualified applicants. The values below show the number of applicants in each group for a fixed advertising budget. <font color='red'><b>How should they allocate their advertising dollars?<\/b><\/font>",
+            "jitter": 10,
+            "response": "48"
+        },
+        {
+            "att": 0,
+            "trialNumber": 33,
+            "chosenData": {
+                "g1": 73,
+                "g2": 65,
+                "g3": 56,
+                "g4": 46,
+                "mu": 60,
+                "tradeoff": "LOW: g1:660, g2:620, g3:580, g4:540 (SD:200)",
+                "p": -20
+            },
+            "prompt": "A bank must decide who to give <font color='red'> <b>home loans <\/b> <\/font> to. Only 10% of the loans can default and some groups are more likely to default than others, so giving loans to some people may result in less loans for others. <font color='red'><b>How should the loans be allocated?<\/b> <\/font>",
+            "jitter": 10,
+            "response": "0"
+        },
+        {
+            "att": 0,
+            "trialNumber": 34,
+            "chosenData": {
+                "g1": 80,
+                "g2": 62,
+                "g3": 41,
+                "g4": 22,
+                "mu": 51.25,
+                "tradeoff": "HIGH: g1:920, g2:707, g3:493, g4:280 (SD = 200)",
+                "p": 50
+            },
+            "prompt": "Meals on Wheels is tasked with delivering <font color='red'> <b> meals to homebound persons<\/b><\/font>. Their time and resources are limited, and some groups live further away, so delivering to some groups may mean less deliveries to others. The numbers below represent how many meals are given to each group. <font color='red'><b>How should they allocate their time for deliveries?<\/b><\/font>",
+            "jitter": 10,
+            "response": "70"
+        },
+        {
+            "att": 0,
+            "trialNumber": 35,
+            "chosenData": {
+                "g1": 72,
+                "g2": 64,
+                "g3": 56,
+                "g4": 47,
+                "mu": 59.75,
+                "tradeoff": "LOW: g1:660, g2:620, g3:580, g4:540 (SD:200)",
+                "p": -10
+            },
+            "prompt": "A local newspaper company is trying to decide how to <font color='red'> <b> divide up the paper routes<\/b><\/font>. Some groups of delivery people are faster than others, and if too many papers don't get delivered, customers get angry. Giving more to one delivery group may mean less for others. The icons below show how many routes are given to each group. <font color='red'><b>How should they divide up the routes?<\/b><\/font>",
+            "jitter": 20,
+            "response": "0"
+        },
+        {
+            "att": 0,
+            "trialNumber": 36,
+            "chosenData": {
+                "g1": 94,
+                "g2": 76,
+                "g3": 44,
+                "g4": 16,
+                "mu": 57.5,
+                "tradeoff": "HIGH: g1:920, g2:707, g3:493, g4:280 (SD = 200)",
+                "p": 21
+            },
+            "prompt": "A <font color='red'> <b> local courthouse is deciding who to give bail to<\/b><\/font>. Their goal is to maintain a constant level of public safety. Some groups are more likely to commit crimes than others. Giving bail to some people may mean not giving bail to others. The icons below show the percentage of each group receiving bail. <font color='red'><b>How should they allocate bail?<\/b><\/font>",
+            "jitter": 10,
+            "response": "41"
+        },
+        {
+            "att": 0,
+            "trialNumber": 37,
+            "chosenData": {
+                "g1": 92,
+                "g2": 73,
+                "g3": 44,
+                "g4": 18,
+                "mu": 56.75,
+                "tradeoff": "HIGH: g1:920, g2:707, g3:493, g4:280 (SD = 200)",
+                "p": 28
+            },
+            "prompt": "A <font color='red'> <b> local courthouse is deciding who to give bail to<\/b><\/font>. Their goal is to maintain a constant level of public safety. Some groups are more likely to commit crimes than others. Giving bail to some people may mean not giving bail to others. The icons below show the percentage of each group receiving bail. <font color='red'><b>How should they allocate bail?<\/b><\/font>",
+            "jitter": 10,
+            "response": "48"
+        },
+        {
+            "att": 0,
+            "trialNumber": 38,
+            "chosenData": {
+                "g1": 89,
+                "g2": 67,
+                "g3": 55,
+                "g4": 26,
+                "mu": 59.25,
+                "tradeoff": "MED: g1:800, g2:633, g3:567, g4:400 (SD:567)",
+                "p": 7
+            },
+            "prompt": "A <font color='red'> <b> local courthouse is deciding who to give bail to<\/b><\/font>. Their goal is to maintain a constant level of public safety. Some groups are more likely to commit crimes than others. Giving bail to some people may mean not giving bail to others. The icons below show the percentage of each group receiving bail. <font color='red'><b>How should they allocate bail?<\/b><\/font>",
+            "jitter": 0,
+            "response": "37"
+        }
+    ]
+}

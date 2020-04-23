@@ -23,7 +23,7 @@ race_rates = c('g1'=0.25, 'g2'=0.25, 'g3'=0.25, 'g4'=0.25) #equal base rates
 race_means = c('g1'=660, 'g2'=620, 'g3'=580, 'g4'=540) #low diff
 mu_type = 'LOW: g1:660, g2:620, g3:580, g4:540 (SD:200)'
 race_means = c('g1'=800, 'g2'=633, 'g3'=567, 'g4'=400) #med diff
-mu_type = 'MED: g1:800, g2:633, g3:567, g4:400 (SD:567)'
+mu_type = 'MED: g1:800, g2:633, g3:567, g4:400 (SD:200)'
 race_means = c('g1'=920, 'g2'=707, 'g3'=493, 'g4'=280) #high diff
 mu_type = 'HIGH: g1:920, g2:707, g3:493, g4:280 (SD = 200)'
 race_sds = c('g1'=200, 'g2'=200, 'g3'=200, 'g4'=200)

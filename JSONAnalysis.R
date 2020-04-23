@@ -6,9 +6,9 @@ library(tidyverse)
 setwd(dirname(rstudioapi::getActiveDocumentContext()$path))
 setwd("./data")
 file_list = list.files()
-setwd(dirname(rstudioapi::getActiveDocumentContext()$path))
-setwd("./dataV3V4combined")
-file_list = list.files()
+# setwd(dirname(rstudioapi::getActiveDocumentContext()$path))
+# setwd("./dataV3V4combined")
+# file_list = list.files()
 for (file in file_list){
   print(file)
   # if the merged dataset doesn't exist, create it
@@ -165,13 +165,12 @@ df_second_obs = df %>% arrange(trialNumber) %>%
 df_grouped = left_join(df_first_obs, df_second_obs, by=c("id","tradeoff", "prompt.type")) %>% rowwise()
 
 #create equation for correlation
-corr_eqn = function(x,y, digits = 2) {
-  corr_coef <- round(cor(x, y), digits = digits)
-  paste("italic(r) == ", corr_coef)
-}
+# corr_eqn = function(x,y, digits = 2) {
+#   corr_coef <- round(cor(x, y), digits = digits)
+#   paste("italic(r) == ", corr_coef)
+# }
 
 #labels = data.frame(x = 25, y = 55, label = corr_eqn(df_grouped$mu.x, df_grouped$mu.y))
-
 ggplot(df_grouped, aes(x = p.x, y = p.y))+
   geom_point()+
   facet_grid(.~tradeoff)+
@@ -182,5 +181,6 @@ ggplot(df_grouped, aes(x = p.x, y = p.y))+
  # geom_text(data = labels, aes(x = 25, y = 55, label = label), parse = TRUE)
 
 
+cor(df_grouped$p.x,df_grouped$p.y)
 
 

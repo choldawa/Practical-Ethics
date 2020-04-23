@@ -4,7 +4,7 @@ let jitterList = [0, 10, 20]
 const trialData = [];
 var subjectData = []
 
-var initialSliderVal = 85;
+var initialSliderVal = 75;
 var BLOCKS_PER_CHART = 10;
 var subjectId = "CH" + Math.round(Math.random() * 10000) + "13";
 attentionTrial = 7;

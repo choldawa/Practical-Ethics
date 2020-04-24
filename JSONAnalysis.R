@@ -62,20 +62,20 @@ df = df %>%
   mutate(var = pmap_dbl(list(g1,g2,g3,g4), ~ var(c(...))))
 df$sd = sqrt(df$var)
 #attention checks
-# df30 = df %>% select(att, p, id, trialNumber) %>%  filter(att == 1, trialNumber ==5)
-# df30$diff = abs(df30$p-30)
-# df60 = df %>% select(att, p, id, trialNumber) %>%  filter(att == 1, trialNumber ==25)
-# df60$diff = abs(df60$p-60) 
-# table(df60$diff)
-# ggplot(df60, aes(diff)) +
-#   geom_histogram(bins = 15)
+df30 = df %>% select(att, p, id, trialNumber) %>%  filter(att == 1, trialNumber ==5)
+df30$diff = abs(df30$p-30)
+df60 = df %>% select(att, p, id, trialNumber) %>%  filter(att == 1, trialNumber ==25)
+df60$diff = abs(df60$p-60)
+table(df60$diff)
+ggplot(df60, aes(diff)) +
+  geom_histogram(bins = 15)
 
 # includeID60 = df60[df60$diff<=20,"id"]
 # includeID30 = df30[df30$diff<=20,"id"]
 # 
 # df = df %>% filter(id %in% c(includeID60,includeID30) )
+
 df = df %>% filter(check1+check2 >0)
-#json.data[[2]][["promptCheck1"]]+json.data[[2]][["promptCheck2"]]
 
 
 #dataframe manipulation (can be done on group df)
@@ -144,7 +144,6 @@ ggplot(df, aes(x = trialNumber, y = p))+
   geom_point()+
   facet_grid(.~tradeoff)+
   geom_smooth(method = "lm")
-
 #Mu vs variance
 ggplot(df, aes(x = mu, y = sd, color = tradeoff))+
   geom_point()+

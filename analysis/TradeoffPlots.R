@@ -91,7 +91,7 @@ out = matrix(ncol = length(find.interp.thresholds(0.5, def.limit)),
              nrow = length(p_list))
 for (p in p_list){ 
   for(i in 1:length(race_means))
-    out[(p-(slider_start-1)),i] = round((1-pnorm(find.interp.thresholds(p/100, def.limit)[i], race_means[i], race_sds[i]))*100,0)
+    out[(p-(slider_start-1)),i] = (1-pnorm(find.interp.thresholds(p/100, def.limit)[i], race_means[i], race_sds[i]))*100
   #out[p+1,i] = (1-pnorm(find.interp.thresholds(p/100, def.limit)[i], race_means[i], race_sds[i]))
 }
 
@@ -105,7 +105,7 @@ out.json = toJSON(df, pretty = T)
 write(out.json, "./FICOTest.json")
 df = df %>% gather(key = 'race', value = 'FICO', 1:5)
 
-df %>% filter(p %in% c(0,25,50,75,100), race == "mu") %>% select(FICO)
+df %>% filter(p %in% c(-20,0,25,50,75,100), race == "mu") %>% select(FICO)
 theme_set(theme_minimal())
 ggplot(data = df, aes(x=p, y = FICO))+
   geom_line(aes(color = race),size = 1)+

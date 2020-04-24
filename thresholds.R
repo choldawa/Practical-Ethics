@@ -111,7 +111,7 @@ out = matrix(ncol = length(find.interp.thresholds(0.5, def.limit)),
              nrow = length(p_list))
 for (p in p_list){ 
    for(i in 1:length(race_means))
-      out[(p-(slider_start-1)),i] = round((1-pnorm(find.interp.thresholds(p/100, def.limit)[i], race_means[i], race_sds[i]))*100,0)
+      out[(p-(slider_start-1)),i] = (1-pnorm(find.interp.thresholds(p/100, def.limit)[i], race_means[i], race_sds[i]))*100
       #out[p+1,i] = (1-pnorm(find.interp.thresholds(p/100, def.limit)[i], race_means[i], race_sds[i]))
 }
 
@@ -125,14 +125,13 @@ write(out.json, "./FICOTest.json")
 df$p = p_list
 df = df %>% gather(key = 'race', value = 'FICO', 1:5)
 
-df %>% filter(p %in% c(0,25,50,75,100), race == "mu") %>% select(FICO)
+df %>% filter(p %in% c(-10,0,25,50,75,100), race == "mu") %>% select(FICO)
 theme_set(theme_minimal())
 ggplot(data = df, aes(x=p, y = FICO))+
    geom_line(aes(color = race),size = 1)+
    scale_color_manual(values=c("deepskyblue4", "firebrick2","lightseagreen",'black',"coral"))+
    ggtitle(paste("Def rate = ", def.limit, "\nBase rates = ", mu_type ))+
    ylab('Approval %')
-
 
 
 

@@ -66,16 +66,16 @@ df30 = df %>% select(att, p, id, trialNumber) %>%  filter(att == 1, trialNumber 
 df30$diff = abs(df30$p-30)
 df60 = df %>% select(att, p, id, trialNumber) %>%  filter(att == 1, trialNumber ==25)
 df60$diff = abs(df60$p-60)
-table(df60$diff)
-ggplot(df60, aes(diff)) +
+table(df30$diff)
+ggplot(df30, aes(diff)) +
   geom_histogram(bins = 15)
 
-# includeID60 = df60[df60$diff<=20,"id"]
-# includeID30 = df30[df30$diff<=20,"id"]
+# includeID60 = df60[df60$diff<=10,"id"]
+# includeID30 = df30[df30$diff<=10,"id"]
 # 
 # df = df %>% filter(id %in% c(includeID60,includeID30) )
 
-df = df %>% filter(check1+check2 >0)
+#df = df %>% filter(check1+check2 >0)
 
 
 #dataframe manipulation (can be done on group df)
@@ -106,12 +106,12 @@ df %>% mutate(name = fct_relevel(tradeoff,
   ggtitle("latentEquality Distribution by Tradeoff")
 
 df %>% mutate(name = fct_relevel(prompt.type, 
-                                 "bail", 
-                                 "meals",
+                                 "loan", 
+                                 "bail",
+                                 "job",
                                  "newspaper",
-                                 "loan",
-                                 "respirator",
-                                 "job")) %>%
+                                 "meals",
+                                 "respirator")) %>%
 ggerrorplot(x = "name", y = "p", 
             desc_stat = "mean_se")+
   ggtitle("latentEquality Distribution by Prompt")
@@ -121,12 +121,12 @@ df %>% mutate(tradeoff = fct_relevel(tradeoff,
                             "med", 
                             "high"),
               prompt = fct_relevel(prompt.type, 
-                                   "bail", 
-                                   "meals",
+                                   "loan", 
+                                   "bail",
+                                   "job",
                                    "newspaper",
-                                   "respirator",
-                                   "loan",
-                                   "job")) %>% 
+                                   "meals",
+                                   "respirator")) %>% 
   ggerrorplot(x = "prompt", y = "p", 
             desc_stat = "mean_se") + 
   facet_grid(.~tradeoff)+

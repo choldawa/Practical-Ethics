@@ -12,21 +12,25 @@ def.limit = 0.1
 race_rates = c('g1'=0.25, 'g2'=0.25, 'g3'=0.25, 'g4'=0.25) #equal base rates
 
 # # means
-# race_means = c('g1'=630, 'g2'=610, 'g3'=570, 'g4'=590) #low diff
-# mu_type = 'LOW: g1:630, g2:610, g3:570, g4:590 (SD:120)'
-# race_means = c('g1'=700, 'g2'=650, 'g3'=500, 'g4'=550) #med diff
-# mu_type = 'MED: g1:750, g2:650, g3:500, g4:550 (SD:120)'
-# race_means = c('g1'=760, 'g2'=680, 'g3'=440, 'g4'=520) #high diff
-# mu_type = 'HIGH: g1:760, g2:680, g3:440, g4:520 (SD = 120)'
-# race_sds = c('g1'=120, 'g2'=120, 'g3'=120, 'g4'=120)
-
 race_means = c('g1'=660, 'g2'=620, 'g3'=580, 'g4'=540) #low diff
-mu_type = 'LOW: g1:660, g2:620, g3:580, g4:540 (SD:200)'
+mu_type = 'LOW: g1:660, g2:620, g3:580, g4:540 (SD:336)'
+race_sds = c('g1'=336, 'g2'=336, 'g3'=336, 'g4'=336)
 race_means = c('g1'=800, 'g2'=633, 'g3'=567, 'g4'=400) #med diff
-mu_type = 'MED: g1:800, g2:633, g3:567, g4:400 (SD:200)'
+mu_type = 'MED: g1:800, g2:633, g3:567, g4:400 (SD:297)'
+race_sds = c('g1'=297, 'g2'=297, 'g3'=297, 'g4'=297)
 race_means = c('g1'=920, 'g2'=707, 'g3'=493, 'g4'=280) #high diff
 mu_type = 'HIGH: g1:920, g2:707, g3:493, g4:280 (SD = 200)'
 race_sds = c('g1'=200, 'g2'=200, 'g3'=200, 'g4'=200)
+
+sqrt(var(c(920,707,493,280)) +200^2 - var(c(800,633,567,400)))
+
+# race_means = c('g1'=660, 'g2'=620, 'g3'=580, 'g4'=540) #low diff
+# mu_type = 'LOW: g1:660, g2:620, g3:580, g4:540 (SD:200)'
+# race_means = c('g1'=800, 'g2'=633, 'g3'=567, 'g4'=400) #med diff
+# mu_type = 'MED: g1:800, g2:633, g3:567, g4:400 (SD:200)'
+# race_means = c('g1'=920, 'g2'=707, 'g3'=493, 'g4'=280) #high diff
+# mu_type = 'HIGH: g1:920, g2:707, g3:493, g4:280 (SD = 200)'
+# race_sds = c('g1'=200, 'g2'=200, 'g3'=200, 'g4'=200)
 # pdf of fico score given the fico truncation.
 dtnorm = function(x, m, s){
   dnorm(x, m, s) / (pnorm(850, m, s) - pnorm(300, m, s))
@@ -98,24 +102,18 @@ for (p in p_list){
 df = data.frame(out)
 df$mu = rowMeans(df[,1:4])
 colnames(df) = c('g1','g2','g3','g4', 'mu')
+df = df %>% 
+  mutate(var = pmap_dbl(list(g1,g2,g3,g4), ~ var(c(...))))
 df$tradeoff = mu_type
 df$p = p_list
-out.json = toJSON(df, pretty = T)
-
-write(out.json, "./FICOTest.json")
 df = df %>% gather(key = 'race', value = 'FICO', 1:5)
 
-df %>% filter(p %in% c(62), race == "mu") %>% select(FICO)
+df %>% filter(p %in% c(0,25,50,75,100), race == "mu") %>% select(FICO)
 theme_set(theme_minimal())
 ggplot(data = df, aes(x=p, y = FICO))+
   geom_line(aes(color = race),size = 1)+
   scale_color_manual(values=c("deepskyblue4", "firebrick2","lightseagreen","coral",'black'))+
   ggtitle(paste("Def rate = ", def.limit, "\n", mu_type ))+
   ylab('Approval %')
-
-# (t1|t2|t3)/
-#   (p1|p2|p3)
-
-
 
 

@@ -4,7 +4,7 @@ library(tidyverse)
 
 #Read in and merge all json data files
 setwd(dirname(rstudioapi::getActiveDocumentContext()$path))
-setwd("./data")
+setwd("./data") 
 file_list = list.files()
 # setwd(dirname(rstudioapi::getActiveDocumentContext()$path))
 # setwd("./dataV3V4combined")

@@ -98,6 +98,13 @@ df = df %>% mutate(tradeoff = fct_relevel(tradeoff,
 df = df %>% 
   filter(att == 0)
 
+df %>% group_by(tradeoff) %>% summarise(round(max(mu),0))
+df %>% group_by(tradeoff) %>% 
+  filter(round(mu,0) == round(max(mu),0))%>% 
+  filter( p == min(p) | p == max(p)) %>% filter(tradeoff == 'low') %>% 
+  select(p, mu) 
+
+
 df %>% group_by(tradeoff) %>% summarise(mean(p))
 
 #plots of response by datatype and prompt
@@ -128,7 +135,7 @@ df %>% mutate(prompt = fct_relevel(prompt.type,
                                    "respirator")) %>% 
   ggerrorplot(x = "prompt", y = "p", 
             desc_stat = "mean_se", size = 1) + 
-  facet_grid(.~name)+
+  facet_grid(.~tradeoff)+
   theme(axis.text.x = element_text(angle = 90), text = element_text(size=20))+
   xlab("Prompt")
 #Distribution of responses
@@ -153,13 +160,15 @@ df %>% group_by(tradeoff) %>% filter(p == round(mean(p))) %>% summarise(mean(mu)
 
 lin = lm(data = df, p ~ tradeoff+prompt.type+jitter)
 summary(lin)
-lme = lme4::lmer(data = df, p ~ 1 + (1|prompt.type) + (1|tradeoff) + (1|jitter))
-ranef(lme)
+lme = lme4::lmer(data = df, p ~ 1 + (1|tradeoff) + (1|prompt.type) + (1|jitter))
+lme4::ranef(lme)
 arm::se.ranef(lme)
 #lme4
 #arm
 #broom.mixed
-tidy(lme, effects = c('fixed', 'ran_vals'))
+broom.mixed::tidy(lme, effects = c('fixed', 'ran_vals'))
+lme.table = broom.mixed::tidy(lme, effects = c('fixed', 'ran_vals'))
+xtable(lme.table)
 ##Create DF to compare correlation between trials 
 df_first_obs = df %>% 
   arrange(trialNumber) %>% 

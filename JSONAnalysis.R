@@ -157,7 +157,10 @@ ggplot(df, aes(x = trialNumber, y = p))+
   geom_point(aes(x =  49.2, y=22.5), colour="black", size = 5)
  
 #Mu vs variance
-ggplot(df, aes(x = sd, y = round(mu,0), color = tradeoff))+
+df_scaled= df
+df_scaled$muScaled =  ave(df_scaled$mu, df_scaled$tradeoff, FUN=function(x) scale(x)) 
+df_scaled = (df_scaled %>% group_by(tradeoff) %>% mutate(muScaled = mu/max(mu)))
+ggplot(df_scaled, aes(x = sd, y = muScaled, color = tradeoff))+
     theme_minimal()+
     theme(text = element_text(size=18))+
     geom_point() 

@@ -155,7 +155,13 @@ ggplot(df, aes(x = trialNumber, y = p))+
   geom_point(aes(x=59.5, y= 3.79), colour="black", size = 5)+
   geom_point(aes(x=54.5, y=12.2), colour="black", size = 5)+
   geom_point(aes(x =  49.2, y=22.5), colour="black", size = 5)
-  
+ 
+#Mu vs variance
+ggplot(df, aes(x = sd, y = round(mu,0), color = tradeoff))+
+    theme_minimal()+
+    theme(text = element_text(size=18))+
+    geom_point() 
+
 
 df %>% group_by(tradeoff) %>% filter(p == round(mean(p))) %>% summarise(mean(mu), mean(sd))
 

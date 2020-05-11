@@ -133,14 +133,15 @@ df %>% mutate(prompt = fct_relevel(prompt.type,
                                    "newspaper",
                                    "meals",
                                    "respirator")) %>% 
-  ggerrorplot(x = "prompt", y = "p", 
+  ggerrorplot(x = "tradeoff", y = "p", 
             desc_stat = "mean_se", size = 1) + 
-  facet_grid(.~tradeoff)+
+  facet_grid(.~prompt)+
   theme(axis.text.x = element_text(angle = 90), text = element_text(size=20))+
   xlab("Prompt")
 #Distribution of responses
 ggplot(df,aes(p)) +
-  geom_histogram(bins = 15) +facet_grid(.~tradeoff)
+  geom_histogram(bins = 15) +facet_grid(.~tradeoff)+ 
+  theme(text = element_text(size=20))
 
 ggplot(df, aes(x = trialNumber, y = p))+
   geom_point()+

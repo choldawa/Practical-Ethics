@@ -161,6 +161,8 @@ df %>% group_by(tradeoff) %>% filter(p == round(mean(p))) %>% summarise(mean(mu)
 lin = lm(data = df, p ~ tradeoff+prompt.type+jitter)
 summary(lin)
 lme = lme4::lmer(data = df, p ~ 1 + (1|tradeoff) + (1|prompt.type) + (1|jitter))
+lme_null = lme4::lmer(data = df, p ~ 1 + (1|tradeoff) + (1|jitter))
+anova(lme,lme_null, test = "Chisq")
 lme4::ranef(lme)
 arm::se.ranef(lme)
 #lme4

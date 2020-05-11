@@ -103,15 +103,17 @@ df$p = p_list
 out.json = toJSON(df, pretty = T)
 
 write(out.json, "./FICOTest.json")
-df = df %>% gather(key = 'race', value = 'FICO', 1:5)
+df = df %>% gather(key = 'Group', value = 'FICO', 1:5)
 
-df %>% filter(p %in% c(62), race == "mu") %>% select(FICO)
+df %>% filter(p %in% c(62), Group == "mu") %>% select(FICO)
 theme_set(theme_minimal())
 ggplot(data = df, aes(x=p, y = FICO))+
-  geom_line(aes(color = race),size = 1)+
+  geom_line(aes(color = Group),size = 2)+
   scale_color_manual(values=c("deepskyblue4", "firebrick2","lightseagreen","coral",'black'))+
-  ggtitle(paste("Def rate = ", def.limit, "\n", mu_type ))+
-  ylab('Approval %')
+  #ggtitle(paste("Def rate = ", def.limit, "\n", mu_type ))+
+  theme(text = element_text(size=40))+
+  ylab('Approval %')+
+  ylim(0,100)
 
 # (t1|t2|t3)/
 #   (p1|p2|p3)

@@ -148,18 +148,19 @@ ggplot(df, aes(x = trialNumber, y = p))+
   facet_grid(.~tradeoff)+
   geom_smooth(method = "lm")
 #Mu vs variance
-  ggplot(df, aes(x = mu, y = sd, color = tradeoff))+
+  ggplot(df, aes(x = round(mu,0), y = sd, color = tradeoff))+
   theme_minimal()+
   theme(text = element_text(size=18))+
-  geom_point()+
+  geom_bin2d()+
+    scale_fill_gradient(trans = "log")+
   geom_point(aes(x=59.5, y= 3.79), colour="black", size = 5)+
   geom_point(aes(x=54.5, y=12.2), colour="black", size = 5)+
   geom_point(aes(x =  49.2, y=22.5), colour="black", size = 5)
  
 #Mu vs variance
 df_scaled= df
-df_scaled$muScaled =  ave(df_scaled$mu, df_scaled$tradeoff, FUN=function(x) scale(x)) 
-df_scaled = (df_scaled %>% group_by(tradeoff) %>% mutate(muScaled = mu/max(mu)))
+#df_scaled$muScaled =  ave(df_scaled$round(mu,0), df_scaled$tradeoff, FUN=function(x) scale(x)) 
+df_scaled = (df_scaled %>% group_by(tradeoff) %>% mutate(muScaled = scale(mu)))
 ggplot(df_scaled, aes(x = sd, y = muScaled, color = tradeoff))+
     theme_minimal()+
     theme(text = element_text(size=18))+

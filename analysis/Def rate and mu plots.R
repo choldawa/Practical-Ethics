@@ -102,7 +102,7 @@ ggplot(NULL, aes(x = c(0, 100))) +
 
 
 #Same threshold
-n_critical_equal <- qnorm(0.05, mean = 75, sd = 10)
+n_critical_equal <- qnorm(0.003, mean = 75, sd = 10)
 
 
 ggplot(NULL, aes(x = c(0, 100))) +

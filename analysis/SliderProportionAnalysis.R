@@ -104,8 +104,8 @@ sum(df_med$sd == 0)/length(df_med$sd)
 sum((df_high$mu == max(df_high$mu)))/length(df_high$mu)
 sum(df_high$sd == 0)/length(df_high$sd)
 
-mean((df_low  %>% 
-  filter(mu != max(mu) & sd != 0 & p<100))$mu)
+mean((df_high  %>% 
+  filter(mu != max(mu) & sd != 0 & p<100 &p >0))$p)
 
 df_med  %>% 
         filter(mu != max(mu) & sd != 0 & p<100)%>% 
@@ -115,3 +115,18 @@ df_med  %>%
   ylim(0,35)+
   theme(text = element_text(size=28))
 lm(data = df_med, sd~mu)
+
+
+df_musd = data.frame("mu" = 10:100)
+df_musd$sd = df_musd$mu - 10
+df_musd$sd1 = 1.2*df_musd$mu - 12
+df_musd$sd2 = 0.5*df_musd$mu - 5
+df_musd$sd3 = 0.1*df_musd$mu - 1
+ggplot(data = df_musd)+
+  geom_line(aes(x = mu, y = sd))+
+  geom_line(aes(x = mu, y = sd1))+
+  geom_line(aes(x = mu, y = sd2))+
+  geom_line(aes(x = mu, y = sd3))+
+  theme_minimal()+
+  theme(text = element_text(size=28))
+

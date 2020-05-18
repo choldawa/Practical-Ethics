@@ -140,6 +140,7 @@ df %>% mutate(prompt = fct_relevel(prompt.type,
   xlab("Prompt")
 #Distribution of responses
 ggplot(df,aes(p)) +
+  theme_minimal()+
   geom_histogram(bins = 15) +facet_grid(.~tradeoff)+ 
   theme(text = element_text(size=20))
 

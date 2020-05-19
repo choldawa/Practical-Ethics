@@ -104,8 +104,8 @@ sum(df_med$sd == 0)/length(df_med$sd)
 sum((df_high$mu == max(df_high$mu)))/length(df_high$mu)
 sum(df_high$sd == 0)/length(df_high$sd)
 
-mean((df_high  %>% 
-  filter(mu != max(mu) & sd != 0 & p<100 &p >0))$p)
+max((df_high  %>% 
+  filter( sd == 0))$p)
 
 df_med  %>% 
         filter(mu != max(mu) & sd != 0 & p<100)%>% 

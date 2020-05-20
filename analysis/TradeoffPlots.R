@@ -113,6 +113,7 @@ ggplot(data = df, aes(x=p, y = FICO))+
   #ggtitle(paste("Def rate = ", def.limit, "\n", mu_type ))+
   theme(text = element_text(size=40))+
   ylab('Approval %')+
+  xlab("Equality Index")+
   ylim(0,100)
 
 # (t1|t2|t3)/

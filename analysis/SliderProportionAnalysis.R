@@ -97,15 +97,15 @@ df_med = df %>% filter(tradeoff == "med")
 df_high = df %>% filter(tradeoff == "high")
 
 
-sum((df_low$mu == max(df_low$mu)))/length(df_low$mu)
+sum(df_high$p > 80)/length(df_high$p)
 sum(df_low$sd == 0)/length(df_low$sd)
 sum((df_med$mu == max(df_med$mu)))/length(df_med$mu)
 sum(df_med$sd == 0)/length(df_med$sd)
 sum((df_high$mu == max(df_high$mu)))/length(df_high$mu)
 sum(df_high$sd == 0)/length(df_high$sd)
 
-max((df_high  %>% 
-  filter( sd == 0))$p)
+mean((df_low  %>% 
+  filter( p >20 && p <80))$p)
 
 df_med  %>% 
         filter(mu != max(mu) & sd != 0 & p<100)%>% 

@@ -141,7 +141,12 @@ df %>% mutate(prompt = fct_relevel(prompt.type,
 #Distribution of responses
 ggplot(df,aes(p)) +
   theme_minimal()+
-  geom_histogram(bins = 15) +facet_grid(.~tradeoff)+ 
+  geom_histogram(bins = 15) +facet_grid(tradeoff~.)+ 
+  #geom_rect(aes(xmin=-25, xmax=25, ymin=0, ymax=Inf), fill = "red", alpha = 0.005)+
+  annotate("rect", xmin = -20, xmax = 20, ymin = 0, ymax =Inf,
+           alpha = .2, fill = "red")+
+  annotate("rect", xmin = 80, xmax = 120, ymin = 0, ymax =Inf,
+           alpha = .2, fill = "blue")+
   theme(text = element_text(size=20))
 
 ggplot(df, aes(x = trialNumber, y = p))+

@@ -112,7 +112,8 @@ library(ggpubr)
 ggerrorplot(df, x = "tradeoff", y = "p", 
             desc_stat = "mean_se", size  =1)+
   theme(text = element_text(size=20))+
-  xlab("Tradeoff Type")
+  xlab("Tradeoff Type")+
+  ylab("Equality Index")
 
 df %>% mutate(name = fct_relevel(prompt.type, 
                                  "loan", 
@@ -123,8 +124,9 @@ df %>% mutate(name = fct_relevel(prompt.type,
                                  "respirator")) %>%
 ggerrorplot(x = "name", y = "p", 
             desc_stat = "mean_se", size  =1)+
-  theme(text = element_text(size=20))+
-  xlab("Prompt")
+  theme(text = element_text(size=20), axis.text.x = element_text(size = 12))+
+  xlab("Prompt")+
+  ylab("Equality Index")
 
 df %>% mutate(prompt = fct_relevel(prompt.type, 
                                    "loan", 

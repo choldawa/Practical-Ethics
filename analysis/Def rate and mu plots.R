@@ -96,7 +96,7 @@ ggplot(NULL, aes(x = c(0, 100))) +
   geom_vline(xintercept = n_critical_30, linetype="dotted")+
   theme_minimal()+
   theme(text = element_text(size=20))+
-  xlab("Score")+
+  xlab("Fitness")+
   ylab("Probability Density")+
   xlim(0, 100)
 

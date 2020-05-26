@@ -124,7 +124,7 @@ df %>% mutate(name = fct_relevel(prompt.type,
                                  "respirator")) %>%
 ggerrorplot(x = "name", y = "p", 
             desc_stat = "mean_se", size  =1)+
-  theme(text = element_text(size=20), axis.text.x = element_text(size = 12))+
+  theme(text = element_text(size=20), axis.text.x = element_text(size = 20))+
   xlab("Prompt")+
   ylab("Equality Index")
 

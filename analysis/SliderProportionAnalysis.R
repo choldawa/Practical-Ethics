@@ -128,5 +128,7 @@ ggplot(data = df_musd)+
   geom_line(aes(x = mu, y = sd2))+
   geom_line(aes(x = mu, y = sd3))+
   theme_minimal()+
-  theme(text = element_text(size=28))
+  theme(text = element_text(size=28))+
+  ylab("Between Group Variance")+
+  xlab("Global Average")
 

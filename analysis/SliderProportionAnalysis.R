@@ -104,8 +104,15 @@ sum(df_med$sd == 0)/length(df_med$sd)
 sum((df_high$mu == max(df_high$mu)))/length(df_high$mu)
 sum(df_high$sd == 0)/length(df_high$sd)
 
-mean((df_high  %>% 
-  filter( p >20 && p <80))$p)
+#calculate % eq or ef
+df_low = df_low%>% mutate(ef = as.integer((df_low$p > 80 & df_low$p < 120)))
+mean(df_low$ef)
+
+mean((df_high %>% 
+      filter( p >20 & p <80))$p)
+sd((df_high  %>% 
+  filter( p >20 & p <80))$p)/length((df_high  %>% 
+                                       filter( p >20 & p <80))$p)
 
 df_med  %>% 
         filter(mu != max(mu) & sd != 0 & p<100)%>% 

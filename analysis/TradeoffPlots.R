@@ -114,7 +114,7 @@ ggplot(data = df, aes(x=p, y = FICO))+
   theme(text = element_text(size=40))+
   ylab('Approval %')+
   xlab("Equality Index")+
-  ylim(0,100)
+  ylim(0,100)+ xlim(0,100)
 
 # (t1|t2|t3)/
 #   (p1|p2|p3)
